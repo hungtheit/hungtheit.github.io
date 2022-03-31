@@ -1,4 +1,4 @@
 ---
-title: "Welcome to Hung The's gibhub profile"
+title: "Welcome to Hung The's github profile"
 ---
 
