@@ -3,6 +3,7 @@ A Vietnamese Software Engineer.<br/>
 <h2>Skills</h2>
 <ul>
 <li>Java</li>
+<li>PL/SQL</li>
 <li>ReactJS</li>
 </ul>
 <h2>Contacts</h2>
