@@ -4578,8 +4578,9 @@
     }
     function W(e) {
       var t = FrameWorkScript.runtime.vm[e];
-      t ||
-      reurn,
+
+      if(t === undefined) return;
+
       t.$el.style.display = 'none',
       t.$el.querySelectorAll('.com-gallery').forEach(
         (
