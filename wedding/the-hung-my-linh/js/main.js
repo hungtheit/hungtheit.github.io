@@ -7132,105 +7132,6 @@
     u = n(58),
     l = n(31);
     e.exports = function (e) {
-      return new Promise(
-        (
-          function (t, n) {
-            var d = e.data,
-            p = e.headers;
-            i.isFormData(d) &&
-            delete p['Content-Type'];
-            var h = new XMLHttpRequest;
-            if (e.auth) {
-              var f = e.auth.username ||
-              '',
-              v = e.auth.password ? unescape(encodeURIComponent(e.auth.password)) : '';
-              p.Authorization = 'Basic ' + btoa(f + ':' + v)
-            }
-            var m = s(e.baseURL, e.url);
-            if (
-              h.open(e.method.toUpperCase(), o(m, e.params, e.paramsSerializer), !0),
-              h.timeout = e.timeout,
-              h.onreadystatechange = function () {
-                if (
-                  h &&
-                  4 === h.readyState &&
-                  (
-                    0 !== h.status ||
-                    h.responseURL &&
-                    0 === h.responseURL.indexOf('file:')
-                  )
-                ) {
-                  var i = 'getAllResponseHeaders' in h ? c(h.getAllResponseHeaders()) : null,
-                  a = {
-                    data: e.responseType &&
-                    'text' !== e.responseType ? h.response : h.responseText,
-                    status: h.status,
-                    statusText: h.statusText,
-                    headers: i,
-                    config: e,
-                    request: h
-                  };
-                  r(t, n, a),
-                  h = null
-                }
-              },
-              h.onabort = function () {
-                h &&
-                (n(l('Request aborted', e, 'ECONNABORTED', h)), h = null)
-              },
-              h.onerror = function () {
-                n(l('Network Error', e, null, h)),
-                h = null
-              },
-              h.ontimeout = function () {
-                var t = 'timeout of ' + e.timeout + 'ms exceeded';
-                e.timeoutErrorMessage &&
-                (t = e.timeoutErrorMessage),
-                n(l(t, e, 'ECONNABORTED', h)),
-                h = null
-              },
-              i.isStandardBrowserEnv()
-            ) {
-              var _ = (e.withCredentials || u(m)) &&
-              e.xsrfCookieName ? a.read(e.xsrfCookieName) : void 0;
-              _ &&
-              (p[e.xsrfHeaderName] = _)
-            }
-            if (
-              'setRequestHeader' in h &&
-              i.forEach(
-                p,
-                (
-                  function (e, t) {
-                    void 0 === d &&
-                    'content-type' === t.toLowerCase() ? delete p[t] : h.setRequestHeader(t, e)
-                  }
-                )
-              ),
-              i.isUndefined(e.withCredentials) ||
-              (h.withCredentials = !!e.withCredentials),
-              e.responseType
-            ) try {
-              h.responseType = e.responseType
-            } catch (t) {
-              if ('json' !== e.responseType) throw t
-            }
-            'function' == typeof e.onDownloadProgress &&
-            h.addEventListener('progress', e.onDownloadProgress),
-            'function' == typeof e.onUploadProgress &&
-            h.upload &&
-            h.upload.addEventListener('progress', e.onUploadProgress),
-            e.cancelToken &&
-            e.cancelToken.promise.then((function (e) {
-              h &&
-              (h.abort(), n(e), h = null)
-            })),
-            d ||
-            (d = null),
-            h.send(d)
-          }
-        )
-      )
     }
   },
   function (e, t, n) {
@@ -28345,18 +28246,9 @@
             key: 'load',
             value: function () {
               var e = this;
-              this.loadSyncInfo(),
-              window.addEventListener(
-                'DOMContentLoaded',
-                (function () {
-                  e.loadCart(),
-                  e.cartCheckout()
-                })
-              ),
               window.addEventListener('load', (function () {
                 e.customCode()
               })),
-              window.onYouTubeIframeAPIReady = this.onYTIframeAPIReady.bind(this),
               this.eventPopupBackdrop(),
               this.eventLightboxBackdrop(),
               this.pubsub.subscribe(
