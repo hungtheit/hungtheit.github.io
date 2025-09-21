@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "SVN-Mightiest.otf";
+    src: url("../fonts/SVN-Mightiest.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SVN-Amstirdam.otf";
+    src: url("../fonts/SVN-Amstirdam.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ephesis-Regular.ttf";
+    src: url("../fonts/Ephesis-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UTM-Cafeta.ttf";
+    src: url("../fonts/UTM-Cafeta.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "VNF-Shelia-Regular.ttf";
+    src: url("../fonts/VNF-Shelia-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BlackMango-Medium.otf";
+    src: url("../fonts/BlackMango-Medium.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UTM-Azkia.ttf";
+    src: url("../fonts/UTM-Azkia.ttf") format("truetype");
+    font-display: swap;
+}
