@@ -63,8 +63,7 @@ window.event_data = {
             "j6ac06mu": {
                 "type": "text-block",
                 "specials": {
-                    "tag": "h2",
-                    "text": "Mời Cưới"
+                    "tag": "h2"
                 },
                 "id": "j6ac06mu",
                 "desktop": {
@@ -93,7 +92,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/05/e8/a8/16/01929026352f538e92df0cf5acb55a927a088c800fcceec2f2ed400e-w:2857-h:4000-l:443402-t:image/png.png"
                 },
                 "id": "3subauj7",
                 "events": [
@@ -173,7 +171,6 @@ window.event_data = {
                         "appTarget": "",
                         "hoverColor": "",
                         "id": "owj34amy",
-                        "target": "https://statics.hungthe.vn/web-media/30/2d/16/de/6ef7c8fcf6b86241ef11f111d6d3269a74a27c5ab5a451854d150895-w:0-h:0-l:2426583-t:audio/mpeg.mp3",
                         "type": "click"
                     },
                     {
@@ -227,7 +224,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/7e/0e/ee/a0/c27d822a813538477d62a88d9e8b8589c4d236ff795f70c73cfc3b7e-w:2857-h:4000-l:498009-t:image/png.png"
                 },
                 "id": "q1wlsumy",
                 "$parent": "1toiquem"
@@ -237,7 +233,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/b8/a9/be/33/645ec95fdf293c645381a4aefd65aada76ac2c12e1a08201bf323dd5-w:1919-h:2560-l:363265-t:image/jpeg.jpg"
                 },
                 "id": "4aeii491",
                 "desktop": {
@@ -261,8 +256,7 @@ window.event_data = {
             "bnrugie4": {
                 "type": "text-block",
                 "specials": {
-                    "tag": "h2",
-                    "text": "THIỆP"
+                    "tag": "h2"
                 },
                 "id": "bnrugie4",
                 "desktop": {
@@ -289,7 +283,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "- NHẤP VÀO THIỆP ĐỂ MỞ -"
                 },
                 "id": "hoyb400n",
                 "desktop": {
@@ -312,7 +305,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/f1/c6/99/9b/84ae5a36a38f56bd560b76c5127697498d846aedb2d7c19b97fb91d3-w:2857-h:4000-l:451305-t:image/png.png"
                 },
                 "id": "3udt7eao",
                 "events": [
@@ -329,7 +321,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/1f/94/22/d2/4b84947380d319a034d00e7f832c3382c2e560af38d2eb0c27f28233-w:313-h:313-l:4199-t:image/png.png"
                 },
                 "id": "1qpgocgm",
                 "desktop": {
@@ -356,7 +347,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/ad/5f/53/64/1edd4fef1a388b55bd7e911576af2974ef23eee1d6e8256fbc284adb-w:313-h:313-l:85150-t:image/png.png"
                 },
                 "id": "chgngsfo",
                 "mobile": {
@@ -370,7 +360,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/96/eb/3e/88/e0669ae69ebd15ed0ce1f5084f1c40ff9f5f95748b2f5655a899050e-w:313-h:313-l:52959-t:image/png.png"
                 },
                 "id": "cvriqtir",
                 "$parent": "1toiquem"
@@ -381,7 +370,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/ad/5f/53/64/1edd4fef1a388b55bd7e911576af2974ef23eee1d6e8256fbc284adb-w:313-h:313-l:85150-t:image/png.png"
                 },
                 "id": "rh0ij8au",
                 "$parent": "1toiquem"
@@ -392,7 +380,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/bf/2f/5d/80/19a0458767a0deb97944f43446b1d99e2f5f6dd0f391afe8f83701fd-w:313-h:313-l:43599-t:image/png.png"
                 },
                 "id": "7s2xy9vd",
                 "$parent": "1toiquem"
@@ -403,7 +390,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/bf/2f/5d/80/19a0458767a0deb97944f43446b1d99e2f5f6dd0f391afe8f83701fd-w:313-h:313-l:43599-t:image/png.png"
                 },
                 "id": "8cd27q3l",
                 "$parent": "1toiquem"
@@ -430,7 +416,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/1f/16/e4/11/0b3d30427528ab5be1b6228746b88c90298787bf4b800b6b390c3f0e-w:100-h:100-l:4112-t:image/png.png"
                 },
                 "id": "ohkl2lnj",
                 "desktop": {
@@ -455,7 +440,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h4",
-                    "text": "Anh Tú"
                 },
                 "id": "lfeb0egb",
                 "desktop": {
@@ -488,7 +472,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h3",
-                    "text": "31.03<br>2025<br>"
                 },
                 "id": "19tqxf4g",
                 "desktop": {
@@ -515,7 +498,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h4",
-                    "text": "Diệu Nhi"
                 },
                 "id": "wkuu9jg6",
                 "desktop": {
@@ -548,7 +530,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/b3/d7/78/bb/d8759c19ffd5366a85530fbb9d84c8030baaeae14a7b2d8e6d714072-w:313-h:313-l:4969-t:image/png.png"
                 },
                 "id": "e7d1tx8k",
                 "desktop": {
@@ -574,7 +555,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/f5/9d/6e/68/68bd732f71085eb122df4674357e52a44ce50cdefc9018e1bfebbf2a-w:200-h:200-l:5929-t:image/png.png"
                 },
                 "id": "np891vuj",
                 "mobile": {
@@ -589,7 +569,6 @@ window.event_data = {
                 "specials": {
                     "customAdvance": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/02/d4/a7/88/fef5132f979892c1778a688f2039942fc24b396b332750179775f87e-w:200-h:200-l:8183-t:image/png.png"
                 },
                 "id": "pqtxq0p8",
                 "events": [
@@ -599,7 +578,6 @@ window.event_data = {
                         "hoverColor": "",
                         "id": "on0bslwe",
                         "nameFile": "EM ĐỒNG Ý (I DO) - ĐỨC PHÚC x 911 x KHẮC HƯNG - OFFICIAL MUSIC VIDEO - VALENTINE 2023 (mp3cut.net).mp3",
-                        "target": "https://statics.hungthe.vn/web-media/30/2d/16/de/6ef7c8fcf6b86241ef11f111d6d3269a74a27c5ab5a451854d150895-w:0-h:0-l:2426583-t:audio/mpeg.mp3",
                         "type": "click"
                     },
                     {
@@ -633,7 +611,6 @@ window.event_data = {
                 "specials": {
                     "customAdvance": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/31/08/c9/52/c9f574ca2fa8481e1c8c657100583ddfbf47e33427d480a7dc32e788-w:200-h:200-l:242141-t:image/gif.gif"
                 },
                 "id": "djaowtuq",
                 "events": [
@@ -643,7 +620,6 @@ window.event_data = {
                         "hoverColor": "",
                         "id": "on0bslwe",
                         "nameFile": "EM ĐỒNG Ý (I DO) - ĐỨC PHÚC x 911 x KHẮC HƯNG - OFFICIAL MUSIC VIDEO - VALENTINE 2023 (mp3cut.net).mp3",
-                        "target": "https://statics.hungthe.vn/web-media/30/2d/16/de/6ef7c8fcf6b86241ef11f111d6d3269a74a27c5ab5a451854d150895-w:0-h:0-l:2426583-t:audio/mpeg.mp3",
                         "type": "click"
                     },
                     {
@@ -676,7 +652,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/48/53/5d/e8/8360ef0daf228b537db79566ac2bfb8ff7d126e363d698bcaaf55ad8-w:100-h:100-l:4812-t:image/png.png"
                 },
                 "id": "76hn3zct",
                 "events": [
@@ -730,7 +705,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "Thư<br>Mời<br>Cưới<br>"
                 },
                 "id": "3hbjzhq6",
                 "desktop": {
@@ -781,7 +755,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/1f/94/22/d2/4b84947380d319a034d00e7f832c3382c2e560af38d2eb0c27f28233-w:313-h:313-l:4199-t:image/png.png"
                 },
                 "id": "1u5rhi6o",
                 "desktop": {
@@ -812,7 +785,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/57/9d/b4/54/8062abb209fa7d1a4f616d71addf48e4b528644d159a733f58090902-w:100-h:100-l:7010-t:image/png.png"
                 },
                 "id": "1vrm5g0n",
                 "$parent": "6dnci2bs"
@@ -821,7 +793,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "NHÀ TRAI<br>"
                 },
                 "id": "gksl9w4l",
                 "desktop": {
@@ -848,7 +819,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "Quận 8, Hồ Chí Minh"
                 },
                 "id": "91jxhp0m",
                 "desktop": {
@@ -875,7 +845,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "ÔNG CẤN VĂN AN\n<br>BÀ NGUYỄN THỊ HẢI<br>"
                 },
                 "id": "ig5jcswu",
                 "desktop": {
@@ -902,7 +871,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "NHÀ GÁI<br>"
                 },
                 "id": "j8n1a9zw",
                 "desktop": {
@@ -929,7 +897,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "Quận 8, Hồ Chí Minh"
                 },
                 "id": "2hyi8ra3",
                 "desktop": {
@@ -956,7 +923,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "ÔNG CẤN VĂN AN\n<br>BÀ NGUYỄN THỊ HẢI<br>"
                 },
                 "id": "bv74resi",
                 "desktop": {
@@ -983,7 +949,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "Trân Trọng Báo Tin Lễ Thành Hôn Của<br>"
                 },
                 "id": "32etj2r3",
                 "desktop": {
@@ -1010,7 +975,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h1",
-                    "text": "Nguyễn Anh Tú"
                 },
                 "id": "6i7xa1kt",
                 "desktop": {
@@ -1037,7 +1001,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h1",
-                    "text": "Trần Diệu Nhi"
                 },
                 "id": "giudke9b",
                 "desktop": {
@@ -1064,7 +1027,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h1",
-                    "text": "&amp;"
                 },
                 "id": "ioujowzg",
                 "desktop": {
@@ -1092,7 +1054,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/9b/88/f1/17/9ce85c6c98630dcebbd8857da9d943d9459478d7a17462251be04d2c-w:1919-h:2560-l:246373-t:image/jpeg.jpg"
                 },
                 "id": "hs9njuu7",
                 "desktop": {
@@ -1139,7 +1100,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "Trân Trọng Kính Mời<br>"
                 },
                 "id": "amfdze1w",
                 "desktop": {
@@ -1166,7 +1126,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "(Tức Ngày 02 Tháng 03 Năm Ất Tỵ)<br>"
                 },
                 "id": "trta43bz",
                 "desktop": {
@@ -1193,7 +1152,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "Tại The ADORA Center"
                 },
                 "id": "pdl931a6",
                 "desktop": {
@@ -1220,7 +1178,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "<span style=\"font-weight: bold;\">Tháng 03</span><br>"
                 },
                 "id": "k8kl83qy",
                 "desktop": {
@@ -1241,7 +1198,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "2025<br>"
                 },
                 "id": "kbgnz2rp",
                 "desktop": {
@@ -1290,7 +1246,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "<span style=\"font-weight: bold;\">TIỆC MỪNG LỄ THÀNH HÔN</span>"
                 },
                 "id": "6amly90s",
                 "desktop": {
@@ -1317,7 +1272,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "Vào Lúc 10h00 | Thứ 6"
                 },
                 "id": "rvjhix10",
                 "desktop": {
@@ -1338,7 +1292,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "30<br>"
                 },
                 "id": "0m3cmvaa",
                 "desktop": {
@@ -1360,7 +1313,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/21/54/83/cb/163b4872b6600196d0ac068b1f046c5dd5f9d20c3ddad5e7c0abea9b-w:736-h:980-l:48194-t:image/jpeg.jfif"
                 },
                 "id": "2z4vbngp",
                 "desktop": {
@@ -1386,7 +1338,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/3c/3b/ca/e1/e12ca0e6af675d653327f5a3b5d2c7c2385f71d26b8fee7604b45828-w:1706-h:2560-l:224512-t:image/jpeg.jpg"
                 },
                 "id": "xd4gq2s2",
                 "desktop": {
@@ -1412,7 +1363,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/6f/2b/71/1d/03a457a718b5bf78c5639d6de0521b7a19ec698dcd5737408a50bd16-w:1707-h:2560-l:275640-t:image/jpeg.jpg"
                 },
                 "id": "p4gatvnw",
                 "desktop": {
@@ -1448,7 +1398,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/f9/f9/14/61/b93e1944e481ef0a3271a5b1b06dcbc479caff75dae08567c7060473-w:1200-h:1200-l:56235-t:image/png.png"
                 },
                 "id": "3m9ley3f",
                 "desktop": {
@@ -1473,7 +1422,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/9e/29/8f/06/7eca1cf0dfeeb23c555f0b1342b52bdee2d79ebf94cbadadcbaf3854-w:225-h:225-l:8407-t:image/png.png"
                 },
                 "id": "q5ac8dqm",
                 "desktop": {
@@ -1515,7 +1463,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "xxx, Phường xxx, Quận xxx,<br>Hồ Chí Minh<br>"
                 },
                 "id": "b8ao84la",
                 "desktop": {
@@ -1542,7 +1489,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "p",
-                    "text": "<span style=\"font-weight: 700;\">The ADORA Center</span><br>"
                 },
                 "id": "8799m2jd",
                 "desktop": {
@@ -1568,7 +1514,6 @@ window.event_data = {
             "i7ym6cbi": {
                 "type": "button",
                 "specials": {
-                    "text": "Xem Chỉ Đường"
                 },
                 "id": "i7ym6cbi",
                 "events": [
@@ -1577,7 +1522,6 @@ window.event_data = {
                         "appTarget": "",
                         "hoverColor": "",
                         "id": "11z1nlck",
-                        "target": "https://maps.app.goo.gl/PP57rDnyXbgNEVbM8",
                         "type": "click"
                     },
                     {
@@ -1626,7 +1570,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/ea/22/0a/29/7282a3145204e1bfd9fcd61e814d26ec7b304aece5149f90e6438404-w:313-h:313-l:10169-t:image/png.png"
                 },
                 "id": "t2sokzzh",
                 "desktop": {
@@ -1651,7 +1594,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "Địa Điểm Tổ Chức<br>"
                 },
                 "id": "sr1oja6m",
                 "desktop": {
@@ -1678,7 +1620,6 @@ window.event_data = {
                 "type": "image-block",
                 "specials": {
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/18/7e/77/4c/96a2a2f60cb339e22f23c83f5862757a8e46e86b60093989c51fb68b-w:335-h:200-l:179780-t:image/png.png"
                 },
                 "id": "9d96wbwv",
                 "$parent": "gxpbejzi"
@@ -1706,7 +1647,6 @@ window.event_data = {
                 "type": "text-block",
                 "specials": {
                     "tag": "h2",
-                    "text": "Xác Nhận Tham Dự<br>&amp;<br>Gửi Lời Chúc<br>"
                 },
                 "id": "hxsmv8a3",
                 "desktop": {
@@ -1733,18 +1673,9 @@ window.event_data = {
                 "type": "button",
                 "specials": {
                     "closePopupOther": true,
-                    "text": "GỬI MỪNG CƯỚI"
                 },
                 "id": "n9eye9rx",
                 "events": [
-                    {
-                        "action": "open_popup",
-                        "appTarget": "",
-                        "hoverColor": "",
-                        "id": "kbygmywh",
-                        "target": "g81yux0n",
-                        "type": "click"
-                    },
                     {
                         "action": "animation_hover",
                         "animationHover": "scale",
@@ -1805,7 +1736,6 @@ window.event_data = {
             "klql4ysp": {
                 "type": "button",
                 "specials": {
-                    "text": "GỬI NGAY"
                 },
                 "id": "klql4ysp",
                 "events": [
@@ -1884,7 +1814,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/1f/ec/67/de/9e0ddf95bd1e8508eb6f0177f5ef50605c83a3a9833c96b0e66ad619-w:1080-h:1620-l:309623-t:image/jpeg.jpg"
                 },
                 "id": "i9mk0qdo",
                 "desktop": {
@@ -1910,7 +1839,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/4e/3a/ee/02/dc987c839e2d2b41608056aca76c61f8069679c0fdf6b585b28e0267-w:1080-h:1620-l:290935-t:image/jpeg.jpg"
                 },
                 "id": "6m7phoby",
                 "desktop": {
@@ -1936,7 +1864,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/10/8a/c7/a3/4469b23a30640d824081431e33cfd219c78e0717425798aed85f1535-w:1080-h:1440-l:167192-t:image/jpeg.jpg"
                 },
                 "id": "7m08afme",
                 "desktop": {
@@ -1962,7 +1889,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/ba/87/8e/98/5b47f056d251a6b8bb4861fe26e96bff44e06e4543af717b5d2d8b23-w:1080-h:1440-l:133756-t:image/jpeg.jpg"
                 },
                 "id": "gfr8kgrk",
                 "desktop": {
@@ -1986,8 +1912,7 @@ window.event_data = {
             "ytqzomid": {
                 "type": "text-block",
                 "specials": {
-                    "tag": "p",
-                    "text": "Album hình cưới"
+                    "tag": "p"
                 },
                 "id": "ytqzomid",
                 "desktop": {
@@ -2015,7 +1940,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/46/45/b6/42/7ebe591a302e052c877665786914eac1192398f4f8181152f26761fd-w:1080-h:1620-l:360585-t:image/jpeg.jpg"
                 },
                 "id": "6klqgubq",
                 "desktop": {
@@ -2053,7 +1977,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/df/28/0d/67/a2aecb446deb980a1709b1c3f2828a03a43952e40b2c5b76a57641cf-w:1080-h:1440-l:125280-t:image/jpeg.jpg"
                 },
                 "id": "07ds8l4t",
                 "desktop": {
@@ -2079,7 +2002,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/60/b1/5e/e9/89fd2d2d6cd9a62db6e70776243eb9ed8603fc1fb415bdc95da92104-w:1286-h:857-l:255701-t:image/jpeg.jpg"
                 },
                 "id": "atvsanei",
                 "desktop": {
@@ -2105,7 +2027,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/7a/e8/d6/f6/da197a5a3542dfe09e7faa9e118999103385582808a2e2014fc72986-w:1286-h:988-l:154700-t:image/jpeg.jpg"
                 },
                 "id": "6zk6tjag",
                 "mobile": {
@@ -2134,7 +2055,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/50/b1/a5/b8/1b155f57e57ad9a1a81d973470e98ff4e9bd15d0eae0a678e86431f7-w:1079-h:1436-l:181431-t:image/jpeg.jpg"
                 },
                 "id": "qg9pg53z",
                 "desktop": {
@@ -2160,7 +2080,6 @@ window.event_data = {
                 "specials": {
                     "compressible": true,
                     "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/6b/4d/33/b6/41e9ee049b1a0b0fb616d8599fa0e05dafb8c9fdc1d533cef1ffe1f8-w:1079-h:1434-l:200906-t:image/jpeg.jpg"
                 },
                 "id": "3i6z5fev",
                 "desktop": {
@@ -2200,7 +2119,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": false,
-                    "src": "https://statics.hungthe.vn/web-media/b8/a9/be/33/645ec95fdf293c645381a4aefd65aada76ac2c12e1a08201bf323dd5-w:1919-h:2560-l:363265-t:image/jpeg.jpg"
                 },
                 "id": "sj86rf1m",
                 "$parent": "1kaa9b1v"
@@ -2217,7 +2135,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/cf/cf/28/5f/f9ca08165577556ed2df053b0962a0e8e670490844d7ad5e84fa48b2-w:1366-h:530-l:48754-t:image/png.png"
                 },
                 "id": "iylwpged",
                 "desktop": {
@@ -2241,8 +2158,7 @@ window.event_data = {
             "ihlyqwez": {
                 "type": "text-block",
                 "specials": {
-                    "tag": "p",
-                    "text": "Rất hân hạnh được đón tiếp!"
+                    "tag": "p"
                 },
                 "id": "ihlyqwez",
                 "desktop": {
@@ -2265,98 +2181,9 @@ window.event_data = {
                 },
                 "$parent": "1kaa9b1v"
             },
-            "fgek8m28": {
-                "type": "section",
-                "specials": {
-                    "imageCompression": true
-                },
-                "id": "fgek8m28",
-                "children": [
-                    "iptyd1uk"
-                ]
-            },
-            "iptyd1uk": {
-                "type": "group",
-                "specials": {},
-                "id": "iptyd1uk",
-                "children": [
-                    "1f5kx0xs",
-                    "lqaf2v0z",
-                    "79dh2iym",
-                    "hmtd6z2n",
-                    "0hjz1zes",
-                    "ajvubs7y"
-                ],
-                "$parent": "fgek8m28"
-            },
-            "1f5kx0xs": {
-                "type": "text-block",
-                "specials": {
-                    "tag": "h1",
-                    "text": "| THIỆP CƯỚI ONLINE LONG THỊNH"
-                },
-                "id": "1f5kx0xs",
-                "desktop": {
-                    "fontSize": 15
-                },
-                "mobile": {
-                    "fontSize": 15
-                },
-                "$parent": "iptyd1uk"
-            },
-            "lqaf2v0z": {
-                "type": "rectangle",
-                "specials": {
-                    "sample": "social-logo",
-                    "src": "center center/ cover no-repeat  content-box url(\"https://content.hungthe.vn/1/be/ad/61/25/69ccff4bf9c533a8297ad940b8f871b8bc7057593d2ec6f7d9c9066b.png\") border-box"
-                },
-                "id": "lqaf2v0z",
-                "$parent": "iptyd1uk"
-            },
-            "79dh2iym": {
-                "type": "rectangle",
-                "specials": {
-                    "sample": "social-logo",
-                    "src": "https://statics.hungthe.vn/web-media/36/b3/ec/ae/eb9548e74deddff898a48c5caa4791b84669476bafc00e5c1704e002-w:980-h:980-l:7525-t:image/webp.webp"
-                },
-                "id": "79dh2iym",
-                "$parent": "iptyd1uk"
-            },
-            "hmtd6z2n": {
-                "type": "rectangle",
-                "specials": {
-                    "sample": "social-logo",
-                    "src": "center center/ cover no-repeat  content-box url(\"https://content.hungthe.vn/1/08/3f/7a/e9/be9a053a77ec7cdb461246a62779525962247b7146d4dcccce9c1cfb.png\") border-box"
-                },
-                "id": "hmtd6z2n",
-                "$parent": "iptyd1uk"
-            },
-            "0hjz1zes": {
-                "type": "line",
-                "specials": {},
-                "id": "0hjz1zes",
-                "$parent": "iptyd1uk"
-            },
-            "ajvubs7y": {
-                "type": "rectangle",
-                "specials": {},
-                "id": "ajvubs7y",
-                "events": [
-                    {
-                        "action": "open_link",
-                        "appTarget": "",
-                        "hoverColor": "",
-                        "id": "b2v4gn6g",
-                        "target": "https://www.ewedinvite.site/info",
-                        "type": "click"
-                    }
-                ],
-                "$parent": "iptyd1uk"
-            },
             "__popup_default__": {
                 "type": "popup",
                 "specials": {
-                    "src": "https://statics.hungthe.vn/web-media/16/9e/a4/ac/762f2d7becdeecc1d0ebaa1eda69eff9d1e3c531d99eca87e1781fcc-w:1079-h:1441-l:202842-t:image/jpeg.jpg"
                 },
                 "id": "__popup_default__",
                 "children": [
@@ -2392,7 +2219,6 @@ window.event_data = {
                     "compressible": true,
                     "imageCompression": true,
                     "isTransparent": true,
-                    "src": "https://statics.hungthe.vn/web-media/cf/cf/28/5f/f9ca08165577556ed2df053b0962a0e8e670490844d7ad5e84fa48b2.png"
                 },
                 "id": "zbmg6glj",
                 "desktop": {
@@ -2416,8 +2242,7 @@ window.event_data = {
             "ogbk63vj": {
                 "type": "text-block",
                 "specials": {
-                    "tag": "p",
-                    "text": "Rất hân hạnh được đón tiếp!"
+                    "tag": "p"
                 },
                 "id": "ogbk63vj",
                 "desktop": {
@@ -2439,85 +2264,6 @@ window.event_data = {
                     "fontSize": 38
                 },
                 "$parent": "__popup_default__"
-            },
-            "g81yux0n": {
-                "type": "popup",
-                "specials": {
-                    "src": "https://statics.hungthe.vn/web-media/7a/7a/9b/e6/503fcb9cda6afe643293024cb66fe4a8fd7296f58e3b762f84f1f463.jpg"
-                },
-                "id": "g81yux0n",
-                "children": [
-                    "it5xx3wr",
-                    "w7jquvg1",
-                    "oqnvrkg3",
-                    "p8etkpq1",
-                    "k0vu3e5e"
-                ]
-            },
-            "it5xx3wr": {
-                "type": "rectangle",
-                "specials": {},
-                "id": "it5xx3wr",
-                "$parent": "g81yux0n"
-            },
-            "w7jquvg1": {
-                "type": "rectangle",
-                "specials": {},
-                "id": "w7jquvg1",
-                "events": [
-                    {
-                        "action": "close_popup",
-                        "id": "t3jgjr2z",
-                        "target": "g81yux0n",
-                        "type": "click"
-                    }
-                ],
-                "$parent": "g81yux0n"
-            },
-            "oqnvrkg3": {
-                "type": "text-block",
-                "specials": {
-                    "tag": "h2",
-                    "text": "Gửi Mừng Cưới"
-                },
-                "id": "oqnvrkg3",
-                "desktop": {
-                    "animation": {
-                        "delay": 0,
-                        "duration": 2,
-                        "name": "fadeInUp",
-                        "repeat": null
-                    },
-                    "fontSize": "22"
-                },
-                "mobile": {
-                    "fontSize": 40
-                },
-                "$parent": "g81yux0n"
-            },
-            "p8etkpq1": {
-                "type": "image-block",
-                "specials": {
-                    "imageCompression": true,
-                    "src": "https://statics.hungthe.vn/web-media/e2/bc/35/38/dc2d9ddf74d997785eb0c802bd3237a50de1118e505f1e0a89ae4ec1-w:592-h:1280-l:497233-t:image/png.png"
-                },
-                "id": "p8etkpq1",
-                "$parent": "g81yux0n"
-            },
-            "k0vu3e5e": {
-                "type": "text-block",
-                "specials": {
-                    "tag": "h4",
-                    "text": "MBBANK - NGUYEN TAN DAT<br>8838683860<br>"
-                },
-                "id": "k0vu3e5e",
-                "desktop": {
-                    "fontSize": 17
-                },
-                "mobile": {
-                    "fontSize": 17
-                },
-                "$parent": "g81yux0n"
             }
         },
         "extra_css": "",
