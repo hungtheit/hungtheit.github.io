@@ -15521,7 +15521,7 @@
         'commune_id',
         'province_id/district_id/commune_id'
       ],
-      GOOGLE_API_KEY: 'AIzaSyBtswC9pVaBFryGs_42G4ZJKw-U0XBCUTU',
+      GOOGLE_API_KEY: '',
       BODY_FONT_SIZE: 12,
       NOTIFY_IMG_DEFAULT: 'https://content.hungthe.dev/1/4b/52/7f/e7/666682ecfee619a3451cf2566aba653946dc13bfe52f47456f186874.png',
       LOCALES_TIME: {
