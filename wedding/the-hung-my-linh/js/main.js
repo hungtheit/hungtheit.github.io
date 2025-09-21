@@ -15523,7 +15523,7 @@
       ],
       GOOGLE_API_KEY: '',
       BODY_FONT_SIZE: 12,
-      NOTIFY_IMG_DEFAULT: 'https://content.hungthe.dev/1/4b/52/7f/e7/666682ecfee619a3451cf2566aba653946dc13bfe52f47456f186874.png',
+      NOTIFY_IMG_DEFAULT: '',
       LOCALES_TIME: {
         vietnam: 'vi-VN',
         english: 'en-US',
@@ -15533,10 +15533,10 @@
         thai: 'th-TH',
         malay: 'ms-MY'
       },
-      GRID_ICON_NEXT: '<img src="https://content.hungthe.dev/1/d8/88/b5/1f/ce7bea1db3f2c535a89a2c99988aeba8d3a361b2c72c9d08950d10e7.svg">',
-      GRID_ICON_PREV: '<img src="https://content.hungthe.dev/1/31/23/51/e5/41806a12b05813bfc36f3ad3d1a580aa060a9d8f1736cc38e197a61f.svg">',
-      PLACEHOLDER_IMAGE: 'https://content.hungthe.dev/1/8d/3f/a1/d8/08eaee659613d0a76bcc6a077cb3a37a94c55d720d3cab7331ea697f.png',
-      ICON_FLASH_SALE: 'https://content.hungthe.dev/1/ae/3e/08/81/2358d47a6632c080e27a4da079b6f6ce3cf0dde0168be316c4f27b96.png'
+      GRID_ICON_NEXT: '',
+      GRID_ICON_PREV: '',
+      PLACEHOLDER_IMAGE: '',
+      ICON_FLASH_SALE: ''
     },
     _ = n(0),
     b = n(16),

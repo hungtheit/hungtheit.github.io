@@ -9,30 +9,13 @@ window.event_data = {
         "GG_TAG_MANAGER_CONSENT_MODE": false,
         "MOBILE_WIDTH": 420,
         "DESKTOP_WIDTH": 960,
-        "PAGE_ID": "08de249b-b0d1-4fa9-a005-4b7c66fafc84",
-        "TITLE": "THIỆP MỜI CƯỚI ANH TÚ & DIỆU NHI",
+        "PAGE_ID": "the-hung-my-linh",
         "COUNTRY": "84",
         "TYPE": 1,
         "COPY_MESSAGE": {
             "Success": "Đã sao chép!",
             "Failed": "Sao chép thất bại!"
         },
-        "REGEX_PHONE_VALIDATOR": "^(\\+84|84|0)(3([2-9])|5(2|5|6|8|9)|7(0|[6-9])|8([1-9])|9([0-4]|[6-9]))([0-9]{7})$",
-        "DEFAULT_KEYS": [
-            "email",
-            "full_name",
-            "first_name",
-            "last_name",
-            "address",
-            "phone_number",
-            "province_id",
-            "district_id",
-            "commune_id",
-            "province_id/district_id/commune_id"
-        ],
-        "GOOGLE_API_KEY": "AIzaSyBtswC9pVaBFryGs_42G4ZJKw-U0XBCUTU",
-        "BODY_FONT_SIZE": 12,
-        "NOTIFY_IMG_DEFAULT": "https://content.hungthe.vn/1/4b/52/7f/e7/666682ecfee619a3451cf2566aba653946dc13bfe52f47456f186874.png",
         "LOCALES_TIME": {
             "vietnam": "vi-VN",
             "english": "en-US",
@@ -42,180 +25,7 @@ window.event_data = {
             "thai": "th-TH",
             "malay": "ms-MY"
         },
-        "GRID_ICON_NEXT": "<img src=\"https://content.hungthe.vn/1/d8/88/b5/1f/ce7bea1db3f2c535a89a2c99988aeba8d3a361b2c72c9d08950d10e7.svg\">",
-        "GRID_ICON_PREV": "<img src=\"https://content.hungthe.vn/1/31/23/51/e5/41806a12b05813bfc36f3ad3d1a580aa060a9d8f1736cc38e197a61f.svg\">",
-        "PLACEHOLDER_IMAGE": "https://content.hungthe.vn/1/s752x752/fwebp/54/69/e4/13/d02869f068e9b7c043efc7c551d2042a678a104b32495639f71c33a1.png",
-        "ICON_FLASH_SALE": "https://content.hungthe.vn/1/ae/3e/08/81/2358d47a6632c080e27a4da079b6f6ce3cf0dde0168be316c4f27b96.png",
-        "LANG_LIST_PROD_CURRENCY": {
-            "STILL": {
-                "VND": "Còn",
-                "THB": "คลัง",
-                "IDR": "Tetap",
-                "USD": "Still"
-            },
-            "PROD": {
-                "VND": "sản phẩm",
-                "THB": "ชิ้น",
-                "IDR": "produk",
-                "USD": "product"
-            },
-            "ADD_TO_CART": {
-                "VND": "Thêm vào giỏ hàng",
-                "THB": "หยิบใส่ตะกร้า",
-                "IDR": "Masukkan ke keranjang",
-                "USD": "Add to cart"
-            },
-            "QUANTITY": {
-                "VND": "Số lượng",
-                "THB": "ปริมาณ",
-                "IDR": "Kuantitas",
-                "USD": "Quantity"
-            },
-            "BUY_NOW": {
-                "VND": "Mua ngay",
-                "THB": "ซื้อเลย",
-                "IDR": "Beli sekarang",
-                "USD": "Buy now"
-            },
-            "CODE_PROD": {
-                "VND": "Mã sản phẩm",
-                "THB": "รหัสสินค้า",
-                "IDR": "Kode Produk",
-                "USD": "Code product"
-            },
-            "SEARCH_PROD": {
-                "VND": "Tìm kiếm sản phẩm",
-                "THB": "ค้นหาสินค้า",
-                "IDR": "Cari produk",
-                "USD": "Search product"
-            },
-            "DESCRIPTION": {
-                "VND": "Mô tả",
-                "USD": "Description",
-                "THB": "อธิบาย",
-                "IDR": "menggambarkan"
-            },
-            "SOLD": {
-                "VND": "Đã bán",
-                "USD": "Sold",
-                "THB": "ขายแล้ว",
-                "IDR": "Terjual"
-            },
-            "NOT_EMPTY": {
-                "VND": "Không được để trống",
-                "USD": "Not Empty",
-                "THB": "เว้นว่างไว้ไม่ได้",
-                "IDR": "tidak boleh dikosongkan"
-            },
-            "NO_FIND_PROD": {
-                "VND": "Không tìm thấy sản phẩm",
-                "USD": "No products found",
-                "THB": "ไม่พบสินค้า",
-                "IDR": "Tidak ada produk yang ditemukan"
-            },
-            "DISCOUNT": {
-                "VND": "GIẢM",
-                "USD": "OFF",
-                "THB": "ส่วนลด",
-                "IDR": "DISKON"
-            },
-            "SOLD_OUT": {
-                "VND": "SẮP CHÁY HÀNG",
-                "USD": "SOLD OUT SOON",
-                "THB": "ขายหมดเร็วๆ นี้",
-                "IDR": "segera terjual"
-            },
-            "USE_CODE": {
-                "VND": "Nhập mã",
-                "USD": "Use",
-                "THB": "ใช้",
-                "IDR": "menggunakan"
-            },
-            "APPLY": {
-                "VND": "ÁP DỤNG",
-                "USD": "APPLY",
-                "THB": "นำมาใช้",
-                "IDR": "BERLAKU"
-            },
-            "BONUS": {
-                "VND": "Tặng kèm",
-                "USD": "Bonus",
-                "THB": "โบนัส",
-                "IDR": "bonus"
-            },
-            "ORG_PRICE": {
-                "VND": "Giá gốc",
-                "USD": "Full price",
-                "THB": "ค่าใช้จ่าย",
-                "IDR": "Biaya"
-            },
-            "PRICE": {
-                "VND": "Giá bán",
-                "USD": "Price",
-                "THB": "ราคา",
-                "IDR": "Harga"
-            },
-            "COUPON_SUCCESS": {
-                "VND": "Đã áp dụng coupon!",
-                "USD": "Coupon applied!",
-                "THB": "ใช้คูปองแล้ว!",
-                "IDR": "Kupon berlaku!"
-            },
-            "COUPON_FAILED": {
-                "VND": "Mã coupon không khả dụng!",
-                "USD": "Invalid coupon!",
-                "THB": "คูปองไม่ถูกต้อง!",
-                "IDR": "Kupon tidak valid!"
-            },
-            "COUPON_EMPTY": {
-                "VND": "Vui lòng nhập coupon!",
-                "USD": "Please enter coupon!",
-                "THB": "กรุณากรอกคูปอง!",
-                "IDR": "Silakan masukkan kupon!"
-            },
-            "HOUR": {
-                "VND": "Giờ",
-                "USD": "Hours",
-                "THB": "ชั่วโมง",
-                "IDR": "Jam"
-            },
-            "MINUTE": {
-                "VND": "Phút",
-                "USD": "Minutes",
-                "THB": "นาที",
-                "IDR": "Menit"
-            },
-            "SECOND": {
-                "VND": "Giây",
-                "USD": "Seconds",
-                "THB": "ที่สอง",
-                "IDR": "Kedua"
-            },
-            "SALE_COUNTDOWN": {
-                "VND": "Thời gian khuyến mại chỉ còn",
-                "USD": "Promotion end in",
-                "THB": "โปรโมชั่นหมดเขต",
-                "IDR": "Promosi berakhir pada"
-            },
-            "COPY_SUCCESS": {
-                "VND": "Đã sao chép!",
-                "USD": "Copied!",
-                "THB": "คัดลอกแล้ว!",
-                "IDR": "Disalin!"
-            },
-            "COPY_FAILED": {
-                "VND": "Sao chép thất bại!",
-                "USD": "Copy Failed!",
-                "THB": "คัดลอกไม่สำเร็จ!",
-                "IDR": "Penyalinan gagal!"
-            },
-            "WARNING_SURVEY": {
-                "VND": "Chọn giá trị trong survey",
-                "USD": "Select values in the survey",
-                "THB": "เลือกค่าที่ต้องการในแบบสำรวจ",
-                "IDR": "Pilih nilai dalam survei"
-            }
-        },
+        "LANG_LIST_PROD_CURRENCY": {},
         "ALLOW_PLAY_MULTIPLE_VIDEO": false
     },
     "runtime": {
