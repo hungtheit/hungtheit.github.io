@@ -377,7 +377,7 @@
       }))
     },
     findContainer = function e(t) {
-      return t ? t.$parent ? e(WebcakeScript.runtime.vm[t.$parent]) : t : null
+      return t ? t.$parent ? e(FrameWorkScript.runtime.vm[t.$parent]) : t : null
     },
     unescapeHTML = function (e) {
       return 'string' == typeof e &&
@@ -874,7 +874,7 @@
       return t
     },
     traversal = function e(t, n, i) {
-      var r = WebcakeScript.runtime.vm[t];
+      var r = FrameWorkScript.runtime.vm[t];
       r &&
       (
         n(r, i),
@@ -2211,7 +2211,7 @@
                 var i = c() (this, m).pageId;
                 if (i) {
                   var r = 'undefined' != typeof navigator ? navigator.userAgent : null,
-                  a = ''.concat(WebcakeScript.runtime.host, '/track'),
+                  a = ''.concat(FrameWorkScript.runtime.host, '/track'),
                   o = {
                     page_id: i,
                     type: e,
@@ -2226,7 +2226,7 @@
                   };
                   'tiktok' == c() (this, m).tracking &&
                   (
-                    a = ''.concat(WebcakeScript.runtime.host, '/track_tiktok'),
+                    a = ''.concat(FrameWorkScript.runtime.host, '/track_tiktok'),
                     o = {
                       page_id: i,
                       type: e,
@@ -2239,9 +2239,9 @@
                     }
                   );
                   var s = {};
-                  1 !== WebcakeScript.CONST.TYPE &&
+                  1 !== FrameWorkScript.CONST.TYPE &&
                   (
-                    a = ''.concat(WebcakeScript.runtime.host, '/ext_track'),
+                    a = ''.concat(FrameWorkScript.runtime.host, '/ext_track'),
                     o = Object(h.d) (o),
                     o = new URLSearchParams(o),
                     s = {
@@ -2402,7 +2402,7 @@
             void 0 !== t &&
             t._toggleRequired &&
             e.$instance._toggleRequired();
-            var n = WebcakeScript.runtime.vm[e.id];
+            var n = FrameWorkScript.runtime.vm[e.id];
             if (n) switch (e.type) {
               case 'text-block':
               case 'button':
@@ -2429,9 +2429,9 @@
       d = c.showCheckoutSession,
       p = arguments.length > 2 ? arguments[2] : void 0;
       if (e) {
-        var h = WebcakeScript.runtime.vm[e];
+        var h = FrameWorkScript.runtime.vm[e];
         if (h) {
-          var f = WebcakeScript.runtime.vm[p];
+          var f = FrameWorkScript.runtime.vm[p];
           if (
             null != f &&
             null !== (t = f.specials) &&
@@ -2440,7 +2440,7 @@
             o(),
             '-popup-checkout' == h.id ? Object(i.a) ('-popup-search') : '-popup-search' == h.id &&
             Object(i.a) ('-popup-checkout'),
-            !WebcakeScript.runtime.stackPopup[e]
+            !FrameWorkScript.runtime.stackPopup[e]
           ) {
             u &&
             (
@@ -2455,16 +2455,16 @@
                 ),
                 1000
               ),
-              WebcakeScript.runtime.animationUsed ||
-              (WebcakeScript.runtime.animationUsed = []),
-              WebcakeScript.runtime.animationUsed[e] = u
+              FrameWorkScript.runtime.animationUsed ||
+              (FrameWorkScript.runtime.animationUsed = []),
+              FrameWorkScript.runtime.animationUsed[e] = u
             ),
             s(),
             window.popupBackdrop.classList.remove('d-none');
             var v = parseInt(window.getComputedStyle(h.$el).height);
             h.$el.firstElementChild.style.height = v + 'px',
             h.$el.classList.remove('d-none'),
-            h.$el.style.zIndex = 1000001 + Object.keys(WebcakeScript.runtime.stackPopup).length;
+            h.$el.style.zIndex = 1000001 + Object.keys(FrameWorkScript.runtime.stackPopup).length;
             var m = 'full_screen' == (null == h || null === (n = h.specials) || void 0 === n ? void 0 : n.maxHeight) ? 1 : 0.9;
             h.$el.scrollHeight >= Math.floor(window.innerHeight * m) &&
             (
@@ -2485,18 +2485,18 @@
               null === (r = h.specials) ||
               void 0 === r ? void 0 : r.saveDataOrder
             );
-            var _ = WebcakeScript.runtime.loadedPopups[h.id];
+            var _ = FrameWorkScript.runtime.loadedPopups[h.id];
             if (
               _ ||
-              (WebcakeScript.runtime.loadedPopups[h.id] = 1),
-              WebcakeScript.runtime.stackPopup[e] = 1,
+              (FrameWorkScript.runtime.loadedPopups[h.id] = 1),
+              FrameWorkScript.runtime.stackPopup[e] = 1,
               setTimeout(
                 (
                   function () {
                     _ ||
                     (
-                      WebcakeScript.observer(!0, '#w-'.concat(h.id)),
-                      WebcakeScript.skipLazy(h.$el)
+                      FrameWorkScript.observer(!0, '#w-'.concat(h.id)),
+                      FrameWorkScript.skipLazy(h.$el)
                     ),
                     a(h)
                   }
@@ -2508,16 +2508,16 @@
             ) {
               var b = h.$el.querySelector('form');
               if (!b) return;
-              var y = WebcakeScript.runtime.vm[b.id];
+              var y = FrameWorkScript.runtime.vm[b.id];
               y &&
               y.$instance._autoCompleteFormInPopup(window.pos_checkout_session)
-            } else WebcakeScript.CONST.AUTO_SAVE_INFO_USER &&
-            WebcakeScript.CONST.AUTO_COMPLETE_FORM_IN_POPUP &&
+            } else FrameWorkScript.CONST.AUTO_SAVE_INFO_USER &&
+            FrameWorkScript.CONST.AUTO_COMPLETE_FORM_IN_POPUP &&
             window.autofill_form_obj_data &&
             h.$el.querySelectorAll('form').forEach(
               (
                 function (e) {
-                  var t = WebcakeScript.runtime.vm[e.id];
+                  var t = FrameWorkScript.runtime.vm[e.id];
                   t &&
                   t.$instance._autoCompleteFormInPopup(window.autofill_form_obj_data)
                 }
@@ -2528,7 +2528,7 @@
       }
     };
     var o = function () {
-      Object.values(WebcakeScript.runtime.vm).forEach((function (e) {
+      Object.values(FrameWorkScript.runtime.vm).forEach((function (e) {
         'popup' == e.type &&
         Object(i.a) (e.id)
       }))
@@ -2560,7 +2560,7 @@
         document.body.style.width = '100%'
       ),
       window.__body_scroll_disabled = !0,
-      null === (e = window.WebcakeScript) ||
+      null === (e = window.FrameWorkScript) ||
       void 0 === e ||
       null === (t = e.pubsub) ||
       void 0 === t ||
@@ -2611,14 +2611,14 @@
       void 0 !== arguments[1] ? arguments[1] : {
       },
       n = t.animationName,
-      i = WebcakeScript.runtime.vm[e];
-      if (i && WebcakeScript.runtime.stackPopup[e]) {
-        delete WebcakeScript.runtime.stackPopup[e];
-        var r = Object.keys(WebcakeScript.runtime.stackPopup).length;
-        WebcakeScript.runtime.animationUsed ||
-        (WebcakeScript.runtime.animationUsed = []);
+      i = FrameWorkScript.runtime.vm[e];
+      if (i && FrameWorkScript.runtime.stackPopup[e]) {
+        delete FrameWorkScript.runtime.stackPopup[e];
+        var r = Object.keys(FrameWorkScript.runtime.stackPopup).length;
+        FrameWorkScript.runtime.animationUsed ||
+        (FrameWorkScript.runtime.animationUsed = []);
         var a = n ||
-        WebcakeScript.runtime.animationUsed[e];
+        FrameWorkScript.runtime.animationUsed[e];
         a ? (
           i.$el.classList.remove('animate__animated', 'animate__'.concat(a)),
           window.setTimeout(
@@ -2637,7 +2637,7 @@
                 i.$el.classList.remove('animate__animated', 'animate__'.concat(a), 'animate__reverse'),
                 i.$el.style.setProperty('--animate-delay', ''),
                 o(),
-                delete WebcakeScript.runtime.animationUsed[e]
+                delete FrameWorkScript.runtime.animationUsed[e]
               }
             ),
             1000
@@ -2653,8 +2653,8 @@
         i.$el.style.overflow = '',
         i.$el.style.maxHeight = '',
         i.$el.style.display = '',
-        WebcakeScript.destroy(i),
-        WebcakeScript.resetText(i),
+        FrameWorkScript.destroy(i),
+        FrameWorkScript.resetText(i),
         window.in_current_task &&
         window.WCart &&
         (
@@ -2697,7 +2697,7 @@
         window.scrollTo(0, window.scrollPosition)
       ),
       window.__body_scroll_disabled = !1,
-      null === (e = window.WebcakeScript) ||
+      null === (e = window.FrameWorkScript) ||
       void 0 === e ||
       null === (t = e.pubsub) ||
       void 0 === t ||
@@ -3512,13 +3512,13 @@
                 document.head.appendChild(e)
               }
               if (window.YT) return this.loadYT();
-              this.subscribe = WebcakeScript.pubsub.subscribe('YTReady', this.onYTIframeAPIReady.bind(this))
+              this.subscribe = FrameWorkScript.pubsub.subscribe('YTReady', this.onYTIframeAPIReady.bind(this))
             }
           },
           {
             key: 'onYTIframeAPIReady',
             value: function () {
-              WebcakeScript.pubsub.unsubscribe('YTReady', this.subscribe),
+              FrameWorkScript.pubsub.unsubscribe('YTReady', this.subscribe),
               this.loadYT()
             }
           },
@@ -3558,7 +3558,7 @@
               if ('desktop' != window.DISPLAY && 1 == e.data) {
                 var t = e.target,
                 n = t.getIframe();
-                if (!WebcakeScript.runtime.mute[n.id]) {
+                if (!FrameWorkScript.runtime.mute[n.id]) {
                   var i = document.createElement('div');
                   i.classList.add('player-btn-unmute'),
                   i.innerHTML = '<div></div>',
@@ -3573,7 +3573,7 @@
                       }
                     )
                   ),
-                  WebcakeScript.runtime.mute[n.id] = 1
+                  FrameWorkScript.runtime.mute[n.id] = 1
                 }
               }
             }
@@ -3994,11 +3994,11 @@
                                         case 59:
                                           return t.abrupt('break', 111);
                                         case 60:
-                                          return window.__body_scroll_disabled ? ie = WebcakeScript.pubsub.subscribe(
+                                          return window.__body_scroll_disabled ? ie = FrameWorkScript.pubsub.subscribe(
                                             'enable-body-scroll',
                                             (
                                               function () {
-                                                WebcakeScript.pubsub.unsubscribe('enable-body-scroll', ie),
+                                                FrameWorkScript.pubsub.unsubscribe('enable-body-scroll', ie),
                                                 setTimeout((function () {
                                                   Object(p.a) (o, {
                                                     bonus: s
@@ -4044,7 +4044,7 @@
                                           (ue || ce) &&
                                           'botcake' == oe ? (
                                             ae += '--webcakeorderid___'.concat(ue || ce),
-                                            he = ''.concat(WebcakeScript.runtime.host, '/update_redirect_url'),
+                                            he = ''.concat(FrameWorkScript.runtime.host, '/update_redirect_url'),
                                             C.a.post(he, {
                                               redirected_url: ae,
                                               id: ue ||
@@ -4196,7 +4196,7 @@
                     if (
                       'other' == l &&
                       p &&
-                      (h = WebcakeScript.runtime.vm[p.replace('w-', '')]),
+                      (h = FrameWorkScript.runtime.vm[p.replace('w-', '')]),
                       h
                     ) {
                       var f = 'text-block' == h.type ? h.$el.querySelector('.text-block-css') : h.$el.firstElementChild ||
@@ -4449,7 +4449,7 @@
                 )
               );
               if (!t.length) return;
-              WebcakeScript.reloadLazy(),
+              FrameWorkScript.reloadLazy(),
               t.forEach((function (e) {
                 return $(e.target, 'hide')
               }))
@@ -4558,18 +4558,18 @@
       e.indexOf('trident') > - 1
     }
     function q(e) {
-      var t = WebcakeScript.runtime.vm[e];
+      var t = FrameWorkScript.runtime.vm[e];
       t &&
       (
         t.$el.style.display = 'block',
-        WebcakeScript.runtime.loadedPopups[t.id] ||
+        FrameWorkScript.runtime.loadedPopups[t.id] ||
         (
-          WebcakeScript.runtime.loadedPopups[t.id] = 1,
+          FrameWorkScript.runtime.loadedPopups[t.id] = 1,
           setTimeout(
             (
               function () {
-                WebcakeScript.observer(!0, '#w-'.concat(t.id)),
-                WebcakeScript.reloadLazy()
+                FrameWorkScript.observer(!0, '#w-'.concat(t.id)),
+                FrameWorkScript.reloadLazy()
               }
             )
           )
@@ -4577,7 +4577,7 @@
       )
     }
     function W(e) {
-      var t = WebcakeScript.runtime.vm[e];
+      var t = FrameWorkScript.runtime.vm[e];
       t ||
       reurn,
       t.$el.style.display = 'none',
@@ -4585,7 +4585,7 @@
         (
           function (e) {
             var t = e.id.split(g || (g = o() (['-']))) [1],
-            n = WebcakeScript.runtime.vm[t];
+            n = FrameWorkScript.runtime.vm[t];
             n &&
             n.$instance &&
             (
@@ -4613,16 +4613,16 @@
         a.forEach(
           (
             function (e) {
-              var n = WebcakeScript.runtime.vm[e];
+              var n = FrameWorkScript.runtime.vm[e];
               if (n) {
                 var i = 'none' == window.getComputedStyle(n.$el).display ? 'initial' : 'none',
                 a = 'none' == (i = 'hide' == t ? 'none' : 'show' == t ? 'initial' : i) ? r.animationOut : r.animation;
-                WebcakeScript.runtime.animationUsed[e] ||
+                FrameWorkScript.runtime.animationUsed[e] ||
                 (
                   a &&
                   'none' != a ? (
                     n.$el.classList.remove('animate__animated', 'animate__'.concat(a)),
-                    WebcakeScript.runtime.animationUsed[e] = !0,
+                    FrameWorkScript.runtime.animationUsed[e] = !0,
                     window.setTimeout(
                       (
                         function () {
@@ -4642,7 +4642,7 @@
                         function () {
                           n.$el.classList.remove('animate__animated', 'animate__'.concat(a), 'animate__reverse'),
                           n.$el.style.setProperty('--animate-delay', ''),
-                          WebcakeScript.runtime.animationUsed[e] = !1
+                          FrameWorkScript.runtime.animationUsed[e] = !1
                         }
                       ),
                       1000
@@ -4650,12 +4650,12 @@
                   ) : o(),
                   Object(d.D) (n, 'none' !== i),
                   'none' == i ||
-                  WebcakeScript.runtime.loadedPopups[e] ||
+                  FrameWorkScript.runtime.loadedPopups[e] ||
                   (
-                    WebcakeScript.runtime.loadedPopups[e] = 1,
-                    WebcakeScript.observer(!1, '', '#w-'.concat(e)),
-                    WebcakeScript.observer(!1, '#w-'.concat(e)),
-                    WebcakeScript.reloadLazy()
+                    FrameWorkScript.runtime.loadedPopups[e] = 1,
+                    FrameWorkScript.observer(!1, '', '#w-'.concat(e)),
+                    FrameWorkScript.observer(!1, '#w-'.concat(e)),
+                    FrameWorkScript.reloadLazy()
                   )
                 )
               }
@@ -4665,7 +4665,7 @@
             }
           )
         ),
-        WebcakeScript.pubsub.publish('show-hide-element', {
+        FrameWorkScript.pubsub.publish('show-hide-element', {
           ids: a
         })
       }
@@ -4675,7 +4675,7 @@
       void 0 !== arguments[1] ? arguments[1] : 'prev',
       n = arguments.length > 2 &&
       void 0 !== arguments[2] ? arguments[2] : 0,
-      i = WebcakeScript.runtime.vm[e];
+      i = FrameWorkScript.runtime.vm[e];
       if (i) {
         if ('gallery' == i.type) switch (t) {
           case 'prev':
@@ -4735,15 +4735,15 @@
                             s = (null === (n = window.sync) || void 0 === n ? void 0 : n.currency) ||
                             'VND',
                             u = (
-                              null === (i = WebcakeScript.CONST.LANG_LIST_PROD_CURRENCY.COPY_SUCCESS) ||
+                              null === (i = FrameWorkScript.CONST.LANG_LIST_PROD_CURRENCY.COPY_SUCCESS) ||
                               void 0 === i ? void 0 : i[s]
                             ) ||
-                            WebcakeScript.CONST.COPY_MESSAGE.Success,
+                            FrameWorkScript.CONST.COPY_MESSAGE.Success,
                             l = (
-                              null === (r = WebcakeScript.CONST.LANG_LIST_PROD_CURRENCY.COPY_FAILED) ||
+                              null === (r = FrameWorkScript.CONST.LANG_LIST_PROD_CURRENCY.COPY_FAILED) ||
                               void 0 === r ? void 0 : r[s]
                             ) ||
-                            WebcakeScript.CONST.COPY_MESSAGE.Failed,
+                            FrameWorkScript.CONST.COPY_MESSAGE.Failed,
                             !(
                               d = function (e) {
                                 try {
@@ -4767,7 +4767,7 @@
                         case 12:
                           return e.next = 14,
                           C.a.post(
-                            ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(d)
+                            ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(d)
                           );
                         case 14:
                           h = e.sent,
@@ -4855,18 +4855,18 @@
       i = e.target;
       if ('string' == typeof i && i) {
         var r = i.replace(/^#?w-/, ''),
-        a = WebcakeScript.runtime.vm[r];
+        a = FrameWorkScript.runtime.vm[r];
         if (a && (!t || 'none' != a.$el.style.display)) {
-          var o = WebcakeScript.runtime.vm[a.$parent];
+          var o = FrameWorkScript.runtime.vm[a.$parent];
           if (!o) return a.$el.style.display = 'none' == a.$el.style.display ? '' : 'none',
           void (
-            WebcakeScript.runtime.loadedPopups[r] ||
+            FrameWorkScript.runtime.loadedPopups[r] ||
             a.$el.style.display ||
             (
-              WebcakeScript.observer(!1, '#w-'.concat(r)),
-              WebcakeScript.observer(!1, '', '#w-'.concat(r)),
-              WebcakeScript.runtime.loadedPopups[r] = 1,
-              WebcakeScript.reloadLazy()
+              FrameWorkScript.observer(!1, '#w-'.concat(r)),
+              FrameWorkScript.observer(!1, '', '#w-'.concat(r)),
+              FrameWorkScript.runtime.loadedPopups[r] = 1,
+              FrameWorkScript.reloadLazy()
             )
           );
           window.collapse ||
@@ -4903,15 +4903,15 @@
           ),
           a.$el.style.display = 'none' == a.$el.style.display ? 'initial' : 'none',
           Object(d.D) (a, 'none' !== a.$el.style.display),
-          WebcakeScript.runtime.loadedPopups[r] ||
+          FrameWorkScript.runtime.loadedPopups[r] ||
           'none' == a.$el.style.display ||
           (
-            WebcakeScript.observer(!1, '', '#w-'.concat(r)),
-            WebcakeScript.observer(!1, '#w-'.concat(r)),
-            WebcakeScript.reloadLazy(),
-            WebcakeScript.runtime.loadedPopups[r] = 1
+            FrameWorkScript.observer(!1, '', '#w-'.concat(r)),
+            FrameWorkScript.observer(!1, '#w-'.concat(r)),
+            FrameWorkScript.reloadLazy(),
+            FrameWorkScript.runtime.loadedPopups[r] = 1
           ),
-          WebcakeScript.pubsub.publish('collapse-element', {
+          FrameWorkScript.pubsub.publish('collapse-element', {
             id: r
           })
         }
@@ -4923,7 +4923,7 @@
       window.COLLAPSE[t].forEach(
         (
           function (e) {
-            var n = WebcakeScript.runtime.vm[e];
+            var n = FrameWorkScript.runtime.vm[e];
             n &&
             (window.collapse[t][n.id] = {
               $el: n.$el,
@@ -4932,7 +4932,7 @@
           }
         )
       );
-      var i = WebcakeScript.runtime.vm[e.$parent];
+      var i = FrameWorkScript.runtime.vm[e.$parent];
       if (i) {
         var r,
         a,
@@ -4950,7 +4950,7 @@
           (
             function (n) {
               if (n != e.id) {
-                var i = WebcakeScript.runtime.vm[n],
+                var i = FrameWorkScript.runtime.vm[n],
                 r = window.getComputedStyle(i.$el).top;
                 a + o <= parseInt(r) &&
                 (window.collapse[t][i.id] = {
@@ -4971,11 +4971,11 @@
     function B(e) {
       if (e.target) {
         var t = [];
-        if (e.target.includes('w-')) t.push(WebcakeScript.runtime.vm[e.target.replace(/^#?w-/, '')]);
-         else Object.keys(WebcakeScript.runtime.vm).reduce(
+        if (e.target.includes('w-')) t.push(FrameWorkScript.runtime.vm[e.target.replace(/^#?w-/, '')]);
+         else Object.keys(FrameWorkScript.runtime.vm).reduce(
           (
             function (e, t) {
-              return 'form' == WebcakeScript.runtime.vm[t].type ? (e.push(WebcakeScript.runtime.vm[t]), e) : e
+              return 'form' == FrameWorkScript.runtime.vm[t].type ? (e.push(FrameWorkScript.runtime.vm[t]), e) : e
             }
           ),
           []
@@ -5062,7 +5062,7 @@
       if (
         'other' == c &&
         l &&
-        (e = WebcakeScript.runtime.vm[l.replace('w-', '')]),
+        (e = FrameWorkScript.runtime.vm[l.replace('w-', '')]),
         e
       ) {
         var d = 'text-block' == e.type ? e.$el.querySelector('.text-block-css') : e.$el.firstElementChild ||
@@ -5471,8 +5471,8 @@
           var d = setTimeout((function () {
             return Object(u.a) (n)
           }), 1000 * s);
-          if (l && 'none' != l && WebcakeScript.runtime.vm[l]) {
-            var p = WebcakeScript.runtime.vm[l].$el.getBoundingClientRect().top + window.scrollY - window.innerHeight;
+          if (l && 'none' != l && FrameWorkScript.runtime.vm[l]) {
+            var p = FrameWorkScript.runtime.vm[l].$el.getBoundingClientRect().top + window.scrollY - window.innerHeight;
             document.addEventListener(
               'scroll',
               (
@@ -5485,7 +5485,7 @@
           }
         }
         if (!c || 'none' == c) return 'continue';
-        var h = WebcakeScript.runtime.vm[c];
+        var h = FrameWorkScript.runtime.vm[c];
         if (!h) return 'continue';
         var f = h.$el.getBoundingClientRect();
         t[n] = {
@@ -5594,7 +5594,7 @@
       var e = this,
       t = ''.concat(this.runtime.host, '/sync/').concat(this.CONST.PAGE_ID),
       n = {};
-      1 !== WebcakeScript.CONST.TYPE &&
+      1 !== FrameWorkScript.CONST.TYPE &&
       (
         t = ''.concat(this.runtime.host, '/ext_sync/').concat(this.CONST.PAGE_ID),
         n = {
@@ -5688,7 +5688,7 @@
             var a = r.closest('[id^="w-"]');
             if (a) {
               var o = a.id.split('-') [1],
-              s = window.WebcakeScript.runtime.vm[o];
+              s = window.FrameWorkScript.runtime.vm[o];
               s &&
               s.$instance.openProduct({
                 product: e
@@ -5760,7 +5760,7 @@
               WCart.Cart.addItem({
                 id: o.id,
                 image: o.images[0] ||
-                WebcakeScript.CONST.PLACEHOLDER_IMAGE,
+                FrameWorkScript.CONST.PLACEHOLDER_IMAGE,
                 price: null !== (t = null !== (a = o.custom_price) && void 0 !== a ? a : d) &&
                 void 0 !== t ? t : o.price,
                 retail_price: null != d ? d : o.price,
@@ -5796,7 +5796,7 @@
               }
               if (e.classList.contains('com-gallery')) {
                 var i = e.id.split('-') [1],
-                r = WebcakeScript.runtime.vm[i];
+                r = FrameWorkScript.runtime.vm[i];
                 r &&
                 r.$instance.stopAnimation()
               }
@@ -5805,7 +5805,7 @@
         ),
         '-popup-checkout' == e.id
       ) {
-        var t = WebcakeScript.runtime.vm[e.$instance.selected];
+        var t = FrameWorkScript.runtime.vm[e.$instance.selected];
         t &&
         (
           t.$instance.removeSelectedAttribute(),
@@ -5821,7 +5821,7 @@
       e.children.forEach(
         (
           function (e) {
-            var t = WebcakeScript.runtime.vm[e];
+            var t = FrameWorkScript.runtime.vm[e];
             Object(s.F) (
               t.id,
               (
@@ -5882,7 +5882,7 @@
                       (
                         function () {
                           if (
-                            WebcakeScript.pubsub.publish('sync_variation', u.product_id),
+                            FrameWorkScript.pubsub.publish('sync_variation', u.product_id),
                             window.WCart
                           ) {
                             var e = (WCart.Cart.$items || []).find((function (e) {
@@ -5914,7 +5914,7 @@
                                 'THB',
                                 'IDR'
                               ].includes(n) ? n : 'USD',
-                              r = WebcakeScript.CONST.LANG_LIST_PROD_CURRENCY,
+                              r = FrameWorkScript.CONST.LANG_LIST_PROD_CURRENCY,
                               a = e.querySelector('.-remain-quantity');
                               a &&
                               (
@@ -5925,9 +5925,9 @@
                         ),
                         e.runtime.stackPopup['-popup-checkout']
                       ) {
-                        var p = WebcakeScript.runtime.vm['-popup-checkout'];
+                        var p = FrameWorkScript.runtime.vm['-popup-checkout'];
                         if (p) {
-                          var h = WebcakeScript.runtime.vm[p.$instance.selected];
+                          var h = FrameWorkScript.runtime.vm[p.$instance.selected];
                           if (h) {
                             var f = h.$instance,
                             v = f.selectedAttributes;
@@ -5974,7 +5974,7 @@
                   'THB',
                   'IDR'
                 ].includes(u) ? u : 'USD',
-                d = WebcakeScript.CONST.LANG_LIST_PROD_CURRENCY;
+                d = FrameWorkScript.CONST.LANG_LIST_PROD_CURRENCY;
                 s.forEach(
                   (
                     function (t) {
@@ -6252,7 +6252,7 @@
                         }
                         return e.next = 11,
                         p.a.post(
-                          ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(f)
+                          ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(f)
                         );
                       case 11:
                         if (_ = e.sent, s = _.data.order.fields, c = _.data.order.total_price, s) {
@@ -6294,19 +6294,19 @@
                           !(
                             o &&
                             w &&
-                            WebcakeScript.runtime.__addresses &&
-                            WebcakeScript.runtime.__addresses[o.id]
+                            FrameWorkScript.runtime.__addresses &&
+                            FrameWorkScript.runtime.__addresses[o.id]
                           )
                         ) {
                           e.next = 32;
                           break
                         }
                         g = [
-                          WebcakeScript.runtime.__addresses[o.id].commune ||
+                          FrameWorkScript.runtime.__addresses[o.id].commune ||
                           '',
-                          WebcakeScript.runtime.__addresses[o.id].district ||
+                          FrameWorkScript.runtime.__addresses[o.id].district ||
                           '',
-                          WebcakeScript.runtime.__addresses[o.id].province ||
+                          FrameWorkScript.runtime.__addresses[o.id].province ||
                           ''
                         ],
                         y = g.map((function (e) {
@@ -6329,7 +6329,7 @@
                           type: 'list'
                         },
                         e.next = 37,
-                        p.a.post(''.concat(WebcakeScript.runtime.host, '/addresses'), k);
+                        p.a.post(''.concat(FrameWorkScript.runtime.host, '/addresses'), k);
                       case 37:
                         200 == (E = e.sent).status &&
                         (
@@ -6472,7 +6472,7 @@
       r = void 0 === n ? 0 : n,
       a = arguments.length > 2 &&
       void 0 !== arguments[2] ? arguments[2] : 600,
-      o = WebcakeScript.runtime.vm[e];
+      o = FrameWorkScript.runtime.vm[e];
       if (o) {
         var s = o.$el,
         c = Math.abs(s.offsetTop - window.pageYOffset);
@@ -7448,7 +7448,7 @@
               s = r.customMessage,
               c = r.customize,
               u = r.duration,
-              l = WebcakeScript.CONST.VERSION_ID;
+              l = FrameWorkScript.CONST.VERSION_ID;
               switch (a) {
                 case 'minute':
                   if (n = h.a.get('_now-'.concat(l)), t = 60 * + u || 0, n) t -= Math.floor((Date.now() - n) / 1000),
@@ -8191,7 +8191,7 @@
               this.vm.specials.isTextParams &&
               '' != this.vm.specials.textParams &&
               this.handleTextParams(),
-              WebcakeScript.pubsub.subscribe(
+              FrameWorkScript.pubsub.subscribe(
                 'site_instance_mounted',
                 (function () {
                   n.handleFormParams(),
@@ -8217,7 +8217,7 @@
                 })).map((function (e) {
                   return e.replace(/{{/g, '').replace(/}}/g, '')
                 }));
-                WebcakeScript.pubsub.subscribe('form_submitted', (function () {
+                FrameWorkScript.pubsub.subscribe('form_submitted', (function () {
                   e.showInfo({
                     binding: !0
                   })
@@ -8243,11 +8243,11 @@
                       binding: !0
                     })
                   }));
-                   else var i = WebcakeScript.pubsub.subscribe(
+                   else var i = FrameWorkScript.pubsub.subscribe(
                     'cart-loaded',
                     (
                       function () {
-                        WebcakeScript.pubsub.unsubscribe('cart-loaded', i),
+                        FrameWorkScript.pubsub.unsubscribe('cart-loaded', i),
                         e.showInfo({
                           binding: !0
                         }),
@@ -8262,7 +8262,7 @@
                   n.forEach(
                     (
                       function (t) {
-                        WebcakeScript.pubsub.subscribe(
+                        FrameWorkScript.pubsub.subscribe(
                           'form_info_change_'.concat(t),
                           (function () {
                             e.showInfo({
@@ -8315,18 +8315,18 @@
                   survey_map = {},
                   survey_value = {},
                   inited_survey = [],
-                  forms = Object.keys(WebcakeScript.runtime.vm).reduce(
+                  forms = Object.keys(FrameWorkScript.runtime.vm).reduce(
                     (
                       function (e, t) {
-                        return 'form' == WebcakeScript.runtime.vm[t].type ? (e.push(WebcakeScript.runtime.vm[t]), e) : e
+                        return 'form' == FrameWorkScript.runtime.vm[t].type ? (e.push(FrameWorkScript.runtime.vm[t]), e) : e
                       }
                     ),
                     []
                   ),
-                  surveys = Object.keys(WebcakeScript.runtime.vm).reduce(
+                  surveys = Object.keys(FrameWorkScript.runtime.vm).reduce(
                     (
                       function (e, t) {
-                        return 'survey' == WebcakeScript.runtime.vm[t].type ? (e.push(WebcakeScript.runtime.vm[t]), e) : e
+                        return 'survey' == FrameWorkScript.runtime.vm[t].type ? (e.push(FrameWorkScript.runtime.vm[t]), e) : e
                       }
                     ),
                     []
@@ -8379,7 +8379,7 @@
                             )
                           );
                           var t = e.replace(/[{{}}]/g, ''),
-                          n = WebcakeScript.runtime.vm[t];
+                          n = FrameWorkScript.runtime.vm[t];
                           if (n) {
                             if ('cart-quantity' == n.type) {
                               var i = n.$el.querySelector('input');
@@ -8457,10 +8457,10 @@
                   Object.keys(mappings).forEach(
                     (
                       function (e) {
-                        var t = WebcakeScript.runtime.vm[e];
+                        var t = FrameWorkScript.runtime.vm[e];
                         if (t) if (['cart-quantity',
                         'quantity_input'].includes(t.type)) {
-                          WebcakeScript.pubsub.subscribe(
+                          FrameWorkScript.pubsub.subscribe(
                             ''.concat(e, '__quantity-change'),
                             (function (e) {
                               handleCalculateFormula()
@@ -8558,7 +8558,7 @@
                       }
                     )
                   ),
-                  WebcakeScript.pubsub.subscribe(
+                  FrameWorkScript.pubsub.subscribe(
                     'collapse-element',
                     (
                       function (e) {
@@ -8569,7 +8569,7 @@
                       }
                     )
                   ),
-                  WebcakeScript.pubsub.subscribe(
+                  FrameWorkScript.pubsub.subscribe(
                     'show-hide-element',
                     (
                       function (e) {
@@ -8706,7 +8706,7 @@
                                 }
                                 return e.next = 19,
                                 axios__WEBPACK_IMPORTED_MODULE_6___default.a.post(
-                                  ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(c)
+                                  ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(c)
                                 );
                               case 19:
                                 p = e.sent,
@@ -8727,7 +8727,7 @@
                                 }
                                 return e.next = 29,
                                 axios__WEBPACK_IMPORTED_MODULE_6___default.a.post(
-                                  ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(u)
+                                  ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(u)
                                 );
                               case 29:
                                 h = e.sent,
@@ -8804,7 +8804,7 @@
                                   k = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default() (w, 2),
                                   E = k[0],
                                   S = k[1],
-                                  O = null === (y = WebcakeScript.runtime.vm[E]) ||
+                                  O = null === (y = FrameWorkScript.runtime.vm[E]) ||
                                   void 0 === y ? void 0 : y.$instance,
                                   E &&
                                   S &&
@@ -8977,7 +8977,7 @@
             key: 'showTotalCart',
             value: function () {
               var e = this;
-              if (WebcakeScript.runtime.is_cart_active) {
+              if (FrameWorkScript.runtime.is_cart_active) {
                 var t = function () {
                   var t,
                   n = WCart.Cart.$totalPrice,
@@ -8987,11 +8987,11 @@
                 };
                 if (window.WCart) return window.WCart.Cart.Event.on('cart', t),
                 t();
-                var n = WebcakeScript.pubsub.subscribe(
+                var n = FrameWorkScript.pubsub.subscribe(
                   'cart-loaded',
                   (
                     function () {
-                      WebcakeScript.pubsub.unsubscribe('cart-loaded', n),
+                      FrameWorkScript.pubsub.unsubscribe('cart-loaded', n),
                       WCart.Cart.Event.on('cart', t),
                       t()
                     }
@@ -14691,7 +14691,7 @@
                   listParams.forEach(
                     (
                       function (e) {
-                        var t = WebcakeScript.runtime.vm[_this.vm.$parent];
+                        var t = FrameWorkScript.runtime.vm[_this.vm.$parent];
                         Object(_common__WEBPACK_IMPORTED_MODULE_4__.F) (
                           t.id,
                           (
@@ -14739,7 +14739,7 @@
                     )
                   );
                   var updateValue = function updateValue(value, targetInputID, lastChangedID) {
-                    var instance = WebcakeScript.runtime.vm[targetInputID].$instance,
+                    var instance = FrameWorkScript.runtime.vm[targetInputID].$instance,
                     formula = instance.vm.specials.formula;
                     values[mappings[lastChangedID]] = value,
                     Object.keys(values).forEach(
@@ -14763,10 +14763,10 @@
                   Object.keys(mappings).forEach(
                     (
                       function (e) {
-                        var t = WebcakeScript.runtime.vm[e];
+                        var t = FrameWorkScript.runtime.vm[e];
                         if (t) if (['cart-quantity',
                         'quantity_input'].includes(t.type)) {
-                          WebcakeScript.pubsub.subscribe(
+                          FrameWorkScript.pubsub.subscribe(
                             ''.concat(e, '__quantity-change'),
                             (function (t) {
                               updateValue(t, _this.vm.id, e)
@@ -14911,7 +14911,7 @@
           {
             key: 'validateCheckPhone',
             value: function (e) {
-              var t = WebcakeScript.runtime.vm[this.vm.$parent].$el.querySelector('input[name="phone_number"]');
+              var t = FrameWorkScript.runtime.vm[this.vm.$parent].$el.querySelector('input[name="phone_number"]');
               if (t) {
                 this.input.setCustomValidity('');
                 var n = t.value,
@@ -14934,7 +14934,7 @@
                   quantity: parseInt(e.value) ||
                   1
                 };
-                WebcakeScript.runtime.vm[this.vm.$parent].$instance._setVariations(n, r)
+                FrameWorkScript.runtime.vm[this.vm.$parent].$instance._setVariations(n, r)
               }
             }
           },
@@ -14944,7 +14944,7 @@
               var e,
               t,
               n = this,
-              i = WebcakeScript.runtime.vm[this.vm.$parent],
+              i = FrameWorkScript.runtime.vm[this.vm.$parent],
               r = !1;
               if (
                 Object(_common__WEBPACK_IMPORTED_MODULE_4__.F) (i.id, (function (e) {
@@ -14956,7 +14956,7 @@
                 'address' == this.vm.specials.field_name &&
                 this.vm.specials.detectAddress &&
                 '84' == (
-                  null === (e = WebcakeScript) ||
+                  null === (e = FrameWorkScript) ||
                   void 0 === e ||
                   null === (t = e.CONST) ||
                   void 0 === t ? void 0 : t.COUNTRY
@@ -15094,7 +15094,7 @@
             value: function () {
               var e = this,
               t = this.input.value,
-              n = WebcakeScript.runtime.vm[this.vm.$parent];
+              n = FrameWorkScript.runtime.vm[this.vm.$parent];
               if (n && n.$instance) {
                 if (!t) return this.relatedAddress = [],
                 this.renderDetectAddressList(),
@@ -15102,7 +15102,7 @@
                 var i = Object(_common__WEBPACK_IMPORTED_MODULE_4__.y) (4);
                 this.api_uid = i;
                 var r = n.$instance.getFormSelectedAddress(),
-                a = ''.concat(WebcakeScript.runtime.host, '/detect_address'),
+                a = ''.concat(FrameWorkScript.runtime.host, '/detect_address'),
                 o = {
                   address: t,
                   country_code: 84
@@ -15297,7 +15297,7 @@
                       u = s.time,
                       b = s.content,
                       y = s.image,
-                      w = void 0 === y ? WebcakeScript.CONST.NOTIFY_IMG_DEFAULT : y,
+                      w = void 0 === y ? FrameWorkScript.CONST.NOTIFY_IMG_DEFAULT : y,
                       k = a ? f(r) : r;
                       l.innerHTML = c,
                       d.innerHTML = b,
@@ -15442,8 +15442,8 @@
       var i = e.querySelector('input[type="tel"][name="phone_number"]');
       if (i && i.value) {
         e.value;
-        var r = WebcakeScript.CONST.PAGE_ID,
-        a = ''.concat(WebcakeScript.runtime.host, '/create_temp_form/').concat(r),
+        var r = FrameWorkScript.CONST.PAGE_ID,
+        a = ''.concat(FrameWorkScript.runtime.host, '/create_temp_form/').concat(r),
         o = {
           'Access-Control-Allow-Origin': '*'
         },
@@ -15466,9 +15466,9 @@
           ua: window.navigator.userAgent,
           exception: t
         };
-        1 !== WebcakeScript.CONST.TYPE &&
+        1 !== FrameWorkScript.CONST.TYPE &&
         (
-          a = ''.concat(WebcakeScript.runtime.host, '/ext_create_temp_form/').concat(r),
+          a = ''.concat(FrameWorkScript.runtime.host, '/ext_create_temp_form/').concat(r),
           o = {
             'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
           },
@@ -15598,7 +15598,7 @@
     function et() {
       var e = this,
       t = this.vm.specials.multiFormParent,
-      n = WebcakeScript.runtime.vm[t];
+      n = FrameWorkScript.runtime.vm[t];
       if (this.vm.specials.multiForm && n && !n.specials.multiForm) this.container.addEventListener('submit', Q(this, ge, ct).bind(this));
        else {
         var i,
@@ -15606,10 +15606,10 @@
         a;
         this.container.addEventListener('change', Q(this, Ze, Vt).bind(this)),
         this.container.addEventListener('submit', Q(this, we, lt).bind(this)),
-        Object.keys(WebcakeScript.runtime.vm).forEach(
+        Object.keys(FrameWorkScript.runtime.vm).forEach(
           (
             function (t) {
-              var n = WebcakeScript.runtime.vm[t];
+              var n = FrameWorkScript.runtime.vm[t];
               'form' == n.type &&
               n.specials.multiForm &&
               n.specials.multiFormParent == e.vm.id &&
@@ -15620,7 +15620,7 @@
         var o = Object(_.e) (
           (
             function () {
-              WebcakeScript.pubsub.publish('form_info_change_'.concat(e.vm.id))
+              FrameWorkScript.pubsub.publish('form_info_change_'.concat(e.vm.id))
             }
           ),
           500
@@ -15632,7 +15632,7 @@
               null === (n = document.querySelector('form[id="'.concat(t, '"]'))) ||
               void 0 === n ||
               n.addEventListener('change', Q(e, Ze, Vt).bind(e)),
-              WebcakeScript.pubsub.subscribe('form_info_change_'.concat(t), o)
+              FrameWorkScript.pubsub.subscribe('form_info_change_'.concat(t), o)
             }
           )
         ),
@@ -15646,13 +15646,13 @@
         ((null === (a = this.vm) || void 0 === a ? void 0 : a.children) || []).forEach(
           (
             function (e) {
-              var t = WebcakeScript.runtime.vm[e];
+              var t = FrameWorkScript.runtime.vm[e];
               t &&
               [
                 'cart-quantity',
                 'quantity_input'
               ].includes(t.type) &&
-              WebcakeScript.pubsub.subscribe(''.concat(e, '__quantity-change'), (function () {
+              FrameWorkScript.pubsub.subscribe(''.concat(e, '__quantity-change'), (function () {
                 o()
               }))
             }
@@ -15687,11 +15687,11 @@
       I.a.set('_p_session_id', V()),
       Q(this, ve, it).call(this),
       setTimeout(Q(this, _e, at).bind(this), 1000);
-      var t = WebcakeScript.pubsub.subscribe(
+      var t = FrameWorkScript.pubsub.subscribe(
         'load-sync-info',
         (
           function () {
-            WebcakeScript.pubsub.unsubscribe('load-sync-info', t),
+            FrameWorkScript.pubsub.unsubscribe('load-sync-info', t),
             e.findProductsCombo()
           }
         )
@@ -15704,7 +15704,7 @@
       this.vm.children.forEach(
         (
           function (t) {
-            var n = WebcakeScript.runtime.vm[t];
+            var n = FrameWorkScript.runtime.vm[t];
             n &&
             n.specials.isTextParams &&
             Q(e, me, rt).call(e, n)
@@ -15725,20 +15725,20 @@
       }
     }
     function at() {
-      if (WebcakeScript.CONST.AUTO_SAVE_INFO_USER) {
+      if (FrameWorkScript.CONST.AUTO_SAVE_INFO_USER) {
         var e = JSON.parse(localStorage.getItem('data_form_auto_fill') || '{}');
         e &&
         this.vm.children.forEach(
           (
             function (t) {
               var n,
-              i = WebcakeScript.runtime.vm[t];
+              i = FrameWorkScript.runtime.vm[t];
               if (i) {
                 var r = null === (n = i.specials) ||
                 void 0 === n ? void 0 : n.field_name;
                 if ('access_key' != r) {
                   if (
-                    WebcakeScript.CONST.DEFAULT_KEYS.includes(r) &&
+                    FrameWorkScript.CONST.DEFAULT_KEYS.includes(r) &&
                     (
                       e[r] &&
                       'input' == i.type &&
@@ -15768,7 +15768,7 @@
     function ot() {
       var e = this,
       t = this.formatFieldData(),
-      n = ''.concat(WebcakeScript.runtime.host, '/access_key'),
+      n = ''.concat(FrameWorkScript.runtime.host, '/access_key'),
       i = {
         access_key: t.access_key,
         url: location.origin + location.pathname
@@ -15776,9 +15776,9 @@
       r = {
         'Access-Control-Allow-Origin': '*'
       };
-      1 !== WebcakeScript.CONST.TYPE &&
+      1 !== FrameWorkScript.CONST.TYPE &&
       (
-        n = ''.concat(WebcakeScript.runtime.host, '/ext_access_key'),
+        n = ''.concat(FrameWorkScript.runtime.host, '/ext_access_key'),
         i = Object(_.d) (i),
         i = new URLSearchParams(i),
         r = {
@@ -15806,8 +15806,8 @@
              else {
               var n = e.loginPopup.querySelector('.backdrop-login'),
               i = e.loginPopup.querySelector('.popup-default-login');
-              i.style.zIndex = 1000001 + Object.keys(WebcakeScript.runtime.stackPopup).length,
-              n.style.zIndex = 1000001 + Object.keys(WebcakeScript.runtime.stackPopup).length,
+              i.style.zIndex = 1000001 + Object.keys(FrameWorkScript.runtime.stackPopup).length,
+              n.style.zIndex = 1000001 + Object.keys(FrameWorkScript.runtime.stackPopup).length,
               i.style.display = 'block',
               n.style.display = 'block'
             }
@@ -15816,7 +15816,7 @@
       )
     }
     function st(e) {
-      for (var t in WebcakeScript.runtime.stackPopup) {
+      for (var t in FrameWorkScript.runtime.stackPopup) {
         var n = document.getElementById('w-'.concat(t)),
         i = n.querySelectorAll('input'),
         r = [
@@ -15905,7 +15905,7 @@
                           if (
                             e.prev = 0,
                             t.preventDefault(),
-                            o = WebcakeScript.runtime.vm[this.vm.specials.multiFormParent]
+                            o = FrameWorkScript.runtime.vm[this.vm.specials.multiFormParent]
                           ) {
                             e.next = 6;
                             break
@@ -16057,7 +16057,7 @@
                           m = (this.vm.children || []).reduce(
                             (
                               function (e, t) {
-                                var n = window.WebcakeScript.runtime.vm[t];
+                                var n = window.FrameWorkScript.runtime.vm[t];
                                 return n &&
                                 'survey' == n.type &&
                                 e.push(n),
@@ -16069,7 +16069,7 @@
                           b = (o.children || []).reduce(
                             (
                               function (e, t) {
-                                var n = window.WebcakeScript.runtime.vm[t];
+                                var n = window.FrameWorkScript.runtime.vm[t];
                                 return n &&
                                 'survey' == n.type &&
                                 e.push(n),
@@ -16418,8 +16418,8 @@
                             'aff'
                           ]),
                           N = this.getFieldList(),
-                          U = WebcakeScript.CONST.PAGE_ID,
-                          B = ''.concat(WebcakeScript.runtime.host, '/create_form_data/').concat(U),
+                          U = FrameWorkScript.CONST.PAGE_ID,
+                          B = ''.concat(FrameWorkScript.runtime.host, '/create_form_data/').concat(U),
                           V = I.a.get('_p_session_id'),
                           F = I.a.get('_fbp'),
                           H = I.a.get('_fbc'),
@@ -16474,9 +16474,9 @@
                           Y = {
                             'Access-Control-Allow-Origin': '*'
                           },
-                          1 !== WebcakeScript.CONST.TYPE &&
+                          1 !== FrameWorkScript.CONST.TYPE &&
                           (
-                            B = ''.concat(WebcakeScript.runtime.host, '/ext_create_form_data/').concat(U),
+                            B = ''.concat(FrameWorkScript.runtime.host, '/ext_create_form_data/').concat(U),
                             K = Object(_.d) (K),
                             K = new URLSearchParams(K),
                             Y = {
@@ -16490,7 +16490,7 @@
                           ne = te.merge_sub_form_data,
                           ie = void 0 === ne ||
                           ne,
-                          WebcakeScript.pubsub.publish('submitting__'.concat(this.vm.id), !0),
+                          FrameWorkScript.pubsub.publish('submitting__'.concat(this.vm.id), !0),
                           e.next = 70,
                           A.a.post(B, K, Y);
                         case 70:
@@ -16594,7 +16594,7 @@
                           return e.next = 85,
                           Object(_.B) ();
                         case 85:
-                          WebcakeScript.pubsub.publish('submitting__'.concat(this.vm.id), !1),
+                          FrameWorkScript.pubsub.publish('submitting__'.concat(this.vm.id), !1),
                           Promise.resolve().then(
                             (
                               function () {
@@ -16609,7 +16609,7 @@
                           if (
                             e.prev = 89,
                             e.t1 = e.catch(65),
-                            WebcakeScript.pubsub.publish('submitting__'.concat(this.vm.id), !1),
+                            FrameWorkScript.pubsub.publish('submitting__'.concat(this.vm.id), !1),
                             'string' == typeof (
                               me = null === e.t1 ||
                               void 0 === e.t1 ||
@@ -16618,7 +16618,7 @@
                             ) &&
                             'OTP wrong' == me
                           ) {
-                            for (_e = 'OTP wrong !!', ye = 0; ye <= this.vm.children.length; ye++) (ge = WebcakeScript.runtime.vm[this.vm.children[ye]]) &&
+                            for (_e = 'OTP wrong !!', ye = 0; ye <= this.vm.children.length; ye++) (ge = FrameWorkScript.runtime.vm[this.vm.children[ye]]) &&
                             'verify-code' == ge.type &&
                             (_e = ge.specials.message_otp_wrong || 'OTP wrong !!');
                             Object(G.a) ('error-lg', _e, 1)
@@ -16638,7 +16638,7 @@
                             url: window.location.href,
                             error: e.t2.stack
                           },
-                          A.a.post(''.concat(WebcakeScript.runtime.host, '/log'), we),
+                          A.a.post(''.concat(FrameWorkScript.runtime.host, '/log'), we),
                           console.error(e.t2);
                         case 104:
                         case 'end':
@@ -16684,7 +16684,7 @@
       return this.multiformChildren.forEach(
         (
           function (t) {
-            var n = window.WebcakeScript.runtime.vm[t];
+            var n = window.FrameWorkScript.runtime.vm[t];
             if (n && n.$instance) {
               var i = n.$instance._getAdditionalPrice() ||
               [];
@@ -16700,7 +16700,7 @@
       return this.multiformChildren.forEach(
         (
           function (t) {
-            var n = window.WebcakeScript.runtime.vm[t];
+            var n = window.FrameWorkScript.runtime.vm[t];
             if (n && n.$instance) {
               var i = n.$instance._getAdditionalPriceList('surcharge') ||
               [];
@@ -16721,7 +16721,7 @@
       return this.multiformChildren.forEach(
         (
           function (t) {
-            var n = window.WebcakeScript.runtime.vm[t];
+            var n = window.FrameWorkScript.runtime.vm[t];
             if (n && n.$instance) {
               var i = n.$instance._getAdditionalPriceList('add_discount') ||
               [];
@@ -16748,7 +16748,7 @@
         default:
           return Q(this, De, kt).call(this, e, t, n, i),
           Q(this, Ae, wt).call(this, e, t, n, i),
-          void WebcakeScript.pubsub.publish('form_submitted')
+          void FrameWorkScript.pubsub.publish('form_submitted')
       }
     }
     function yt(e) {
@@ -16785,7 +16785,7 @@
             'http' == v.substring(0, 4) ||
             v.includes('://') ||
             (v = 'https://' + v),
-            WebcakeScript.CONST.SEND_TO_THANK_PAGE &&
+            FrameWorkScript.CONST.SEND_TO_THANK_PAGE &&
             (v.includes('?') ? v += '&'.concat(l) : v += '?'.concat(l)),
             v
           ) {
@@ -16926,7 +16926,7 @@
           }
         )
       ),
-      WebcakeScript.pubsub.publish('form_submitted')
+      FrameWorkScript.pubsub.publish('form_submitted')
     }
     function wt(e, t, n, i) {
       var r = this;
@@ -17055,7 +17055,7 @@
           l,
           d;
           if (null !== (u = window.order) && void 0 !== u && u.block_pixel_analystic) return;
-          if (!WebcakeScript.runtime.vm[c]) return;
+          if (!FrameWorkScript.runtime.vm[c]) return;
           localStorage.setItem(
             'form_data_id_present',
             null === (l = i.data) ||
@@ -17098,7 +17098,7 @@
               'http' == O.substring(0, 4) ||
               O.includes('://') ||
               (O = 'https://' + O),
-              WebcakeScript.CONST.SEND_TO_THANK_PAGE &&
+              FrameWorkScript.CONST.SEND_TO_THANK_PAGE &&
               (O.includes('?') ? O += '&'.concat(S) : O += '?'.concat(S)),
               O
             ) {
@@ -17230,7 +17230,7 @@
           f &&
           d &&
           (C += '__'.concat(f));
-          var P = ''.concat(WebcakeScript.runtime.host, '/update_redirect_url');
+          var P = ''.concat(FrameWorkScript.runtime.host, '/update_redirect_url');
           A.a.post(P, {
             redirected_url: C,
             id: null == i ? void 0 : i.id
@@ -17252,7 +17252,7 @@
           p.forEach(
             (
               function (e) {
-                var t = WebcakeScript.runtime.vm[e.key];
+                var t = FrameWorkScript.runtime.vm[e.key];
                 t &&
                 t.specials.field_name &&
                 $.set(e.name, '{{'.concat(t.specials.field_name, '}}'))
@@ -17317,7 +17317,7 @@
         null != s &&
         '' !== s &&
         (
-          WebcakeScript.CONST.DEFAULT_KEYS.includes(o) ? r[o] = s : 'object' !== E() (s) ? a[o] = s : a[o] = Object(F.flatten) (s, {
+          FrameWorkScript.CONST.DEFAULT_KEYS.includes(o) ? r[o] = s : 'object' !== E() (s) ? a[o] = s : a[o] = Object(F.flatten) (s, {
             safe: !0
           })
         )
@@ -17437,13 +17437,13 @@
       n = this.multiformChildren.reduce(
         (
           function (e, t) {
-            var n = WebcakeScript.runtime.vm[t];
+            var n = FrameWorkScript.runtime.vm[t];
             return n ? e.concat(n.children) : e
           }
         ),
         this.vm.children
       ).map((function (e) {
-        return WebcakeScript.runtime.vm[e]
+        return FrameWorkScript.runtime.vm[e]
       })).filter(
         (
           function (e) {
@@ -17774,7 +17774,7 @@
                           return u = (null === (r = window.sync) || void 0 === r ? void 0 : r.currency) ||
                           'VND',
                           l = {},
-                          d = ''.concat(WebcakeScript.runtime.host, '/pos/get_promotion_coupon'),
+                          d = ''.concat(FrameWorkScript.runtime.host, '/pos/get_promotion_coupon'),
                           p = {
                             name: c,
                             shop_id: null === (a = window.sync) ||
@@ -17782,9 +17782,9 @@
                             subtotal: o,
                             currency: u
                           },
-                          1 !== WebcakeScript.CONST.TYPE &&
+                          1 !== FrameWorkScript.CONST.TYPE &&
                           (
-                            d = ''.concat(WebcakeScript.runtime.host, '/pos/ext_get_promotion_coupon'),
+                            d = ''.concat(FrameWorkScript.runtime.host, '/pos/ext_get_promotion_coupon'),
                             p = Object(_.d) (p),
                             p = new URLSearchParams(p),
                             l = {
@@ -17966,17 +17966,17 @@
                           }
                           return e.abrupt('return');
                         case 6:
-                          return a = ''.concat(WebcakeScript.runtime.host, '/pos/promotions'),
+                          return a = ''.concat(FrameWorkScript.runtime.host, '/pos/promotions'),
                           o = {
-                            page_id: WebcakeScript.CONST.PAGE_ID,
+                            page_id: FrameWorkScript.CONST.PAGE_ID,
                             variations: n
                           },
                           c = {
                             'Access-Control-Allow-Origin': '*'
                           },
-                          1 !== WebcakeScript.CONST.TYPE &&
+                          1 !== FrameWorkScript.CONST.TYPE &&
                           (
-                            a = ''.concat(WebcakeScript.runtime.host, '/ext_promotions'),
+                            a = ''.concat(FrameWorkScript.runtime.host, '/ext_promotions'),
                             o = Object(_.d) (o),
                             o = new URLSearchParams(o),
                             c = {
@@ -18054,7 +18054,7 @@
       this.vm.children.forEach(
         (
           function (e) {
-            var t = WebcakeScript.runtime.vm[e];
+            var t = FrameWorkScript.runtime.vm[e];
             t &&
             'address' == t.type &&
             t.$instance.reset()
@@ -18070,7 +18070,7 @@
       this.multiformChildren.reduce(
         (
           function (e, t) {
-            var n = WebcakeScript.runtime.vm[t];
+            var n = FrameWorkScript.runtime.vm[t];
             return n ? e.concat(n.children) : e
           }
         ),
@@ -18078,7 +18078,7 @@
       ).forEach(
         (
           function (t) {
-            var n = WebcakeScript.runtime.vm[t];
+            var n = FrameWorkScript.runtime.vm[t];
             Q(e, ze, Nt).call(e, n),
             'group-select' == n.type &&
             n.$instance.resetDefaultVariation(),
@@ -18104,7 +18104,7 @@
       n = t.isConnectSurvey,
       i = t.connectedSurvey;
       if (n && 'none' != i) {
-        var r = WebcakeScript.runtime.vm[i];
+        var r = FrameWorkScript.runtime.vm[i];
         if (!r) return;
         r.$instance.resetDefaultOption()
       }
@@ -18122,11 +18122,11 @@
       if (i.length > 0) for (var r = 0; r < i.length; r++) {
         var a,
         o = i[r].getAttribute('id'),
-        s = null === (a = window.WebcakeScript.runtime.vm[o].specials) ||
+        s = null === (a = window.FrameWorkScript.runtime.vm[o].specials) ||
         void 0 === a ? void 0 : a.defaultVal;
         i[r].setAttribute('value', s || 0)
       }
-      var c = window.WebcakeScript.runtime.vm,
+      var c = window.FrameWorkScript.runtime.vm,
       u = Object.values(c).filter((function (e) {
         return 'form' === e.type
       }));
@@ -18230,17 +18230,17 @@
                               (u = c.closest('[id^=w-]')) &&
                               (
                                 d = u.id.split(B || (B = a() (['-']))) [1],
-                                p = WebcakeScript.runtime.vm[d],
+                                p = FrameWorkScript.runtime.vm[d],
                                 'function' == typeof (null === (l = p.$instance) || void 0 === l ? void 0 : l._handleChange) &&
                                 p.$instance._handleChange(c)
                               )
                             ),
-                            h = WebcakeScript.CONST.AUTO_SAVE_DRAFT ||
+                            h = FrameWorkScript.CONST.AUTO_SAVE_DRAFT ||
                             !1,
                             f = this.multiformChildren.reduce(
                               (
                                 function (e, t) {
-                                  var n = WebcakeScript.runtime.vm[t];
+                                  var n = FrameWorkScript.runtime.vm[t];
                                   return n ? e.concat(n.children) : e
                                 }
                               ),
@@ -18248,7 +18248,7 @@
                             ),
                             (
                               v = f.map((function (e) {
-                                return WebcakeScript.runtime.vm[e]
+                                return FrameWorkScript.runtime.vm[e]
                               })).find(
                                 (
                                   function (e) {
@@ -18287,7 +18287,7 @@
                           if (
                             e.prev = 15,
                             g = y ||
-                            WebcakeScript.CONST.REGEX_PHONE_VALIDATOR,
+                            FrameWorkScript.CONST.REGEX_PHONE_VALIDATOR,
                             new RegExp(g).test(m)
                           ) {
                             e.next = 20;
@@ -18356,14 +18356,14 @@
                             void 0 === i ? void 0 : i.session_id,
                             pos_order_id: P.order_id
                           }),
-                          $ = WebcakeScript.CONST.PAGE_ID,
-                          M = ''.concat(WebcakeScript.runtime.host, '/create_temp_form/').concat($),
+                          $ = FrameWorkScript.CONST.PAGE_ID,
+                          M = ''.concat(FrameWorkScript.runtime.host, '/create_temp_form/').concat($),
                           j = {
                             'Access-Control-Allow-Origin': '*'
                           },
-                          1 !== WebcakeScript.CONST.TYPE &&
+                          1 !== FrameWorkScript.CONST.TYPE &&
                           (
-                            M = ''.concat(WebcakeScript.runtime.host, '/ext_create_temp_form/').concat($),
+                            M = ''.concat(FrameWorkScript.runtime.host, '/ext_create_temp_form/').concat($),
                             j = {
                               'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
                             },
@@ -18491,7 +18491,7 @@
                           return e.abrupt('return');
                         case 12:
                           return p = {},
-                          h = ''.concat(WebcakeScript.runtime.host, '/pos/get_promotion_coupon'),
+                          h = ''.concat(FrameWorkScript.runtime.host, '/pos/get_promotion_coupon'),
                           f = (null === (o = window.sync) || void 0 === o ? void 0 : o.currency) ||
                           'VND',
                           v = {
@@ -18500,9 +18500,9 @@
                             void 0 === c ? void 0 : c.shop_id,
                             currency: f
                           },
-                          1 !== WebcakeScript.CONST.TYPE &&
+                          1 !== FrameWorkScript.CONST.TYPE &&
                           (
-                            h = ''.concat(WebcakeScript.runtime.host, '/pos/ext_get_promotion_coupon'),
+                            h = ''.concat(FrameWorkScript.runtime.host, '/pos/ext_get_promotion_coupon'),
                             v = Object(_.d) (v),
                             v = new URLSearchParams(v),
                             p = {
@@ -18733,7 +18733,7 @@
                   this.multiformChildren.forEach(
                     (
                       function (e) {
-                        var n = WebcakeScript.runtime.vm[e];
+                        var n = FrameWorkScript.runtime.vm[e];
                         n &&
                         n.$instance &&
                         t &&
@@ -18796,7 +18796,7 @@
                     }(e),
                     a = null === (n = e.closest('[id^="w-"]').id) ||
                     void 0 === n ? void 0 : n.replace('w-', ''),
-                    o = WebcakeScript.runtime.vm[a],
+                    o = FrameWorkScript.runtime.vm[a],
                     s = (null == o ? void 0 : o.specials.placeholder) ||
                     (null == o ? void 0 : o.specials.field_placeholder) ||
                     (null == o ? void 0 : o.specials.field_name) ||
@@ -18843,7 +18843,7 @@
                     o,
                     s,
                     c,
-                    u = WebcakeScript.runtime.vm[n];
+                    u = FrameWorkScript.runtime.vm[n];
                     if (u) {
                       var l = u.$instance;
                       switch (u.type) {
@@ -18853,7 +18853,7 @@
                           u.specials.validate &&
                           (
                             t.postal_country_code = u.specials.country_code ||
-                            WebcakeScript.CONST.COUNTRY
+                            FrameWorkScript.CONST.COUNTRY
                           );
                           break;
                         case 'quantity_input':
@@ -18933,7 +18933,7 @@
                           (t[u.specials.field_name] = l._getValue()) : t[u.specials.field_name] = l._getValue();
                           break;
                         case 'survey':
-                          var E = WebcakeScript.runtime.vm[u.id];
+                          var E = FrameWorkScript.runtime.vm[u.id];
                           t.survey = t.survey ||
                           {
                           },
@@ -18979,7 +18979,7 @@
                       I = P.field_name;
                       if (D && 'none' !== A) {
                         if (e._getVariations(I)) return;
-                        var q = WebcakeScript.runtime.vm[A];
+                        var q = FrameWorkScript.runtime.vm[A];
                         if (!q) return;
                         var W = q.specials,
                         $ = W.defaultVariationId,
@@ -19001,7 +19001,7 @@
               this.multiformChildren.forEach(
                 (
                   function (e) {
-                    var n = window.WebcakeScript.runtime.vm[e];
+                    var n = window.FrameWorkScript.runtime.vm[e];
                     if (n && n.$instance) {
                       var i = n.$instance.formatFieldData();
                       Object.keys(i).forEach(
@@ -19038,7 +19038,7 @@
               return this.multiformChildren.forEach(
                 (
                   function (t) {
-                    var n = window.WebcakeScript.runtime.vm[t];
+                    var n = window.FrameWorkScript.runtime.vm[t];
                     if (n && n.$instance) {
                       var i = n.$instance.getVariationData() ||
                       {
@@ -19286,7 +19286,7 @@
               return this.vm.children.forEach(
                 (
                   function (t) {
-                    var n = WebcakeScript.runtime.vm[t];
+                    var n = FrameWorkScript.runtime.vm[t];
                     if (n) switch (n.type) {
                       case 'country-select':
                         var i;
@@ -19294,11 +19294,11 @@
                         void 0 === i ? void 0 : i.select.value;
                         break;
                       case 'address':
-                        e.address = window.WebcakeScript.CONST.COUNTRY;
+                        e.address = window.FrameWorkScript.CONST.COUNTRY;
                         break;
                       case 'input':
                         'postal_code' == n.specials.field_type &&
-                        (e.postal = window.WebcakeScript.CONST.COUNTRY),
+                        (e.postal = window.FrameWorkScript.CONST.COUNTRY),
                         'phone_number' == n.specials.field_name &&
                         (e.phone = n.specials.validate_country || '84')
                     }
@@ -19309,7 +19309,7 @@
               e.address ||
               e.postal ||
               e.phone ||
-              window.WebcakeScript.CONST.COUNTRY
+              window.FrameWorkScript.CONST.COUNTRY
             }
           },
           {
@@ -19318,8 +19318,8 @@
               var e = this.vm.children.find(
                 (
                   function (e) {
-                    return WebcakeScript.runtime.vm[e] &&
-                    'address' == WebcakeScript.runtime.vm[e].type
+                    return FrameWorkScript.runtime.vm[e] &&
+                    'address' == FrameWorkScript.runtime.vm[e].type
                   }
                 )
               );
@@ -19330,7 +19330,7 @@
                 r,
                 a,
                 o,
-                s = WebcakeScript.runtime.vm[e];
+                s = FrameWorkScript.runtime.vm[e];
                 return {
                   province_id: (
                     null === (t = s.$instance) ||
@@ -19363,7 +19363,7 @@
             key: 'getFieldList',
             value: function () {
               var e = this.vm.children.map((function (e) {
-                return WebcakeScript.runtime.vm[e]
+                return FrameWorkScript.runtime.vm[e]
               })).filter((function (e) {
                 return 'button' !== e.type
               })).map(
@@ -19396,7 +19396,7 @@
                 var t = (this.vm.specials.sheetOrder || []).map(
                   (
                     function (e) {
-                      return WebcakeScript.runtime.vm[null == e ? void 0 : e.id]
+                      return FrameWorkScript.runtime.vm[null == e ? void 0 : e.id]
                     }
                   )
                 ).filter((function (e) {
@@ -19436,7 +19436,7 @@
               return this.multiformChildren.forEach(
                 (
                   function (e) {
-                    var t = window.WebcakeScript.runtime.vm[e];
+                    var t = window.FrameWorkScript.runtime.vm[e];
                     if (t && t.$instance) {
                       var r = t.$instance.getFieldList().filter((function (e) {
                         return !n.includes(e.field_name)
@@ -19723,7 +19723,7 @@
               n &&
               (
                 this.findProductsCombo(),
-                WebcakeScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
+                FrameWorkScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
               )
             }
           },
@@ -19738,7 +19738,7 @@
             value: function (e) {
               delete x() (this, ee) [e],
               this.findProductsCombo(),
-              WebcakeScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
+              FrameWorkScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
             }
           },
           {
@@ -19856,7 +19856,7 @@
               }))),
               'enable' == t &&
               x() (this, le).push(e),
-              WebcakeScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
+              FrameWorkScript.pubsub.publish('form_info_change_'.concat(this.vm.id))
             }
           },
           {
@@ -19930,7 +19930,7 @@
       this.vm = e,
       this.checkedOld = [],
       this.beforePromotion = [],
-      this.options = WebcakeScript.convertDOMListToArray(this.vm.$el.querySelectorAll('.radio-item')),
+      this.options = FrameWorkScript.convertDOMListToArray(this.vm.$el.querySelectorAll('.radio-item')),
       this.selectedOption = null,
       this.vm.$instance = this,
       null !== (t = this.vm.$el) &&
@@ -19941,7 +19941,7 @@
     }
     function en(e) {
       var t = this.vm.specials.options,
-      n = WebcakeScript.runtime.vm[this.vm.$parent];
+      n = FrameWorkScript.runtime.vm[this.vm.$parent];
       g() (t).sort((function (t, n) {
         return t.id == e ? 1 : - 1
       })).forEach(
@@ -20100,7 +20100,7 @@
               p = n.ignoreOnHidden,
               h = void 0 !== p &&
               p,
-              f = WebcakeScript.runtime.vm[this.vm.$parent],
+              f = FrameWorkScript.runtime.vm[this.vm.$parent],
               v = !(null !== (e = this.vm.$el) && void 0 !== e && e.offsetParent) &&
               h;
               if (r && !v) {
@@ -20169,7 +20169,7 @@
               r = n.color_highlight,
               a = n.highlight,
               o = n.field_name,
-              s = WebcakeScript.runtime.vm[this.vm.$parent];
+              s = FrameWorkScript.runtime.vm[this.vm.$parent];
               if (!s.$instance._checkIgnoreField(o)) {
                 this.removeHighlight(),
                 a &&
@@ -20216,7 +20216,7 @@
           {
             key: 'handleInitEvent',
             value: function () {
-              WebcakeScript.runtime.vm[this.vm.$parent];
+              FrameWorkScript.runtime.vm[this.vm.$parent];
               try {
                 this.vm.specials.options.reduce((function (e, t) {
                   return e.concat(t.events_option || [])
@@ -20274,7 +20274,7 @@
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials,
                 n = (t.options, t.field_name),
-                i = WebcakeScript.runtime.vm[this.vm.$parent];
+                i = FrameWorkScript.runtime.vm[this.vm.$parent];
                 i.$instance._removeVariations(n),
                 i.$instance._addIgnoreField(n)
               }
@@ -20289,7 +20289,7 @@
                 var n = this.vm.specials,
                 i = n.options,
                 r = n.field_name,
-                a = WebcakeScript.runtime.vm[this.vm.$parent];
+                a = FrameWorkScript.runtime.vm[this.vm.$parent];
                 a.$instance._removeIgnoreField(r),
                 this.addDefaultVariation(),
                 a.$instance._getVariations(r) ||
@@ -20325,7 +20325,7 @@
     function dn(e) {
       if (
         this.vm = e,
-        this.opts = WebcakeScript.convertDOMListToArray(this.vm.$el.querySelectorAll('.checkbox-group-item')),
+        this.opts = FrameWorkScript.convertDOMListToArray(this.vm.$el.querySelectorAll('.checkbox-group-item')),
         'none' == getComputedStyle(this.vm.$el).display
       ) {
         var t = this.opts[0];
@@ -20371,7 +20371,7 @@
     function fn() {
       var e = this,
       t = this.vm.specials.options,
-      n = WebcakeScript.runtime.vm[this.vm.$parent];
+      n = FrameWorkScript.runtime.vm[this.vm.$parent];
       g() (t).map(
         (
           function (t) {
@@ -20515,7 +20515,7 @@
                 default:
                   !0
                 };
-                WebcakeScript.runtime.vm[this.vm.$parent].$instance._setVariations(n, {
+                FrameWorkScript.runtime.vm[this.vm.$parent].$instance._setVariations(n, {
                 default:
                   [
                     r
@@ -20563,7 +20563,7 @@
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials,
                 n = (t.options, t.field_name),
-                i = WebcakeScript.runtime.vm[this.vm.$parent];
+                i = FrameWorkScript.runtime.vm[this.vm.$parent];
                 i.$instance._removeVariations(n),
                 i.$instance._addIgnoreField(n)
               }
@@ -20578,7 +20578,7 @@
                 var n = this.vm.specials,
                 i = n.options,
                 r = n.field_name,
-                a = WebcakeScript.runtime.vm[this.vm.$parent];
+                a = FrameWorkScript.runtime.vm[this.vm.$parent];
                 a.$instance._removeIgnoreField(r),
                 this.addDefaultVariation(),
                 a.$instance._getVariations(r) ||
@@ -20611,7 +20611,7 @@
                 var i = this.vm.specials,
                 r = i.options,
                 o = i.field_name,
-                s = WebcakeScript.runtime.vm[this.vm.$parent];
+                s = FrameWorkScript.runtime.vm[this.vm.$parent];
                 rn(this, ln, fn).call(this),
                 r.forEach(
                   (
@@ -20778,7 +20778,7 @@
               s = void 0 !== o &&
               o;
               if (n || i) {
-                var c = WebcakeScript.runtime.vm[this.vm.$parent],
+                var c = FrameWorkScript.runtime.vm[this.vm.$parent],
                 u = 'none' == getComputedStyle(this.vm.$el).display &&
                 s;
                 if (n && !u) {
@@ -20860,7 +20860,7 @@
                 var n = this.vm.specials,
                 i = n.options,
                 r = n.field_name,
-                a = WebcakeScript.runtime.vm[this.vm.$parent];
+                a = FrameWorkScript.runtime.vm[this.vm.$parent];
                 if (!a.$instance._checkIgnoreField(r)) {
                   var o = i.find((function (e) {
                     return e.id === t.getAttribute('id')
@@ -20907,7 +20907,7 @@
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials,
                 n = (t.options, t.field_name),
-                i = WebcakeScript.runtime.vm[this.vm.$parent];
+                i = FrameWorkScript.runtime.vm[this.vm.$parent];
                 i.$instance._removeVariations(n),
                 i.$instance._addIgnoreField(n)
               }
@@ -20920,7 +20920,7 @@
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials,
                 n = (t.options, t.field_name),
-                i = WebcakeScript.runtime.vm[this.vm.$parent];
+                i = FrameWorkScript.runtime.vm[this.vm.$parent];
                 i.$instance._removeIgnoreField(n),
                 this.addDefaultVariation(),
                 i.$instance._getVariations(n) ||
@@ -20958,7 +20958,7 @@
               this.selectCommune = this.selectContainer.querySelector('select[name="commune_id"]'),
               this.country = this.vm.specials.country ||
               (
-                null === (t = WebcakeScript) ||
+                null === (t = FrameWorkScript) ||
                 void 0 === t ||
                 null === (n = t.CONST) ||
                 void 0 === n ? void 0 : n.country
@@ -20977,13 +20977,13 @@
             key: 'loadAddress',
             value: function () {
               if (
-                !((WebcakeScript.runtime.vm[this.vm.$parent] || {
+                !((FrameWorkScript.runtime.vm[this.vm.$parent] || {
                 }).children || []).some(
                   (
                     function (e) {
                       var t;
                       return 'country-select' == (
-                        null === (t = WebcakeScript.runtime.vm[e]) ||
+                        null === (t = FrameWorkScript.runtime.vm[e]) ||
                         void 0 === t ? void 0 : t.type
                       )
                     }
@@ -21009,11 +21009,11 @@
             value: function () {
               var e = this;
               if (window.WebcakeAddresses) return this.initData();
-              var t = WebcakeScript.pubsub.subscribe(
+              var t = FrameWorkScript.pubsub.subscribe(
                 'load-address',
                 (
                   function () {
-                    WebcakeScript.pubsub.unsubscribe('load-address', t),
+                    FrameWorkScript.pubsub.unsubscribe('load-address', t),
                     e.initData()
                   }
                 )
@@ -21090,9 +21090,9 @@
               i = void 0 === n ? [] : n,
               r = e.target,
               a = e.target.value;
-              WebcakeScript.runtime.__addresses[this.vm.$parent] ||
-              (WebcakeScript.runtime.__addresses[this.vm.$parent] = {}),
-              WebcakeScript.runtime.__addresses[this.vm.$parent].province = r.options[r.selectedIndex].innerHTML,
+              FrameWorkScript.runtime.__addresses[this.vm.$parent] ||
+              (FrameWorkScript.runtime.__addresses[this.vm.$parent] = {}),
+              FrameWorkScript.runtime.__addresses[this.vm.$parent].province = r.options[r.selectedIndex].innerHTML,
               this.selectDistrict.innerHTML = this.selectDistrict.querySelector('option:first-child').outerHTML,
               this.selectCommune &&
               (
@@ -21124,7 +21124,7 @@
                 ),
                 this.selectDistrict.removeAttribute('disabled'),
                 this.selectDistrict.addEventListener('change', this.createOptCommune.bind(this)),
-                WebcakeScript.CONST.AUTO_SAVE_INFO_USER
+                FrameWorkScript.CONST.AUTO_SAVE_INFO_USER
               ) {
                 var c = JSON.parse(localStorage.getItem('data_form_auto_fill'));
                 c &&
@@ -21148,7 +21148,7 @@
               if (!i) {
                 var o = e.target.value,
                 s = e.target;
-                WebcakeScript.runtime.__addresses[this.vm.$parent].district = s.options[s.selectedIndex].innerHTML,
+                FrameWorkScript.runtime.__addresses[this.vm.$parent].district = s.options[s.selectedIndex].innerHTML,
                 this.selectCommune.innerHTML = this.selectCommune.querySelector('option:first-child').outerHTML,
                 this.selectedDistrict = o;
                 var c = window.WebcakeAddresses[this.country][this.selectedProvince][this.selectedDistrict],
@@ -21181,11 +21181,11 @@
                     (
                       function (e) {
                         var n = e.target;
-                        WebcakeScript.runtime.__addresses[t.vm.$parent].commune = n.options[n.selectedIndex].innerHTML
+                        FrameWorkScript.runtime.__addresses[t.vm.$parent].commune = n.options[n.selectedIndex].innerHTML
                       }
                     )
                   ),
-                  WebcakeScript.CONST.AUTO_SAVE_INFO_USER
+                  FrameWorkScript.CONST.AUTO_SAVE_INFO_USER
                 ) {
                   var l = JSON.parse(localStorage.getItem('data_form_auto_fill'));
                   l &&
@@ -21289,7 +21289,7 @@
                 t.append('width', this.width),
                 t.append('height', this.height),
                 this.width >= 5000 ||
-                this.height >= 5000 ? Object(G.a) ('warning', 'File cannot exceed size 5000x5000') : A.a.post(''.concat(WebcakeScript.runtime.host, '/upload'), t).then(
+                this.height >= 5000 ? Object(G.a) ('warning', 'File cannot exceed size 5000x5000') : A.a.post(''.concat(FrameWorkScript.runtime.host, '/upload'), t).then(
                   (
                     function (e) {
                       if (200 == e.status) {
@@ -21312,7 +21312,7 @@
             }
             var s = new FormData;
             s.append('file', e, e.name || e.filename),
-            A.a.post(''.concat(WebcakeScript.runtime.host, '/upload'), s).then(
+            A.a.post(''.concat(FrameWorkScript.runtime.host, '/upload'), s).then(
               (
                 function (e) {
                   if (200 == e.status) {
@@ -21468,10 +21468,10 @@
       this.vm.specials.isTextParams &&
       '' != this.vm.specials.textParams &&
       Nn(this, Vn, Yn).call(this);
-      var i = WebcakeScript.runtime.vm[this.vm.$parent];
+      var i = FrameWorkScript.runtime.vm[this.vm.$parent];
       i &&
       'form' == i.type &&
-      WebcakeScript.pubsub.subscribe(
+      FrameWorkScript.pubsub.subscribe(
         'submitting__'.concat(this.vm.$parent),
         (
           function (e) {
@@ -21488,7 +21488,7 @@
     }
     function zn() {
       var e = this;
-      WebcakeScript.pubsub.subscribe(
+      FrameWorkScript.pubsub.subscribe(
         'site_instance_mounted',
         (function () {
           e.handleFormParams(),
@@ -21510,7 +21510,7 @@
     }
     function Zn() {
       var e = this,
-      t = WebcakeScript.runtime.vm[this.vm.$parent];
+      t = FrameWorkScript.runtime.vm[this.vm.$parent];
       t &&
       'form' == t.type &&
       (
@@ -21523,7 +21523,7 @@
               t.children.forEach(
                 (
                   function (e) {
-                    var t = WebcakeScript.runtime.vm[e];
+                    var t = FrameWorkScript.runtime.vm[e];
                     if (
                       'input' == t.type &&
                       t.specials.isConnectSurvey &&
@@ -21536,7 +21536,7 @@
                       r = (null === (n = window.sync) || void 0 === n ? void 0 : n.currency) ||
                       'VND',
                       a = (
-                        null === (i = WebcakeScript.CONST.LANG_LIST_PROD_CURRENCY.WARNING_SURVEY) ||
+                        null === (i = FrameWorkScript.CONST.LANG_LIST_PROD_CURRENCY.WARNING_SURVEY) ||
                         void 0 === i ? void 0 : i[r]
                       ) ||
                       'Select values in the survey';
@@ -21555,7 +21555,7 @@
               null === (n = t.$instance) ||
               void 0 === n ||
               n.validateCurrentForm(),
-              WebcakeScript.pubsub.publish('form_info_change_'.concat(e.vm.$parent))
+              FrameWorkScript.pubsub.publish('form_info_change_'.concat(e.vm.$parent))
             }
           )
         ),
@@ -21592,7 +21592,7 @@
                 })).map((function (e) {
                   return e.replace(/{{/g, '').replace(/}}/g, '')
                 }));
-                WebcakeScript.pubsub.subscribe('form_submitted', (function () {
+                FrameWorkScript.pubsub.subscribe('form_submitted', (function () {
                   e.showInfo({
                     binding: !0
                   })
@@ -21618,11 +21618,11 @@
                       binding: !0
                     })
                   }));
-                   else var i = WebcakeScript.pubsub.subscribe(
+                   else var i = FrameWorkScript.pubsub.subscribe(
                     'cart-loaded',
                     (
                       function () {
-                        WebcakeScript.pubsub.unsubscribe('cart-loaded', i),
+                        FrameWorkScript.pubsub.unsubscribe('cart-loaded', i),
                         e.showInfo({
                           binding: !0
                         }),
@@ -21637,7 +21637,7 @@
                   n.forEach(
                     (
                       function (t) {
-                        WebcakeScript.pubsub.subscribe(
+                        FrameWorkScript.pubsub.subscribe(
                           'form_info_change_'.concat(t),
                           (function () {
                             e.showInfo({
@@ -21769,7 +21769,7 @@
                                 }
                                 return e.next = 19,
                                 A.a.post(
-                                  ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(u)
+                                  ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(u)
                                 );
                               case 19:
                                 p = e.sent,
@@ -21790,7 +21790,7 @@
                                 }
                                 return e.next = 29,
                                 A.a.post(
-                                  ''.concat(WebcakeScript.runtime.host, '/form_data/').concat(l)
+                                  ''.concat(FrameWorkScript.runtime.host, '/form_data/').concat(l)
                                 );
                               case 29:
                                 h = e.sent,
@@ -21859,7 +21859,7 @@
                                   E = O() (k, 2),
                                   S = E[0],
                                   C = E[1],
-                                  x = null === (g = WebcakeScript.runtime.vm[S]) ||
+                                  x = null === (g = FrameWorkScript.runtime.vm[S]) ||
                                   void 0 === g ? void 0 : g.$instance,
                                   S &&
                                   C &&
@@ -22059,7 +22059,7 @@
                     t,
                     (
                       function (t) {
-                        var n = WebcakeScript.runtime.vm[t];
+                        var n = FrameWorkScript.runtime.vm[t];
                         if (n && 'survey' != n.type) {
                           var i = n.specials.ctype;
                           if ('field' == i || 'atc' == i) {
@@ -22100,7 +22100,7 @@
     function ri(e, t) {
       var n = this;
       t(e);
-      var i = WebcakeScript.runtime.vm[e];
+      var i = FrameWorkScript.runtime.vm[e];
       i &&
       Array.isArray(i.children) &&
       i.children.forEach((function (e) {
@@ -22134,7 +22134,7 @@
                       e,
                       (
                         function (e) {
-                          var t = WebcakeScript.runtime.vm[e];
+                          var t = FrameWorkScript.runtime.vm[e];
                           if (t && ('atc' === (t.specials || {
                           }).ctype || 'group' === t.type)) {
                             var n = t.$el.closest('[sprod]').id.split('-') [1];
@@ -22186,7 +22186,7 @@
               e = Math.max(1, --e),
               this.input.value = e,
               this.input.setAttribute('value', e),
-              WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
+              FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
             }
           },
           {
@@ -22195,7 +22195,7 @@
               var e = parseInt(this.input.value);
               this.input.value = ++e,
               this.input.setAttribute('value', e),
-              WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
+              FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
             }
           },
           {
@@ -22204,8 +22204,8 @@
               var e;
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials.field_name;
-                WebcakeScript.runtime.vm[this.vm.$parent].$instance._addIgnoreField(t),
-                WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), 0)
+                FrameWorkScript.runtime.vm[this.vm.$parent].$instance._addIgnoreField(t),
+                FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), 0)
               }
             }
           },
@@ -22215,10 +22215,10 @@
               var e;
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials.field_name,
-                n = WebcakeScript.runtime.vm[this.vm.$parent],
+                n = FrameWorkScript.runtime.vm[this.vm.$parent],
                 i = parseInt(this.input.value);
                 n.$instance._removeIgnoreField(t),
-                WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), i)
+                FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), i)
               }
             }
           }
@@ -22238,26 +22238,26 @@
       this.vm.$instance = this,
       this.is_sell_negative = !0,
       this.variation = this.quantity = null,
-      this.parent = WebcakeScript.runtime.vm[this.vm.$parent],
-      WebcakeScript.pubsub.publish('gs-default-value-'.concat(this.vm.id))
+      this.parent = FrameWorkScript.runtime.vm[this.vm.$parent],
+      FrameWorkScript.pubsub.publish('gs-default-value-'.concat(this.vm.id))
     }
     function hi() {
       var e = this;
       if (window.sync) this.handleInitVariation();
-       else var t = WebcakeScript.pubsub.subscribe(
+       else var t = FrameWorkScript.pubsub.subscribe(
         'load-sync-info',
         (
           function () {
-            WebcakeScript.pubsub.unsubscribe('load-sync-info', t),
+            FrameWorkScript.pubsub.unsubscribe('load-sync-info', t),
             e.handleInitVariation()
           }
         )
       );
-      var n = WebcakeScript.pubsub.subscribe(
+      var n = FrameWorkScript.pubsub.subscribe(
         'site_instance_mounted',
         (
           function () {
-            WebcakeScript.pubsub.unsubscribe('site_instance_mounted', n),
+            FrameWorkScript.pubsub.unsubscribe('site_instance_mounted', n),
             e.handleInitVariation()
           }
         )
@@ -22278,7 +22278,7 @@
             key: 'handleInitVariation',
             value: function () {
               var e = this.vm.children[0],
-              t = WebcakeScript.runtime.vm[e];
+              t = FrameWorkScript.runtime.vm[e];
               t &&
               (t.$instance.checkVariation(), t.$instance.setAllStatus())
             }
@@ -22287,7 +22287,7 @@
             key: 'resetDefaultVariation',
             value: function () {
               this.vm.children.forEach((function (e) {
-                WebcakeScript.runtime.vm[e].$instance.reset()
+                FrameWorkScript.runtime.vm[e].$instance.reset()
               }))
             }
           },
@@ -22298,7 +22298,7 @@
               return this.vm.children.forEach(
                 (
                   function (t) {
-                    var n = WebcakeScript.runtime.vm[t];
+                    var n = FrameWorkScript.runtime.vm[t];
                     if (n) {
                       var i = n.specials,
                       r = (i.field_name, i.field_quantity),
@@ -22342,7 +22342,7 @@
               this.vm.children.forEach(
                 (
                   function (e) {
-                    var t = WebcakeScript.runtime.vm[e],
+                    var t = FrameWorkScript.runtime.vm[e],
                     n = t.specials.default_value;
                     n &&
                     'default-none' != n &&
@@ -22377,7 +22377,7 @@
               this.vm.children.forEach(
                 (
                   function (e) {
-                    WebcakeScript.runtime.vm[e].$instance.initData({
+                    FrameWorkScript.runtime.vm[e].$instance.initData({
                       bindPrd: !0
                     })
                   }
@@ -22403,7 +22403,7 @@
       this.select = this.vm.$el.querySelector('select'),
       this.vm.$instance = this,
       this.product = {},
-      this.parent = WebcakeScript.runtime.vm[this.vm.$parent],
+      this.parent = FrameWorkScript.runtime.vm[this.vm.$parent],
       this.is_sell_negative = !0,
       this.is_field_quantity = this.vm.specials.field_quantity,
       this.attrName = '',
@@ -22413,11 +22413,11 @@
       var e = this;
       if (this.is_field_quantity) return this.defaultValue();
       if (window.sync) return this.initData();
-      var t = WebcakeScript.pubsub.subscribe(
+      var t = FrameWorkScript.pubsub.subscribe(
         'load-sync-info',
         (
           function () {
-            WebcakeScript.pubsub.unsubscribe('load-sync-info', t),
+            FrameWorkScript.pubsub.unsubscribe('load-sync-info', t),
             e.initData()
           }
         )
@@ -22544,7 +22544,7 @@
               n = this.parent.children.map(
                 (
                   function (e) {
-                    var t = WebcakeScript.runtime.vm[e];
+                    var t = FrameWorkScript.runtime.vm[e];
                     if (
                       t &&
                       !t.specials.field_quantity &&
@@ -22597,7 +22597,7 @@
               this.parent.children.forEach(
                 (
                   function (e) {
-                    var n = WebcakeScript.runtime.vm[e];
+                    var n = FrameWorkScript.runtime.vm[e];
                     !n ||
                     n.specials.field_quantity ||
                     n.id == t.vm.id ||
@@ -22617,7 +22617,7 @@
               this.parent.children.forEach(
                 (
                   function (e) {
-                    var t = WebcakeScript.runtime.vm[e];
+                    var t = FrameWorkScript.runtime.vm[e];
                     t &&
                     !t.specials.field_quantity &&
                     t.specials.attrName &&
@@ -22657,7 +22657,7 @@
                 var r = this.parent.children.map(
                   (
                     function (e) {
-                      var n = WebcakeScript.runtime.vm[e];
+                      var n = FrameWorkScript.runtime.vm[e];
                       if (
                         n &&
                         !n.specials.field_quantity &&
@@ -22785,7 +22785,7 @@
                   n.bindPrd
                 ) {
                   var m,
-                  _ = WebcakeScript.runtime.vm['-popup-checkout'];
+                  _ = FrameWorkScript.runtime.vm['-popup-checkout'];
                   if (_ && _.$instance) if (
                     1 == (
                       null === (m = _.$instance.lastSelectedVariations) ||
@@ -22811,11 +22811,11 @@
               t = this.vm.specials.default_value;
               if (t && 'default-none' != t) {
                 if (this.parent.$instance) return this.parent.$instance._setQuantity(t);
-                var n = WebcakeScript.pubsub.subscribe(
+                var n = FrameWorkScript.pubsub.subscribe(
                   'gs-default-value-'.concat(this.parent.id),
                   (
                     function () {
-                      WebcakeScript.pubsub.unsubscribe('gs-default-value-'.concat(e.parent.id), n),
+                      FrameWorkScript.pubsub.unsubscribe('gs-default-value-'.concat(e.parent.id), n),
                       e.parent.$instance._setQuantity(t)
                     }
                   )
@@ -22918,7 +22918,7 @@
                                 return t = this.vm.specials.datasetId,
                                 e.next = 3,
                                 A.a.get(
-                                  ''.concat(WebcakeScript.runtime.host, '/datasets/').concat(t, '?page_id=').concat(WebcakeScript.CONST.PAGE_ID)
+                                  ''.concat(FrameWorkScript.runtime.host, '/datasets/').concat(t, '?page_id=').concat(FrameWorkScript.CONST.PAGE_ID)
                                 );
                               case 3:
                                 if (200 === (n = e.sent).status && n.data.success) {
@@ -23108,8 +23108,8 @@
                 n = document.createElement('div');
                 n.classList.add('grid-controls-prev'),
                 t.classList.add('grid-controls-next'),
-                t.innerHTML = WebcakeScript.CONST.GRID_ICON_NEXT,
-                n.innerHTML = WebcakeScript.CONST.GRID_ICON_PREV,
+                t.innerHTML = FrameWorkScript.CONST.GRID_ICON_NEXT,
+                n.innerHTML = FrameWorkScript.CONST.GRID_ICON_PREV,
                 t.addEventListener('click', this.handleNextSlide.bind(this)),
                 n.addEventListener('click', this.handlePrevSlide.bind(this)),
                 this.vm.$el.appendChild(t),
@@ -23260,7 +23260,7 @@
             value: function () {
               var e = document.createElement('div');
               e.classList.add('grid-controls-bottom'),
-              e.innerHTML = WebcakeScript.CONST.GRID_ICON_NEXT,
+              e.innerHTML = FrameWorkScript.CONST.GRID_ICON_NEXT,
               1 != this.slide &&
               (
                 e.addEventListener('click', this.handleShowTab.bind(this)),
@@ -23319,7 +23319,7 @@
                 (
                   function (e) {
                     var t = e.id.split(Ci || (Ci = a() (['-']))) [1],
-                    n = WebcakeScript.runtime.vm[t];
+                    n = FrameWorkScript.runtime.vm[t];
                     if (n && e.classList.contains('is-animation')) {
                       var i = (n[DISPLAY].animation || {
                       }).delay,
@@ -23536,8 +23536,8 @@
       var e,
       t;
       return null === (
-        e = WebcakeScript.runtime.vm[this.vm.$parent].children.map((function (e) {
-          return WebcakeScript.runtime.vm[e]
+        e = FrameWorkScript.runtime.vm[this.vm.$parent].children.map((function (e) {
+          return FrameWorkScript.runtime.vm[e]
         })).find(
           (
             function (e) {
@@ -23552,8 +23552,8 @@
       void 0 === t ? void 0 : t.input
     }
     function Ui() {
-      return WebcakeScript.runtime.vm[this.vm.$parent].children.map((function (e) {
-        return WebcakeScript.runtime.vm[e]
+      return FrameWorkScript.runtime.vm[this.vm.$parent].children.map((function (e) {
+        return FrameWorkScript.runtime.vm[e]
       })).find(
         (
           function (e) {
@@ -23593,8 +23593,8 @@
                 ''
             }
             var l = I.a.get('_p_last_time_otp'),
-            d = WebcakeScript.runtime.vm[e.vm.$parent].children.map((function (e) {
-              return WebcakeScript.runtime.vm[e]
+            d = FrameWorkScript.runtime.vm[e.vm.$parent].children.map((function (e) {
+              return FrameWorkScript.runtime.vm[e]
             })).find((function (e) {
               return 'button' == e.type
             }));
@@ -23607,7 +23607,7 @@
                     expires: h
                   }),
                   Di(e, qi, Ri).call(e, i);
-                  var f = ''.concat(WebcakeScript.runtime.host, '/partners/').concat(r, '/get_otp?phone_number=').concat(o.value, '&length_otp=').concat(a, '&country_code=').concat(
+                  var f = ''.concat(FrameWorkScript.runtime.host, '/partners/').concat(r, '/get_otp?phone_number=').concat(o.value, '&length_otp=').concat(a, '&country_code=').concat(
                     null == s ||
                     null === (c = s.specials) ||
                     void 0 === c ? void 0 : c.validate_country
@@ -23767,11 +23767,11 @@
           this.selected = this.vm.$el.querySelector('#required-box'),
           window.sync
         ) Ki(this, Ji, ar).call(this);
-         else var n = window.WebcakeScript.pubsub.subscribe(
+         else var n = window.FrameWorkScript.pubsub.subscribe(
           'load-sync-info',
           (
             function () {
-              window.WebcakeScript.pubsub.unsubscribe('load-sync-info', n),
+              window.FrameWorkScript.pubsub.unsubscribe('load-sync-info', n),
               Ki(t, Ji, ar).call(t)
             }
           )
@@ -23790,7 +23790,7 @@
       t = (this.vm.selectedOptions || []).map((function (e) {
         return e.id
       })),
-      n = WebcakeScript.runtime.vm[this.vm.$parent];
+      n = FrameWorkScript.runtime.vm[this.vm.$parent];
       g() (e).map((function (e) {
         return e.checked = t.includes(e.id),
         e
@@ -23882,7 +23882,7 @@
     }
     function rr() {
       var e,
-      t = WebcakeScript.runtime.vm[this.vm.$parent];
+      t = FrameWorkScript.runtime.vm[this.vm.$parent];
       if ('form' == t.type) {
         var n = this.vm.$el;
         n.classList.remove('group-auto-scroll');
@@ -23893,7 +23893,7 @@
           !i &&
           'yes' == (null === (e = this.vm.specials) || void 0 === e ? void 0 : e.scrollAuto)
         ) {
-          var r = 'mobile' == window.DISPLAY ? WebcakeScript.CONST.MOBILE_WIDTH : WebcakeScript.CONST.DESKTOP_WIDTH,
+          var r = 'mobile' == window.DISPLAY ? FrameWorkScript.CONST.MOBILE_WIDTH : FrameWorkScript.CONST.DESKTOP_WIDTH,
           a = getComputedStyle(t.$el),
           o = parseInt(a.left),
           s = o > 0 ? 0 : Math.abs(o);
@@ -23952,9 +23952,9 @@
       this.vm.$el.style.border = '';
       var n,
       i = this.vm.specials.connectedForm,
-      r = WebcakeScript.runtime.vm[i],
+      r = FrameWorkScript.runtime.vm[i],
       a = document.getElementById('sv__'.concat(this.vm.id, '__').concat(e.id)),
-      o = WebcakeScript.runtime.vm[this.vm.id].selectedOptions ||
+      o = FrameWorkScript.runtime.vm[this.vm.id].selectedOptions ||
       [],
       s = o.find((function (t) {
         return e.id == t.id
@@ -23993,9 +23993,9 @@
           e
         ]
       }
-      WebcakeScript.runtime.vm[this.vm.id].selectedOptions = o,
+      FrameWorkScript.runtime.vm[this.vm.id].selectedOptions = o,
       Ki(this, Yi, nr).call(this);
-      var f = WebcakeScript.runtime.vm[this.vm.$parent],
+      var f = FrameWorkScript.runtime.vm[this.vm.$parent],
       v = function (e) {
         var n = e.getAttribute('data-index');
         if (n) {
@@ -24003,11 +24003,11 @@
           if (i) {
             var r = u ? e.id : t.vm.id;
             if (window.WCart) return window.WCart.Actions.selectAttribute(r, b, y, i, u);
-            var a = WebcakeScript.pubsub.subscribe(
+            var a = FrameWorkScript.pubsub.subscribe(
               'cart-loaded',
               (
                 function () {
-                  WebcakeScript.pubsub.unsubscribe('cart-loaded', a),
+                  FrameWorkScript.pubsub.unsubscribe('cart-loaded', a),
                   window.WCart.Actions.selectAttribute(r, b, y, i)
                 }
               )
@@ -24100,7 +24100,7 @@
         q = [],
         W = this.vm.$el.getElementsByClassName('survey-option selected'),
         $ = [],
-        M = WebcakeScript.runtime.vm[r.$parent],
+        M = FrameWorkScript.runtime.vm[r.$parent],
         j = Fi(W);
         try {
           for (j.s(); !(I = j.n()).done; ) {
@@ -24288,10 +24288,10 @@
             key: 'handleChangeQuantityForm',
             value: function (e, t) {
               var n = this.vm.specials.connectedForm,
-              i = WebcakeScript.runtime.vm[n],
+              i = FrameWorkScript.runtime.vm[n],
               r = i ? i.specials.field_name : this.vm.specials.field_name,
-              a = WebcakeScript.runtime.vm[this.vm.$parent],
-              o = i ? WebcakeScript.runtime.vm[i.$parent] : a;
+              a = FrameWorkScript.runtime.vm[this.vm.$parent],
+              o = i ? FrameWorkScript.runtime.vm[i.$parent] : a;
               e.attrOnly &&
               (e.attrs || []).forEach((function (n) {
                 o.$instance._setQuantity(e.id, n.prodId, t)
@@ -24458,7 +24458,7 @@
                             client_id: t,
                             currency: n,
                             total_price: window.order.total_price,
-                            page_id: WebcakeScript.CONST.PAGE_ID
+                            page_id: FrameWorkScript.CONST.PAGE_ID
                           })
                         }
                       ).then((function (e) {
@@ -24478,7 +24478,7 @@
                           body: JSON.stringify({
                             client_id: t,
                             orderID: e.orderID,
-                            page_id: WebcakeScript.CONST.PAGE_ID
+                            page_id: FrameWorkScript.CONST.PAGE_ID
                           })
                         }
                       ).then((function (e) {
@@ -24585,7 +24585,7 @@
             key: 'fireReloadLazy',
             value: function () {
               var e;
-              null === (e = window.WebcakeScript) ||
+              null === (e = window.FrameWorkScript) ||
               void 0 === e ||
               e.pubsub.publish('reload-lazy-monitoring-position')
             }
@@ -24955,13 +24955,13 @@
           {
             key: 'loadAddress',
             value: function () {
-              ((WebcakeScript.runtime.vm[this.vm.$parent] || {
+              ((FrameWorkScript.runtime.vm[this.vm.$parent] || {
               }).children || []).some(
                 (
                   function (e) {
                     var t;
                     return 'address' == (
-                      null === (t = WebcakeScript.runtime.vm[e]) ||
+                      null === (t = FrameWorkScript.runtime.vm[e]) ||
                       void 0 === t ? void 0 : t.type
                     )
                   }
@@ -24985,7 +24985,7 @@
             key: 'loadDefaultValue',
             value: function () {
               var e = this,
-              t = WebcakeScript.pubsub.subscribe(
+              t = FrameWorkScript.pubsub.subscribe(
                 'site_instance_mounted',
                 (
                   function () {
@@ -24993,7 +24993,7 @@
                     i = e.select.value;
                     if (i) if (null !== (n = window.WebcakeAddresses) && void 0 !== n && n[i]) e.handleChangeCountry(i),
                     e.changePrefixPhoneInput();
-                     else var r = WebcakeScript.pubsub.subscribe(
+                     else var r = FrameWorkScript.pubsub.subscribe(
                       'load-address',
                       (
                         function () {
@@ -25004,14 +25004,14 @@
                           (
                             e.handleChangeCountry(i),
                             e.changePrefixPhoneInput(),
-                            WebcakeScript.pubsub.unsubscribe('load-address', r)
+                            FrameWorkScript.pubsub.unsubscribe('load-address', r)
                           )
                         }
                       )
                     );
                      else e.handleChangeCountry('none'),
                     e.changePrefixPhoneInput();
-                    WebcakeScript.pubsub.unsubscribe('site_instance_mounted', t)
+                    FrameWorkScript.pubsub.unsubscribe('site_instance_mounted', t)
                   }
                 )
               )
@@ -25023,12 +25023,12 @@
               var t = kr.find((function (t) {
                 return t.code == e
               })),
-              n = WebcakeScript.runtime.vm[this.vm.$parent];
+              n = FrameWorkScript.runtime.vm[this.vm.$parent];
               n &&
               n.children.forEach(
                 (
                   function (n) {
-                    var i = WebcakeScript.runtime.vm[n],
+                    var i = FrameWorkScript.runtime.vm[n],
                     r = null == i ? void 0 : i.$instance;
                     if (i && r) {
                       var a,
@@ -25144,7 +25144,7 @@
               this.minus = this.vm.$el.querySelector('.minus'),
               this.plus = this.vm.$el.querySelector('.plus'),
               this.input = this.vm.$el.querySelector('input'),
-              WebcakeScript.pubsub.subscribe(
+              FrameWorkScript.pubsub.subscribe(
                 'site_instance_mounted',
                 (
                   function () {
@@ -25174,7 +25174,7 @@
               e = Math.max(0, --e),
               this.input.value = e,
               this.input.setAttribute('value', e),
-              WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
+              FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
             }
           },
           {
@@ -25183,7 +25183,7 @@
               var e = parseInt(this.input.value);
               this.input.value = ++e,
               this.input.setAttribute('value', e),
-              WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
+              FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), e)
             }
           },
           {
@@ -25192,8 +25192,8 @@
               var e;
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials.field_name;
-                WebcakeScript.runtime.vm[this.vm.$parent].$instance._addIgnoreField(t),
-                WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), 0)
+                FrameWorkScript.runtime.vm[this.vm.$parent].$instance._addIgnoreField(t),
+                FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), 0)
               }
             }
           },
@@ -25203,10 +25203,10 @@
               var e;
               if (null !== (e = this.vm.specials.ignoreOnHidden) && void 0 !== e && e) {
                 var t = this.vm.specials.field_name,
-                n = WebcakeScript.runtime.vm[this.vm.$parent],
+                n = FrameWorkScript.runtime.vm[this.vm.$parent],
                 i = parseInt(this.input.value);
                 n.$instance._removeIgnoreField(t),
-                WebcakeScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), i)
+                FrameWorkScript.pubsub.publish(''.concat(this.vm.id, '__quantity-change'), i)
               }
             }
           }
@@ -25357,7 +25357,7 @@
       n()
     }
     function qr() {
-      var e = WebcakeScript.CONST.PAGE_ID;
+      var e = FrameWorkScript.CONST.PAGE_ID;
       Ar.a.set('pageId', e);
       Object(_.y) (10);
       var t = window.gtracks ||
@@ -25772,7 +25772,7 @@
                       window.loadIframeAPI = !0
                     }
                     if (window.YT) return this.loadVideoYT(n, i);
-                    this.idSubscribes[i] = window.WebcakeScript.pubsub.subscribe('YTReady', (function () {
+                    this.idSubscribes[i] = window.FrameWorkScript.pubsub.subscribe('YTReady', (function () {
                       return t.onYTReady(n)
                     }))
                   }
@@ -25828,7 +25828,7 @@
               n.playVideo();
               if ('desktop' != window.DISPLAY && 1 == e.data) {
                 var i = n.getIframe();
-                if (WebcakeScript.runtime.mute[i.id]) {
+                if (FrameWorkScript.runtime.mute[i.id]) {
                   var r = document.createElement('div');
                   r.classList.add('player-btn-unmute'),
                   r.innerHTML = '<div></div>',
@@ -25840,7 +25840,7 @@
                       r.parentElement.removeChild(r)
                     })
                   ),
-                  WebcakeScript.runtime.mute[i.id] = 1
+                  FrameWorkScript.runtime.mute[i.id] = 1
                 }
               }
             }
@@ -25849,7 +25849,7 @@
             key: 'onYTReady',
             value: function (e) {
               var t = e.getAttribute('data-index');
-              window.WebcakeScript.pubsub.unsubscribe('YTReady', this.idSubscribes[t]),
+              window.FrameWorkScript.pubsub.unsubscribe('YTReady', this.idSubscribes[t]),
               this.loadVideoYT(e, t)
             }
           },
@@ -25873,11 +25873,11 @@
                 };
                 window.WCart &&
                 window.WCart.Actions ? n() : Object(_.a) (n.bind(this));
-                var i = window.WebcakeScript.pubsub.subscribe(
+                var i = window.FrameWorkScript.pubsub.subscribe(
                   'load-sync-info',
                   (
                     function () {
-                      window.WebcakeScript.pubsub.unsubscribe('load-sync-info', i),
+                      window.FrameWorkScript.pubsub.unsubscribe('load-sync-info', i),
                       e.renderProductGallery()
                     }
                   )
@@ -26081,8 +26081,8 @@
               this.vm = e,
               this.idSubscribe = this.player = null,
               this.vm.$instance = this,
-              this.allowPlayMultipleVideo = !!window.WebcakeScript.CONST.ALLOW_PLAY_MULTIPLE_VIDEO,
-              this.id = window.WebcakeScript.pubsub.subscribe('pause-video', this.handlePauseFromPubsubCb.bind(this));
+              this.allowPlayMultipleVideo = !!window.FrameWorkScript.CONST.ALLOW_PLAY_MULTIPLE_VIDEO,
+              this.id = window.FrameWorkScript.pubsub.subscribe('pause-video', this.handlePauseFromPubsubCb.bind(this));
               var t = this.vm.specials,
               n = t.typeVideo,
               i = t.video;
@@ -26090,8 +26090,8 @@
                 var r = i.replace('statics.hungthe.dev', 'content.hungthe.dev').replace('web_content', '1.1').replace('web-media', '1');
                 this.vm.specials.video_cdn = r
               }
-              window.WebcakeScript.resizeObserver &&
-              window.WebcakeScript.resizeObserver.observe(this.vm.$el)
+              window.FrameWorkScript.resizeObserver &&
+              window.FrameWorkScript.resizeObserver.observe(this.vm.$el)
             }
           },
           {
@@ -26153,7 +26153,7 @@
                 document.head.appendChild(e)
               }
               if (window.YT) return this.loadVideoYT();
-              this.idSubscribe = window.WebcakeScript.pubsub.subscribe('YTReady', this.onYTIframeAPIReady.bind(this))
+              this.idSubscribe = window.FrameWorkScript.pubsub.subscribe('YTReady', this.onYTIframeAPIReady.bind(this))
             }
           },
           {
@@ -26193,7 +26193,7 @@
           {
             key: 'onYTIframeAPIReady',
             value: function () {
-              window.WebcakeScript.pubsub.unsubscribe('YTReady', this.idSubscribe),
+              window.FrameWorkScript.pubsub.unsubscribe('YTReady', this.idSubscribe),
               this.loadVideoYT()
             }
           },
@@ -26236,12 +26236,12 @@
                 !(/Chrome/.test(navigator.userAgent) && window.innerWidth > 767 || n)
               ) {
                 var r = i.getIframe();
-                WebcakeScript.runtime.mute[r.id] ||
+                FrameWorkScript.runtime.mute[r.id] ||
                 (
                   this.createBtnUnmute(r, (function () {
                     return i.unMute()
                   })),
-                  WebcakeScript.runtime.mute[r.id] = 1
+                  FrameWorkScript.runtime.mute[r.id] = 1
                 )
               }
             }
@@ -26386,13 +26386,13 @@
                     function () {
                       if (t.pauses(), !c || l) return p();
                       1 != e ||
-                      WebcakeScript.runtime.mute[t.vm.id] ||
+                      FrameWorkScript.runtime.mute[t.vm.id] ||
                       i ||
                       (
                         t.createBtnUnmute(n, (function () {
                           return p()
                         })),
-                        WebcakeScript.runtime.mute[t.vm.id] = 1
+                        FrameWorkScript.runtime.mute[t.vm.id] = 1
                       )
                     }
                   )
@@ -26404,7 +26404,7 @@
           {
             key: 'pauses',
             value: function () {
-              window.WebcakeScript.pubsub.broadcast('pause-video', this.vm.id, this.id)
+              window.FrameWorkScript.pubsub.broadcast('pause-video', this.vm.id, this.id)
             }
           }
         ]
@@ -26570,7 +26570,7 @@
               this.slidesDelayTime = (e.children || []).map(
                 (
                   function (e) {
-                    return Object(_.k) (WebcakeScript.runtime.vm[e], 'delayTime') ||
+                    return Object(_.k) (FrameWorkScript.runtime.vm[e], 'delayTime') ||
                     0
                   }
                 )
@@ -27088,7 +27088,7 @@
                               case 3:
                                 return e.next = 5,
                                 A.a.get(
-                                  ''.concat(WebcakeScript.runtime.host, '/datasets/').concat(n, '?page_id=').concat(WebcakeScript.CONST.PAGE_ID)
+                                  ''.concat(FrameWorkScript.runtime.host, '/datasets/').concat(n, '?page_id=').concat(FrameWorkScript.CONST.PAGE_ID)
                                 );
                               case 5:
                                 if (200 === (i = e.sent).status && i.data.success) {
@@ -27268,7 +27268,7 @@
                       clearInterval(a);
                       var o = i > 0 ? Math.min(t, n) : Math.max(t, n);
                       e.content.innerHTML = o,
-                      WebcakeScript.pubsub.publish(''.concat(e.vm.id, '-autonumber-change'), o)
+                      FrameWorkScript.pubsub.publish(''.concat(e.vm.id, '-autonumber-change'), o)
                     }
                   ),
                   r ||
@@ -27283,7 +27283,7 @@
               var e = this,
               t = (this.vm.specials || {
               }).syncTarget;
-              WebcakeScript.pubsub.subscribe(
+              FrameWorkScript.pubsub.subscribe(
                 ''.concat(t, '-autonumber-change'),
                 (function (t) {
                   e.content.innerHTML = t
@@ -27361,7 +27361,7 @@
     function ia(e) {
       this.vm = e,
       this.wrapper = this.vm.$el.querySelector('.timegroup-wrapper'),
-      this.LOCALES_TIME = WebcakeScript.CONST.LOCALES_TIME
+      this.LOCALES_TIME = FrameWorkScript.CONST.LOCALES_TIME
     }
     function ra() {
       var e,
@@ -27607,10 +27607,10 @@
             key: 'init',
             value: function (e) {
               this.el = e,
-              this.vm = WebcakeScript.runtime.vm[e.id];
+              this.vm = FrameWorkScript.runtime.vm[e.id];
               var t = this.el.specials.message;
               this.spinWheelBgDom = this.vm.$el.querySelector('.spin-wheel-background'),
-              this.versionID = WebcakeScript.CONST.VERSION_ID,
+              this.versionID = FrameWorkScript.CONST.VERSION_ID,
               this.messageDefault = t,
               this.message = t,
               this.rotate = 0,
@@ -27758,7 +27758,7 @@
           {
             key: 'innerTextFieldIdCouponInForm',
             value: function (e) {
-              var t = window.WebcakeScript.runtime.vm,
+              var t = window.FrameWorkScript.runtime.vm,
               n = Object.values(t).filter((function (e) {
                 return 'form' === e.type
               }));
@@ -27790,7 +27790,7 @@
                 spin_turn_left: n
               };
               if (window.selected_coupon = i, 'default' != t) {
-                var r = window.WebcakeScript.runtime.vm[t];
+                var r = window.FrameWorkScript.runtime.vm[t];
                 if (this.innerTextFieldIdCouponInForm(e.coupon), !r) return;
                 Object(_.F) (
                   t,
@@ -27824,7 +27824,7 @@
                 }))
               }
               document.getElementById('btnSpin_'.concat(this.el.id)).style.pointerEvents = 'initial',
-              WebcakeScript.pubsub.publish('form_submitted')
+              FrameWorkScript.pubsub.publish('form_submitted')
             }
           },
           {
@@ -27886,7 +27886,7 @@
                               case 0:
                                 return t = this.el.specials.datasetId,
                                 e.prev = 1,
-                                n = WebcakeScript.runtime.host,
+                                n = FrameWorkScript.runtime.host,
                                 e.next = 5,
                                 axios.post(''.concat(n, '/datasets/').concat(t));
                               case 5:
@@ -27977,7 +27977,7 @@
     }();
     function La(e) {
       var t = e.id.split(la || (la = a() (['-']))) [1],
-      n = WebcakeScript.runtime.vm[t];
+      n = FrameWorkScript.runtime.vm[t];
       n &&
       ((null == n ? void 0 : n.events) || []).filter((function (e) {
         return 'delay' == e.type
@@ -28016,7 +28016,7 @@
     }
     function Ta(e) {
       var t = e.id.split(da || (da = a() (['-']))) [1],
-      n = WebcakeScript.runtime.vm[t];
+      n = FrameWorkScript.runtime.vm[t];
       if (n && n.specials.customTracking) if (window.ttq) Object(_.r) (n.specials.customTracking);
        else var i = setInterval(
         (
@@ -28031,7 +28031,7 @@
     function Pa(e) {
       var t,
       n = e.id.split(pa || (pa = a() (['-']))) [1],
-      i = WebcakeScript.runtime.vm[n];
+      i = FrameWorkScript.runtime.vm[n];
       if (i && null !== (t = i[window.DISPLAY]) && void 0 !== t && t.animation) {
         var r = (i[window.DISPLAY].animation || {
         }).delay,
@@ -28051,44 +28051,44 @@
     }
     function Aa(e) {
       var t = e.id.split(ha || (ha = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       !n.$instance &&
-      (WebcakeScript.runtime.loadedPopups[t] = 1, new Wr(n))
+      (FrameWorkScript.runtime.loadedPopups[t] = 1, new Wr(n))
     }
     function Da(e) {
       var t = e.id.split(fa || (fa = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       !n.$instance &&
-      (WebcakeScript.runtime.loadedPopups[t] = 1, new Rr(n))
+      (FrameWorkScript.runtime.loadedPopups[t] = 1, new Rr(n))
     }
     function Ia(e) {
       var t = e.id.split(va || (va = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       !n.$instance &&
-      (WebcakeScript.runtime.loadedPopups[t] = 1, new Gr(n))
+      (FrameWorkScript.runtime.loadedPopups[t] = 1, new Gr(n))
     }
     function qa(e) {
       var t = e.id.split(ma || (ma = a() (['-']))) [1],
-      n = WebcakeScript.runtime.vm[t];
+      n = FrameWorkScript.runtime.vm[t];
       n &&
       Object(ci.a) (n)
     }
     function Wa(e) {
       var t = e.id.split(_a || (_a = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       !n.$instance &&
-      (WebcakeScript.runtime.loadedPopups[t] = 1, new Zr(n))
+      (FrameWorkScript.runtime.loadedPopups[t] = 1, new Zr(n))
     }
     function $a(e) {
       var t = e.id.split(ba || (ba = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       !n.$instance &&
-      (WebcakeScript.runtime.loadedPopups[t] = 1, new Jr(n))
+      (FrameWorkScript.runtime.loadedPopups[t] = 1, new Jr(n))
     }
     function Ma(e) {
       var t = e.querySelector('img') ||
@@ -28110,31 +28110,31 @@
     }
     function ja(e) {
       var t = e.id.split(ya || (ya = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       new Xr.a(n)
     }
     function Ra(e) {
       var t = e.id.split(ga || (ga = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       new Oa(n)
     }
     function Na(e) {
       var t = e.id.split(wa || (wa = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       new Ca(n)
     }
     function Ua(e) {
       var t = e.id.split(ka || (ka = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       Object(_.f) (n)
     }
     function Ba(e) {
       var t = e.id.split(Ea || (Ea = a() (['-']))) [1],
-      n = window.WebcakeScript.runtime.vm[t];
+      n = window.FrameWorkScript.runtime.vm[t];
       n &&
       new xa(n)
     }
@@ -28255,7 +28255,7 @@
                 'close-all-popups',
                 (
                   function () {
-                    var e = window.WebcakeScript.runtime.stackPopup;
+                    var e = window.FrameWorkScript.runtime.stackPopup;
                     for (var t in e) Object(z.a) (t)
                   }
                 )
@@ -28739,7 +28739,7 @@
       var e,
       t;
       if (
-        window.isActiveCart = WebcakeScript.runtime.is_cart_active,
+        window.isActiveCart = FrameWorkScript.runtime.is_cart_active,
         window.isActiveCart
       ) {
         var n = document.createElement('script');
@@ -28747,38 +28747,38 @@
         n.src = ''.concat('https://api.hungthe.io', '/cart/app.js?r=').concat(10000 * Math.random()),
         document.body.append(n),
         window.$cartConfigs = {
-          isActive: WebcakeScript.runtime.is_cart_active,
-          mainColor: WebcakeScript.runtime.cart_color,
-          position: WebcakeScript.runtime.cart_position,
-          positionNumber: WebcakeScript.runtime.cart_position_number,
-          positionCartView: WebcakeScript.runtime.cart_view_position,
-          checkoutPopupId: WebcakeScript.runtime.cart_checkout_popup,
-          product_name: WebcakeScript.runtime.product_name,
-          checkoutType: WebcakeScript.runtime.cart_checkout,
-          checkoutElementId: WebcakeScript.runtime.cart_checkout_element,
-          checkoutText: WebcakeScript.runtime.cart_checkout_text,
-          discountText: WebcakeScript.runtime.cart_discount_text,
-          itemsTitle: WebcakeScript.runtime.cart_items_title,
-          shippingText: WebcakeScript.runtime.cart_shipping_text,
-          subtotalText: WebcakeScript.runtime.cart_subtotal_text,
-          show_shipping_fee: WebcakeScript.runtime.show_shipping_fee,
-          voucherDisplay: WebcakeScript.runtime.voucherDisplay,
-          summaryText: WebcakeScript.runtime.cart_summary_text,
-          title: WebcakeScript.runtime.cart_title,
-          totalText: WebcakeScript.runtime.cart_total_text,
-          animation: WebcakeScript.runtime.animation_cart,
-          sizeCartIcon: WebcakeScript.runtime.size_cart_icon,
-          hideCartIcon: WebcakeScript.runtime.hide_cart_icon,
-          srcCartIcon: WebcakeScript.runtime.src_cart_icon,
-          srcCartCloseIcon: WebcakeScript.runtime.src_cart_close_icon,
+          isActive: FrameWorkScript.runtime.is_cart_active,
+          mainColor: FrameWorkScript.runtime.cart_color,
+          position: FrameWorkScript.runtime.cart_position,
+          positionNumber: FrameWorkScript.runtime.cart_position_number,
+          positionCartView: FrameWorkScript.runtime.cart_view_position,
+          checkoutPopupId: FrameWorkScript.runtime.cart_checkout_popup,
+          product_name: FrameWorkScript.runtime.product_name,
+          checkoutType: FrameWorkScript.runtime.cart_checkout,
+          checkoutElementId: FrameWorkScript.runtime.cart_checkout_element,
+          checkoutText: FrameWorkScript.runtime.cart_checkout_text,
+          discountText: FrameWorkScript.runtime.cart_discount_text,
+          itemsTitle: FrameWorkScript.runtime.cart_items_title,
+          shippingText: FrameWorkScript.runtime.cart_shipping_text,
+          subtotalText: FrameWorkScript.runtime.cart_subtotal_text,
+          show_shipping_fee: FrameWorkScript.runtime.show_shipping_fee,
+          voucherDisplay: FrameWorkScript.runtime.voucherDisplay,
+          summaryText: FrameWorkScript.runtime.cart_summary_text,
+          title: FrameWorkScript.runtime.cart_title,
+          totalText: FrameWorkScript.runtime.cart_total_text,
+          animation: FrameWorkScript.runtime.animation_cart,
+          sizeCartIcon: FrameWorkScript.runtime.size_cart_icon,
+          hideCartIcon: FrameWorkScript.runtime.hide_cart_icon,
+          srcCartIcon: FrameWorkScript.runtime.src_cart_icon,
+          srcCartCloseIcon: FrameWorkScript.runtime.src_cart_close_icon,
           prefix: 'w',
-          atcMsg: WebcakeScript.runtime.atcMsg,
-          minQuantity: WebcakeScript.runtime.minQuantity,
-          minQuantityOption: WebcakeScript.runtime.minQuantityOption,
-          checkoutElements: WebcakeScript.runtime.checkoutElements,
-          countdownElement: WebcakeScript.runtime.countdownElement,
-          title_color: WebcakeScript.runtime.title_color,
-          price_color: WebcakeScript.runtime.price_color
+          atcMsg: FrameWorkScript.runtime.atcMsg,
+          minQuantity: FrameWorkScript.runtime.minQuantity,
+          minQuantityOption: FrameWorkScript.runtime.minQuantityOption,
+          checkoutElements: FrameWorkScript.runtime.checkoutElements,
+          countdownElement: FrameWorkScript.runtime.countdownElement,
+          title_color: FrameWorkScript.runtime.title_color,
+          price_color: FrameWorkScript.runtime.price_color
         },
         window.$syncVariations = (null === (e = window.sync) || void 0 === e ? void 0 : e.svariations) ||
         [],
@@ -28909,7 +28909,7 @@
       }
     },
     Ha.prototype.cartCheckout = function () {
-      if (WebcakeScript.runtime.is_cart_active) {
+      if (FrameWorkScript.runtime.is_cart_active) {
         var e = function () {
           var e = window.$cartConfigs,
           t = e.checkoutType,
@@ -28928,11 +28928,11 @@
           window.WCart.close()
         };
         if (window.WCart) return window.WCart.Cart.Event.on('checkout', e);
-        var t = WebcakeScript.pubsub.subscribe(
+        var t = FrameWorkScript.pubsub.subscribe(
           'cart-loaded',
           (
             function () {
-              WebcakeScript.pubsub.unsubscribe('cart-loaded', t),
+              FrameWorkScript.pubsub.unsubscribe('cart-loaded', t),
               window.WCart.Cart.Event.on('checkout', e)
             }
           )
@@ -28968,7 +28968,7 @@
         )
       }(),
       function () {
-        var e = WebcakeScript.CONST.PAGE_ID;
+        var e = FrameWorkScript.CONST.PAGE_ID;
         Ar.a.set('pageId', e);
         var t = window.gtracks ||
         [];
@@ -28993,7 +28993,7 @@
       (null != t && t.length || null != i && i.length) &&
       function (e) {
         if (!e.size) return;
-        if (e = g() (e), WebcakeScript.CONST.GG_ADS_CONSENT_MODE) {
+        if (e = g() (e), FrameWorkScript.CONST.GG_ADS_CONSENT_MODE) {
           window.dataLayer = window.dataLayer ||
           [],
           function () {
@@ -29027,7 +29027,7 @@
       n.length &&
       function (e) {
         if (!e.size) return;
-        if (e = g() (e), WebcakeScript.CONST.GG_TAG_MANAGER_CONSENT_MODE) {
+        if (e = g() (e), FrameWorkScript.CONST.GG_TAG_MANAGER_CONSENT_MODE) {
           window.dataLayer = window.dataLayer ||
           [],
           function () {
@@ -29079,7 +29079,7 @@
       (e = document.createElement('script')).innerHTML = '\n    !function(e,t){var a=t.createElement("script");a.async=!0,a.src="'.concat(
         'https://a.hungthe.dev',
         '/js/app.js?vsn=d";\n    var n=t.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n),e.ab=function(){(ab.q=ab.q||[]).push(arguments)}}(window,document);\n    ab(\'init\', "ab-lp-'
-      ).concat(WebcakeScript.CONST.PAGE_ID, '");\n  '),
+      ).concat(FrameWorkScript.CONST.PAGE_ID, '");\n  '),
       document.head.appendChild(e)
     },
     Ha.prototype.customCode = En.d,
@@ -29099,8 +29099,8 @@
     },
     window.MARK = {};
     try {
-      window.WebcakeScript = new Ha,
-      window.WebcakeScript.run()
+      window.FrameWorkScript = new Ha,
+      window.FrameWorkScript.run()
     } catch (e) {
       var Ka = document.querySelectorAll('form');
       Array.from(Ka).filter((function (e) {
