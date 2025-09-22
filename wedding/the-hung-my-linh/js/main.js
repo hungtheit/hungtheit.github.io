@@ -4014,8 +4014,8 @@
                                           t.abrupt('break', 111);
                                         case 62:
                                           t.t2 = n.appTarget,
-                                          t.next = 'botcake' === t.t2 ||
-                                          'others' === t.t2 ? 65 : 'botcake_dynamic' === t.t2 ? 77 : 65;
+                                          t.next = 'frameworkbot' === t.t2 ||
+                                          'others' === t.t2 ? 65 : 'frameworkbot_dynamic' === t.t2 ? 77 : 65;
                                           break;
                                         case 65:
                                           if (o) {
@@ -4027,7 +4027,7 @@
                                           return ae = 'http' == o.slice(0, 4) ||
                                           o.startsWith('https') ? o : 'https://'.concat(o),
                                           oe = n.appTarget ||
-                                          'botcake',
+                                          'frameworkbot',
                                           se = new URLSearchParams(location.search),
                                           ce = function (e) {
                                             try {
@@ -4042,8 +4042,8 @@
                                           de = /(zalo|zalotheme)/i.test(navigator.userAgent),
                                           pe = /JsSdk.+NetType.+BytedanceWebview.+/.test(navigator.userAgent),
                                           (ue || ce) &&
-                                          'botcake' == oe ? (
-                                            ae += '--webcakeorderid___'.concat(ue || ce),
+                                          'frameworkbot' == oe ? (
+                                            ae += '--frameworkorderid___'.concat(ue || ce),
                                             he = ''.concat(FrameWorkScript.runtime.host, '/update_redirect_url'),
                                             C.a.post(he, {
                                               redirected_url: ae,
@@ -5230,7 +5230,7 @@
       var n = arguments.length > 2 &&
       void 0 !== arguments[2] ? arguments[2] : 0.5;
       try {
-        var i = document.getElementById('webcake-alert-msg');
+        var i = document.getElementById('framework-alert-msg');
         r(i, e, t, n)
       } catch (e) {
         console.log('Error: [render] - alert message')
@@ -5448,7 +5448,7 @@
           }
         }(e)
       ) {
-        var t = JSON.parse(e.get('extra_url_botcake'));
+        var t = JSON.parse(e.get('extra_url_frameworkbot'));
         t &&
         Object(c.a) (t).then((function (e) {
           e &&
@@ -15135,7 +15135,7 @@
                         if (a && o && o != e.input.value) {
                           var s,
                           c,
-                          u = null === (s = WebcakeAddresses) ||
+                          u = null === (s = FrameWorkAddresses) ||
                           void 0 === s ||
                           null === (c = s[84]) ||
                           void 0 === c ? void 0 : c[a.province_id],
@@ -15756,7 +15756,7 @@
                     (a.value = e.province_id, a.dispatchEvent(new Event('change')))
                   }
                 } else {
-                  var o = localStorage.getItem('webcake_autofill_access');
+                  var o = localStorage.getItem('framework_autofill_access');
                   o &&
                   (i.$instance.input.value = o)
                 }
@@ -15791,7 +15791,7 @@
           function (e) {
             200 === e.status &&
             (
-              localStorage.setItem('webcake_autofill_access', t.access_key),
+              localStorage.setItem('framework_autofill_access', t.access_key),
               window.location.href = e.data.private_access.target_url + '?referer='.concat(e.data.private_access.login_url)
             )
           }
@@ -16444,7 +16444,7 @@
                             fbc: H,
                             fbp: F
                           }),
-                          'storecake_tcb' == x() (this, oe) &&
+                          'hungthe_tcb' == x() (this, oe) &&
                           null !== (a = x() (this, se)) &&
                           void 0 !== a &&
                           a.transfer_content &&
@@ -16740,7 +16740,7 @@
     }
     function bt(e, t, n, i) {
       switch (console.log(x() (this, oe), 'this.#payment'), x() (this, oe)) {
-        case 'storecake_tcb':
+        case 'hungthe_tcb':
         case 'xendit':
         case 'vnpay':
         case 'onepay':
@@ -16814,8 +16814,8 @@
         var E = '',
         S = new URLSearchParams;
         switch (x() (this, oe)) {
-          case 'storecake_tcb':
-            E = 'https://payment.storecake.io/order/webcake/tcb',
+          case 'hungthe_tcb':
+            E = 'https://payment.hungthe.io/order/framework/tcb',
             S.set('r', r),
             S.set('s', a);
             break;
@@ -16823,8 +16823,8 @@
             var O = (x() (this, se) || {
             }).xendit_id,
             C = void 0 === O ? '' : O;
-            E = 'https://payment-gateway.storecake.io/xendit/payment_gateway/'.concat(r),
-            S.set('type', 'webcake'),
+            E = 'https://payment-gateway.hungthe.io/xendit/payment_gateway/'.concat(r),
+            S.set('type', 'framework'),
             S.set('s', a),
             S.set('payment_account_id', C);
             break;
@@ -16832,8 +16832,8 @@
             var L = (x() (this, se) || {
             }).mercado_pago_id,
             T = void 0 === L ? '' : L;
-            E = 'https://payment-gateway.storecake.io/mercado_pago/payment_gateway/'.concat(r),
-            S.set('type', 'webcake'),
+            E = 'https://payment-gateway.hungthe.io/mercado_pago/payment_gateway/'.concat(r),
+            S.set('type', 'framework'),
             S.set('s', a),
             S.set('payment_account_id', T);
             break;
@@ -16841,8 +16841,8 @@
             var P = (x() (this, se) || {
             }).vnpay_id,
             A = void 0 === P ? '' : P;
-            E = 'https://payment-gateway.storecake.io/vnpay/payment_gateway/'.concat(r),
-            S.set('type', 'webcake'),
+            E = 'https://payment-gateway.hungthe.io/vnpay/payment_gateway/'.concat(r),
+            S.set('type', 'framework'),
             S.set('s', a),
             S.set('payment_account_id', A);
             break;
@@ -16854,8 +16854,8 @@
             q = void 0 === I ? '' : I,
             W = D.type,
             $ = void 0 === W ? 'DOMESTIC' : W;
-            E = 'https://payment-gateway.storecake.io/onepay/payment_gateway/'.concat(r),
-            S.set('type', 'webcake'),
+            E = 'https://payment-gateway.hungthe.io/onepay/payment_gateway/'.concat(r),
+            S.set('type', 'framework'),
             S.set('s', a),
             S.set('payment_account_id', q),
             S.set('payment_type', $)
@@ -16863,7 +16863,7 @@
         var M = this.vm.specials,
         j = M.extra_url,
         R = M.app_target,
-        N = void 0 === R ? 'botcake' : R,
+        N = void 0 === R ? 'frameworkbot' : R,
         U = M.merge_sub_form_data,
         B = void 0 === U ||
         U,
@@ -16875,15 +16875,15 @@
           }
         }(new URLSearchParams(location.search)) ||
         (null === (i = window.stackOrder) || void 0 === i ? void 0 : i[1]);
-        if (j && 'string' == typeof j && 'botcake' == N) {
+        if (j && 'string' == typeof j && 'frameworkbot' == N) {
           var F = j;
           if (
-            F += '--webcakeorderid___'.concat(r),
+            F += '--frameworkorderid___'.concat(r),
             V &&
             B &&
             (F += '__'.concat(V)),
             Object(_.w) ()
-          ) o.includes('?') ? o += '&botcake_ref='.concat(F) : o += '?botcake_ref='.concat(F),
+          ) o.includes('?') ? o += '&frameworkbot_ref='.concat(F) : o += '?frameworkbot_ref='.concat(F),
           S.set('callback', o),
           console.log(o),
           window.open(E + '?' + S.toString(), '_self'),
@@ -17133,7 +17133,7 @@
       o = this.vm.specials,
       s = o.extra_url,
       c = (o.submit_success, o.app_target),
-      u = void 0 === c ? 'botcake' : c,
+      u = void 0 === c ? 'frameworkbot' : c,
       l = o.merge_sub_form_data,
       d = void 0 === l ||
       l,
@@ -17207,8 +17207,8 @@
             window.open(g, '_self')
           }
           break;
-        case 'botcake_dynamic':
-          var w = this.vm.specials.botcake_dynamic_ref,
+        case 'frameworkbot_dynamic':
+          var w = this.vm.specials.frameworkbot_dynamic_ref,
           k = h.get('page_id');
           if (!k) return;
           var E = 'https://m.me/'.concat(k);
@@ -17221,13 +17221,13 @@
           /(zalo|zalotheme)/i.test(navigator.userAgent) ||
           /JsSdk.+NetType.+BytedanceWebview.+/.test(navigator.userAgent) ? window.open(E, '_self') : window.open(E, '_blank');
           break;
-        case 'botcake':
+        case 'frameworkbot':
           if (!s || 'string' != typeof s) return;
           var C = s.includes('://') ? s : 'https://' + s,
           x = /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
           L = /(zalo|zalotheme)/i.test(navigator.userAgent),
           T = /JsSdk.+NetType.+BytedanceWebview.+/.test(navigator.userAgent);
-          C += '--webcakeorderid___'.concat((null == i ? void 0 : i.id) || ''),
+          C += '--frameworkorderid___'.concat((null == i ? void 0 : i.id) || ''),
           f &&
           d &&
           (C += '__'.concat(f));
@@ -17569,7 +17569,7 @@
                                               (
                                                 function (e, t) {
                                                   return h[t.product_id] &&
-                                                  h[t.product_id].ignore_webcake_promo ? e : e + t.quantity
+                                                  h[t.product_id].ignore_framework_promo ? e : e + t.quantity
                                                 }
                                               ),
                                               0
@@ -17602,7 +17602,7 @@
                                               void 0 === i ? void 0 : i.product_id;
                                               null !== (r = h[b]) &&
                                               void 0 !== r &&
-                                              r.ignore_webcake_promo ||
+                                              r.ignore_framework_promo ||
                                               (
                                                 m += (
                                                   null !== (p = null !== (f = null != u ? u : o) && void 0 !== f ? f : s) &&
@@ -19147,7 +19147,7 @@
                                   (
                                     function (e, t) {
                                       return v[t.product_id] &&
-                                      v[t.product_id].ignore_webcake_promo ? e : e + t.quantity
+                                      v[t.product_id].ignore_framework_promo ? e : e + t.quantity
                                     }
                                   ),
                                   0
@@ -19180,7 +19180,7 @@
                                   void 0 === i ? void 0 : i.product_id;
                                   null !== (r = v[f]) &&
                                   void 0 !== r &&
-                                  r.ignore_webcake_promo ||
+                                  r.ignore_framework_promo ||
                                   (
                                     g += (
                                       null !== (l = null !== (d = null != u ? u : o) && void 0 !== d ? d : s) &&
@@ -19978,7 +19978,7 @@
                       var o = {};
                       i.transfer_content &&
                       (o.transfer_content = i.transfer_content),
-                      n.$instance._setPayment(r ? 'storecake_tcb' : null, o);
+                      n.$instance._setPayment(r ? 'hungthe_tcb' : null, o);
                       break;
                     case 'xendit_banking':
                       r &&
@@ -20422,7 +20422,7 @@
                       var a = {};
                       t.transfer_content &&
                       (a.transfer_content = t.transfer_content),
-                      n.$instance._setPayment(i ? 'storecake_tcb' : null, a)
+                      n.$instance._setPayment(i ? 'hungthe_tcb' : null, a)
                   }
                 }
               )
@@ -21009,7 +21009,7 @@
             key: 'run',
             value: function () {
               var e = this;
-              if (window.WebcakeAddresses) return this.initData();
+              if (window.FrameWorkAddresses) return this.initData();
               var t = FrameWorkScript.pubsub.subscribe(
                 'load-address',
                 (
@@ -21025,7 +21025,7 @@
             key: 'initData',
             value: function () {
               var e,
-              t = null === (e = window.WebcakeAddresses) ||
+              t = null === (e = window.FrameWorkAddresses) ||
               void 0 === e ? void 0 : e[this.country];
               t &&
               this.createOptProvinces(t)
@@ -21100,7 +21100,7 @@
                 this.selectCommune.innerHTML = this.selectCommune.querySelector('option:first-child').outerHTML
               ),
               this.selectedProvince = a;
-              var o = window.WebcakeAddresses[this.country][this.selectedProvince],
+              var o = window.FrameWorkAddresses[this.country][this.selectedProvince],
               s = Object.keys(o || {
               }).filter((function (e) {
                 return !['id',
@@ -21152,7 +21152,7 @@
                 FrameWorkScript.runtime.__addresses[this.vm.$parent].district = s.options[s.selectedIndex].innerHTML,
                 this.selectCommune.innerHTML = this.selectCommune.querySelector('option:first-child').outerHTML,
                 this.selectedDistrict = o;
-                var c = window.WebcakeAddresses[this.country][this.selectedProvince][this.selectedDistrict],
+                var c = window.FrameWorkAddresses[this.country][this.selectedProvince][this.selectedDistrict],
                 u = Object.keys(c).filter((function (e) {
                   return !['id',
                   'name',
@@ -21246,7 +21246,7 @@
       this.uploadCss = this.vm.$el.querySelector('.input-file'),
       this.input = this.vm.$el.querySelector('input[type="file"]'),
       this.title = this.vm.$el.querySelector('span.title'),
-      this.icon = this.vm.$el.querySelector('span.webcake'),
+      this.icon = this.vm.$el.querySelector('span.framework'),
       this.loadingDom = Sn(this, Cn, An).call(this),
       this.fileCount = this.vm.specials.maxFile ? this.vm.$el.querySelector('input#file-length') : null,
       this.vm.$instance = this,
@@ -23830,7 +23830,7 @@
                       var a = {};
                       t.transfer_content &&
                       (a.transfer_content = t.transfer_content),
-                      n.$instance._setPayment(i ? 'storecake_tcb' : null, a)
+                      n.$instance._setPayment(i ? 'hungthe_tcb' : null, a)
                   }
                 }
               )
@@ -24992,14 +24992,14 @@
                   function () {
                     var n,
                     i = e.select.value;
-                    if (i) if (null !== (n = window.WebcakeAddresses) && void 0 !== n && n[i]) e.handleChangeCountry(i),
+                    if (i) if (null !== (n = window.FrameWorkAddresses) && void 0 !== n && n[i]) e.handleChangeCountry(i),
                     e.changePrefixPhoneInput();
                      else var r = FrameWorkScript.pubsub.subscribe(
                       'load-address',
                       (
                         function () {
                           var t;
-                          null !== (t = window.WebcakeAddresses) &&
+                          null !== (t = window.FrameWorkAddresses) &&
                           void 0 !== t &&
                           t[i] &&
                           (
@@ -25745,7 +25745,7 @@
                   if (r) {
                     var a = r.typeVideo,
                     o = r.linkVideo;
-                    if ('webcake' == a) {
+                    if ('framework' == a) {
                       var s = n.querySelector('video');
                       return s.muted = !0,
                       s.src = o,
@@ -26087,7 +26087,7 @@
               var t = this.vm.specials,
               n = t.typeVideo,
               i = t.video;
-              if ('webcake' == n) {
+              if ('framework' == n) {
                 var r = i.replace('statics.hungthe.dev', 'content.hungthe.dev').replace('web_content', '1.1').replace('web-media', '1');
                 this.vm.specials.video_cdn = r
               }
@@ -29094,7 +29094,7 @@
     Ha.prototype.destroy = En.e,
     Ha.prototype.resetText = En.k,
     Ha.prototype.connectSocket = En.a,
-    window.webcake = {
+    window.framework = {
       open_popup: K.a,
       close_popup: z.a
     },
