@@ -1136,11 +1136,11 @@
 }
 
 #w-hs9njuu7 .image-background {
-    width: 340.28203125000005px;
-    height: 458.6221990620115px;
-    top: -73px;
+    width: 100%;
+    height: 100%;
+    top: 0x;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/DSC00681.jpg");
     --type: 0;
 }
 
@@ -1404,7 +1404,7 @@
     height: 159px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/TH_00814.JPG");
     --type: 0;
 }
 
@@ -1434,7 +1434,7 @@
     height: 170px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/TH_01022.JPG");
     --type: 0;
 }
 
@@ -1464,7 +1464,7 @@
     height: 170px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/TH_01162.JPG");
     --type: 0;
 }
 
@@ -1526,8 +1526,8 @@
 }
 
 #w-q5ac8dqm {
-    top: 270px;
-    left: 336px;
+    top: 207px;
+    left: 340px;
     width: 36px;
     height: 36px;
 }
@@ -1998,7 +1998,7 @@
     height: 189.78195422535217px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/TH_00964.JPG");
     --type: 0;
 }
 
@@ -2028,7 +2028,7 @@
     height: 191.5597711267606px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/TH_01022.JPG");
     --type: 0;
 }
 
@@ -2058,7 +2058,7 @@
     height: 280.93896713615027px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00737.jpg) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/TH_00777.JPG) border-box;
     --type: 0;
 }
 
@@ -2088,7 +2088,7 @@
     height: 285.57142857142856px;
     top: -0.571428571428573px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00737.jpg) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/TH_01224.JPG) border-box;
     --type: 0;
 }
 
@@ -2138,7 +2138,7 @@
     height: 191.5597711267606px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC00737.jpg");
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC01293.jpg");
     --type: 0;
 }
 
