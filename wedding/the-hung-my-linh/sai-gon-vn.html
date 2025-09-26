@@ -298,7 +298,7 @@
         <div class="section-container full-height p-relative">
           <div id="w-amfdze1w" class="com-text-block p-absolute is-animation">
             <div class="text-block">
-              <h2 class="text-block-css full-width">Trân Trọng Kính Mời<br>USER_NAME</h2>
+              <h2 class="text-block-css full-width"><div id="user-name">USER_NAME</div></h2>
             </div>
           </div>
           <div id="w-trta43bz" class="com-text-block p-absolute is-animation">
@@ -613,6 +613,68 @@
   </script>
 
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find the div where the user's name will be displayed
+      const userNameDiv = document.getElementById('user-name');
+      
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const guestName = urlParams.get('user-name');
+
+      if (guestName) {
+        // If 'user-name' exists in the URL, decode it and display it
+        try {
+          userNameDiv.innerHTML = "Trân Trọng Kính Mời<br>" + decodeURIComponent(guestName);
+        } catch (e) {
+          console.error("Could not decode user-name parameter:", e);
+          userNameDiv.innerHTML = "Trân Trọng Kính Mời<br>Quý Khách"; // Fallback text
+        }
+      } else {
+        // If 'user-name' does not exist, show an input and a button
+        
+        // Create the input field
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.placeholder = 'Vui lòng nhập tên của Khách';
+
+        // Create the submit button
+        const submitButton = document.createElement('button');
+        submitButton.textContent = 'Xác nhận';
+
+        // Function to handle the submission
+        const handleSubmit = () => {
+          const enteredName = nameInput.value.trim();
+          if (enteredName) {
+            // Encode the name for the URL
+            const encodedName = encodeURIComponent(enteredName);
+            
+            // Add the new parameter to the current URL and reload the page
+            urlParams.set('user-name', encodedName);
+            window.location.search = urlParams.toString();
+          } else {
+            alert('Vui lòng nhập tên của bạn.');
+          }
+        };
+        
+        // Add click event to the button
+        submitButton.addEventListener('click', handleSubmit);
+        
+        // Add keypress event (Enter key) to the input
+        nameInput.addEventListener('keypress', function(event) {
+          if (event.key === 'Enter') {
+            handleSubmit();
+          }
+        });
+
+        // Clear the original div and add the new elements
+        userNameDiv.innerHTML = ''; 
+        userNameDiv.appendChild(nameInput);
+        userNameDiv.appendChild(submitButton);
+      }
+    });
+  </script>
 
   <script>
     ; (function () {
