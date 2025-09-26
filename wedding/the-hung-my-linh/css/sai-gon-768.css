@@ -487,7 +487,7 @@
 #w-lfeb0egb .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: 'VNF-Shelia-Regular (1).ttf', sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 35px;
     text-align: center;
     --type: 0;
@@ -540,7 +540,7 @@
 #w-wkuu9jg6 .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: 'VNF-Shelia-Regular (1).ttf', sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 35px;
     text-align: center;
     --type: 0;
@@ -1479,7 +1479,7 @@
     left: 0px;
     position: relative;
     width: 420px;
-    height: 385px;
+    height: 260px;
 }
 
 #w-frfn2a1z .section-wrapper {
@@ -1499,7 +1499,7 @@
     top: 0px;
     left: 8px;
     width: 401px;
-    height: 367px;
+    height: 240px;
 }
 
 #w-3m9ley3f .image-block-css {
@@ -1512,7 +1512,7 @@
 
 #w-3m9ley3f .image-background {
     width: 401px;
-    height: 401px;
+    height: 290px;
     top: -30px;
     left: 0px;
     background: center center/ cover no-repeat scroll content-box border-box url("../images/save-the-date-sg.png");
@@ -1526,7 +1526,7 @@
 }
 
 #w-q5ac8dqm {
-    top: 207px;
+    top: 152px;
     left: 340px;
     width: 36px;
     height: 36px;
@@ -1998,7 +1998,7 @@
     height: 189.78195422535217px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/TH_00964.JPG");
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC00636.jpg");
     --type: 0;
 }
 
@@ -2054,11 +2054,11 @@
 }
 
 #w-7m08afme .image-background {
-    width: 210.7042253521127px;
-    height: 280.93896713615027px;
+    width: 187px;
+    height: 280px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/TH_00777.JPG) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC01293.jpg) border-box;
     --type: 0;
 }
 
@@ -2070,8 +2070,8 @@
 
 #w-gfr8kgrk {
     top: 54.99998474121094px;
-    left: 215px;
-    width: 187px;
+    left: 210px;
+    width: 192px;
     height: 280px;
 }
 
@@ -2084,11 +2084,11 @@
 }
 
 #w-gfr8kgrk .image-background {
-    width: 214.17857142857142px;
-    height: 285.57142857142856px;
-    top: -0.571428571428573px;
+    width: 192px;
+    height: 280px;
+    top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00275.jpg) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00737.jpg) border-box;
     --type: 0;
 }
 
@@ -2138,7 +2138,7 @@
     height: 191.5597711267606px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC01293.jpg");
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC00275.jpg");
     --type: 0;
 }
 
@@ -2184,11 +2184,11 @@
 }
 
 #w-07ds8l4t .image-background {
-    width: 210.7042253521127px;
+    width: 187px;
     height: 280.93896713615027px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00737.jpg) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/TH_00777.JPG) border-box;
     --type: 0;
 }
 
@@ -2199,10 +2199,10 @@
 }
 
 #w-atvsanei {
-    top: 15.5px;
-    left: 215px;
-    width: 187px;
-    height: 121px;
+    top: 0px;
+    left: 210px;
+    width: 192px;
+    height: 137px;
 }
 
 #w-atvsanei .image-block-css {
@@ -2214,9 +2214,9 @@
 }
 
 #w-atvsanei .image-background {
-    width: 187.6137689614936px;
-    height: 125.02721617418352px;
-    top: -4.027216174183522px;
+    width: 192px;
+    height: 137px;
+    top: 0px;
     left: 0px;
     background: center center/ cover no-repeat scroll content-box border-box url("../images/pre-wed/TH_01224.JPG");
     --type: 0;
@@ -2229,10 +2229,10 @@
 }
 
 #w-6zk6tjag {
-    top: 143.5px;
-    left: 215px;
-    width: 187px;
-    height: 121px;
+    top: 143px;
+    left: 210px;
+    width: 192px;
+    height: 137px;
 }
 
 #w-6zk6tjag .image-block-css {
@@ -2244,11 +2244,11 @@
 }
 
 #w-6zk6tjag .image-background {
-    width: 187.30769230769232px;
-    height: 143.9035769828927px;
-    top: -13.903576982892695px;
-    left: -0.3076923076923208px;
-    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/DSC01293.jpg");
+    width: 192px;
+    height: 137px;
+    top: 0px;
+    left: 0px;
+    background: center center/ cover no-repeat content-box border-box url("../images/pre-wed/TH_00633.JPG");
     --type: 0;
 }
 
@@ -2295,7 +2295,7 @@
 }
 
 #w-qg9pg53z .image-background {
-    width: 211.09550525063102px;
+    width: 187px;
     height: 280.93896713615027px;
     top: 0px;
     left: 0px;
@@ -2310,9 +2310,9 @@
 }
 
 #w-3i6z5fev {
-    top: 0.9937400817871094px;
-    left: 214.5px;
-    width: 187px;
+    top: 0px;
+    left: 210px;
+    width: 192px;
     height: 280px;
 }
 
@@ -2325,11 +2325,11 @@
 }
 
 #w-3i6z5fev .image-background {
-    width: 214.87557282327157px;
-    height: 285.57142857142856px;
-    top: -0.571428571428573px;
+    width: 192px;
+    height: 280px;
+    top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/DSC00065.jpg) border-box;
+    background: center center/ cover no-repeat scroll content-box url(../images/pre-wed/TH_00964.JPG) border-box;
     --type: 0;
 }
 
