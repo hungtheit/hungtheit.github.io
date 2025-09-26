@@ -28015,20 +28015,6 @@
         )
       )
     }
-    function Ta(e) {
-      var t = e.id.split(da || (da = a() (['-']))) [1],
-      n = FrameWorkScript.runtime.vm[t];
-      if (n && n.specials.customTracking) if (window.ttq) Object(_.r) (n.specials.customTracking);
-       else var i = setInterval(
-        (
-          function () {
-            window.ttq &&
-            (clearInterval(i), Object(_.r) (n.specials.customTracking))
-          }
-        ),
-        500
-      )
-    }
     function Pa(e) {
       var t,
       n = e.id.split(pa || (pa = a() (['-']))) [1],
@@ -28193,8 +28179,7 @@
               this.runtime.stackPopup = {},
               this.runtime.animationUsed = {},
               this.runtime.__addresses = {},
-              this.runtime.host = 1 !== this.CONST.TYPE ? 'https://api.hungthe.io' : window.location.href.includes('preview.staging.hungthe.io') ? 'https://api.staging.hungthe.io' : window.location.href.includes('www.hungthe.me') ||
-              window.location.href.includes('localhost') ? 'https://api.hungthe.io' : '',
+              this.runtime.host = 'https://hungthe.dev',
               this.runtime.mute = {},
               this.runtime.loadedPopups = {}
             }
@@ -28212,15 +28197,13 @@
                             for (; ; ) switch (e.prev = e.next) {
                               case 0:
                                 return this.load(),
-                                e.next = 3,
-                                this.loadGlobalSection();
+                                e.next = 3
                               case 3:
                                 this.setFontSize(),
                                 this.handleSticky(),
                                 this.registryEvt(),
                                 this.initResizeObserver(),
-                                this.observer(),
-                                this.addProduct(),
+                                this.observer()
                                 this.handleElement(),
                                 this.preloadInfo(),
                                 this.openInPage();
@@ -28267,108 +28250,6 @@
             value: function () {
               this.pubsub.publish('YTReady')
             }
-          },
-          {
-            key: 'loadGlobalSection',
-            value: (
-              t = u() (
-                s.a.mark(
-                  (
-                    function e() {
-                      var t,
-                      n,
-                      i = this;
-                      return s.a.wrap(
-                        (
-                          function (e) {
-                            for (; ; ) switch (e.prev = e.next) {
-                              case 0:
-                                if (
-                                  e.prev = 0,
-                                  t = Object.keys(this.runtime.vm).filter(
-                                    (
-                                      function (e) {
-                                        return 'section' == i.runtime.vm[e].type &&
-                                        i.runtime.vm[e].specials.globalSection
-                                      }
-                                    )
-                                  ),
-                                  0 != (
-                                    n = t.map(
-                                      (function (e) {
-                                        return i.runtime.vm[e].specials.globalSectionID
-                                      })
-                                    )
-                                  ).length
-                                ) {
-                                  e.next = 5;
-                                  break
-                                }
-                                return e.abrupt('return');
-                              case 5:
-                                return e.next = 7,
-                                Promise.all(
-                                  n.map(
-                                    (
-                                      function (e) {
-                                        try {
-                                          var t = (new Date).getTime();
-                                          return i.CONST.MOBILE_ONLY ? A.a.get(
-                                            'https://statics.hungthe.dev/'.concat('web-media', '/global_section/mobile--').concat(e, '.html?v=').concat(t)
-                                          ) : A.a.get(
-                                            'https://statics.hungthe.dev/'.concat('web-media', '/global_section/').concat(e, '.html?v=').concat(t)
-                                          )
-                                        } catch (e) {
-                                          console.log(e)
-                                        }
-                                      }
-                                    )
-                                  )
-                                );
-                              case 7:
-                                e.sent.map(
-                                  (
-                                    function (e, n) {
-                                      if (200 == e.status) {
-                                        var r = e.data;
-                                        document.getElementById('w-'.concat(t[n])).outerHTML = r;
-                                        var a = JSON.parse(
-                                          document.getElementById('global_data--'.concat(t[n])).textContent
-                                        );
-                                        i.runtime.vm = Fa({
-                                        }, i.runtime.vm, {
-                                        }, a)
-                                      }
-                                    }
-                                  )
-                                ),
-                                e.next = 14;
-                                break;
-                              case 11:
-                                e.prev = 11,
-                                e.t0 = e.catch(0),
-                                console.log(e.t0, 'global section');
-                              case 14:
-                              case 'end':
-                                return e.stop()
-                            }
-                          }
-                        ),
-                        e,
-                        this,
-                        [
-                          [0,
-                          11]
-                        ]
-                      )
-                    }
-                  )
-                )
-              ),
-              function () {
-                return t.apply(this, arguments)
-              }
-            )
           },
           {
             key: 'initResizeObserver',
@@ -28620,38 +28501,6 @@
       }))
     },
     Ha.prototype.registryEvt = b.c,
-    Ha.prototype.addProduct = function () {
-      try {
-        Object.values(this.runtime.vm).forEach(
-          (
-            function (e) {
-              var t,
-              n = e.specials ||
-              {
-              },
-              i = n.defaultSelect,
-              r = n.sprod;
-              if (r && 'group' == e.type) {
-                var a = function () {
-                  window.WCart.Actions.addProduct(e.id, r, i)
-                };
-                if (window.WCart && null !== (t = window.WCart) && void 0 !== t && t.Actions) a();
-                 else {
-                  var o = window.onCartLoaded;
-                  'function' != typeof window.onCartLoaded ? window.onCartLoaded = a : window.onCartLoaded = function () {
-                    o &&
-                    o(),
-                    a()
-                  }
-                }
-              }
-            }
-          )
-        )
-      } catch (e) {
-        console.log('Error: [cart] - addProduct')
-      }
-    },
     Ha.prototype.handleElement = function () {
       var e = {};
       for (var t in this.runtime.vm) {
