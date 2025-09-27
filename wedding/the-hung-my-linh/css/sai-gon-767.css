@@ -1745,7 +1745,7 @@
     left: 0px;
     position: relative;
     width: 420px;
-    height: 380px;
+    height: 430px;
 }
 
 #w-7mhdm53u .section-wrapper {
@@ -1765,7 +1765,7 @@
     top: 0.5px;
     left: 0px;
     width: 420px;
-    height: 370px;
+    height: 420px;
 }
 
 #w-3yfyeul6 .rectangle-css {
@@ -1840,7 +1840,7 @@
 }
 
 #w-klql4ysp {
-    top: 206px;
+    top: 260px;
     left: 0px;
     width: 336px;
     height: 40px;
@@ -1931,6 +1931,31 @@
 
 #w-8h31rtp3 .chevron .icon {
     color: rgba(0, 0, 0, 0.400);
+}
+
+#w-8h31rtp3-2 {
+    top: 206px;
+    left: 0px;
+    width: 336px;
+    height: 40px;
+}
+
+#w-8h31rtp3-2 .input-css {
+    border-color: rgba(57, 71, 58, 1);
+    border-radius: 0px;
+    border-style: double;
+    border-width: 2px;
+    color: rgba(0, 0, 0, 0.400);
+}
+
+#w-8h31rtp3-2 input {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.400);
+}
+
+#w-8h31rtp3-2 input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 #w-pniputpo {
