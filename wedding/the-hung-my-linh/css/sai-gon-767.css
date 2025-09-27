@@ -3582,3 +3582,11 @@
     animation-duration: 3s;
     -webkit-animation-duration: 3s;
 }
+
+.user-name {
+    border-color: rgba(229, 231, 235, 1);
+    border-style: solid;
+    font-weight: bold;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
+    font-size: 40px;
+}

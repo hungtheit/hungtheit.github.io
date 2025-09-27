@@ -626,7 +626,7 @@
       if (guestName) {
         // If 'user-name' exists in the URL, decode it and display it
         try {
-          userNameDiv.innerHTML = "Trân Trọng Kính Mời<br>" + decodeURIComponent(guestName);
+          userNameDiv.innerHTML = "Trân Trọng Kính Mời<br><p class='user-name'>" + decodeURIComponent(guestName) + "</p>";
         } catch (e) {
           console.error("Could not decode user-name parameter:", e);
           userNameDiv.innerHTML = "Trân Trọng Kính Mời<br>Quý Khách"; // Fallback text
