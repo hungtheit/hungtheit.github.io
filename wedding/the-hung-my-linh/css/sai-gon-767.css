@@ -1745,7 +1745,7 @@
     left: 0px;
     position: relative;
     width: 420px;
-    height: 430px;
+    height: 450px;
 }
 
 #w-7mhdm53u .section-wrapper {
@@ -1765,7 +1765,7 @@
     top: 0.5px;
     left: 0px;
     width: 420px;
-    height: 420px;
+    height: 440px;
 }
 
 #w-3yfyeul6 .rectangle-css {
@@ -3594,4 +3594,14 @@
     font-weight: bold;
     font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 40px;
+}
+
+.submit-status {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: green;
+    top: 310px;
 }
