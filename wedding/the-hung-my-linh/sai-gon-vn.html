@@ -675,6 +675,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       // Find the div where the user's name will be displayed
       const userNameDiv = document.getElementById('user-name');
+      const guestNameInput = document.getElementById('wi-unj9ai75');
       
       // Get URL parameters
       const urlParams = new URLSearchParams(window.location.search);
@@ -684,6 +685,7 @@
         // If 'user-name' exists in the URL, decode it and display it
         try {
           userNameDiv.innerHTML = "Trân Trọng Kính Mời<br><p class='user-name'>" + decodeURIComponent(guestName) + "</p>";
+          guestNameInput.value = decodeURIComponent(guestName); // Pre-fill the input field
         } catch (e) {
           console.error("Could not decode user-name parameter:", e);
           userNameDiv.innerHTML = "Trân Trọng Kính Mời<br>Quý Khách"; // Fallback text
