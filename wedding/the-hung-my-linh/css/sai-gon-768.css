@@ -1904,12 +1904,12 @@
     color: rgba(0, 0, 0, 0.400);
 }
 
-#w-9du0r7g4 input {
+#w-9du0r7g4 textarea {
     background: rgba(255, 255, 255, 1);
     color: rgba(0, 0, 0, 0.400);
 }
 
-#w-9du0r7g4 input::placeholder {
+#w-9du0r7g4 textarea::placeholder {
     color: rgba(0, 0, 0, 0.4);
     -webkit-text-fill-color: rgba(0, 0, 0, 0.4) !important;
 }

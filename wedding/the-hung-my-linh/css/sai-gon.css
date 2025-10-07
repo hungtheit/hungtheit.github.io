@@ -498,6 +498,21 @@ a {
     text-decoration: var(--placeholder-decoration)
 }
 
+.input-css textarea {
+    background: transparent;
+    color: inherit;
+    padding-left: 10px;
+    padding-right: 6px;
+    border-radius: 0;
+    text-align: inherit;
+    letter-spacing: inherit
+}
+
+.input-css textarea::placeholder {
+    text-transform: var(--placeholder-transform);
+    text-decoration: var(--placeholder-decoration)
+}
+
 .input-datetime {
     overflow: hidden
 }
